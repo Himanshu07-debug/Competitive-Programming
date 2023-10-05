@@ -22,18 +22,7 @@ int main(){
 
     // NOTE : Character must be in single quotes
 
-    // NOTE : String is a Derived Datatype same as other Vector, map, set, etc  built on characters
-
-    // INPUT way -> Ek value krne ke baad aap kitna bhi space leke second value, no issue
-
     // REMEMBER : In C++, by BODMAS all calculation is done
-
-
-
-    // String input :
-    string s;
-    getline(cin,s);
-
 
 
     // Float divison: 

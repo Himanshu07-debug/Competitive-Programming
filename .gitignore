@@ -4,6 +4,8 @@
 Instructions.cpp
 p.cpp
 
+.vscode
+
 # Compiled Object files
 *.slo
 *.lo

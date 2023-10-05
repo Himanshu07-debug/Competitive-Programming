@@ -1,47 +1,40 @@
+// Given a mathematical expression. The expression will be one of the following expressions:
+// A + B = C, A - B = C and A * B = C
+// where A, B, C are three numbers, S is the sign between A and B, and Q the '=' sign
+
+// Print "Yes" If the expression is Right , Otherwise print the right answer of the expression.
+
+// Constraint: 0 ≤  A, B  ≤ 100 , - 10^5  ≤  C  ≤  10^5
+
+// INPUT :  5 + 10 = 15                           Output : Yes
+// INPUT :  2 * 10 = 19                           Output : 20
 
 #include<bits/stdc++.h>
 using namespace std;
 
-int multiply(vector<long long> &arr, long long x , int n){
-
-    int carry = 0;
-    for(int i = 0; i< n;i++){
-        unsigned long long s = arr[i] * x + carry;
-        arr[i] = s % 10;
-        carry = s/10;
-    }
-
-    while(carry > 0){
-        arr[n] = carry % 10;
-        carry /= 10;
-        n++;
-    }
-
-    return n;
-
-}
-
-
 int main(){
 
-    long long in[4];
+    // See the Question Properly, we misread the question and consider whole input as a String and done in a more 
+    // Complex way
 
-    for(int i=0;i<4;i++){
-        int a;
-        cin>>a;
-        in[i] = a;
+    int a,b,c;
+
+    char c1, c2;
+
+    cin >> a >> c1 >> b >> c2 >> c;
+
+    if(c1=='+'){
+        if(a+b==c) cout<<"Yes";
+        else cout<< a+b;
     }
-
-    vector<long long> arr(100);
-
-    int n=1;
-    arr[0] = 1;
-
-    for(int i=0;i<4;i++){
-        n = multiply(arr, in[i], n);
+    else if(c1=='-'){
+        if(a-b==c) cout<<"Yes";
+        else cout<< a-b;
     }
-
-    cout << arr[1]<<arr[0] <<endl;
+    else if(c1=='*'){
+        if(a*b==c) cout<<"Yes";
+        else cout<< a*b;
+    }
 
     return 0;
 }

@@ -44,7 +44,7 @@ int main(){
 
     // Remember -> Both way takes same time
     
-    cout<< mi<<endl;
+    cout<<mi<<endl;
     cout<<t<<endl;
     cout<<mx<<endl;
     cout<<endl;
