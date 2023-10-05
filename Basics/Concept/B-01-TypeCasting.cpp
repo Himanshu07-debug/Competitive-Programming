@@ -10,6 +10,9 @@ int main(){
     // Type casting
     cout << (char)('f' + 1) << "\n";            // 'f' + 1 gives 103 without type casting
 
+    // NOTE : difference between 'a' and 'A' in ASCII is 32. This will help in conversion from lowercase to upper
+    //        without using functions
+
 
 
     char c = '4';

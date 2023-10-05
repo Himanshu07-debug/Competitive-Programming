@@ -11,6 +11,8 @@
 // -2
 // 1
 
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -40,6 +42,7 @@ int main(){
         }
     }
 
+    // Remember -> Both way takes same time
     
     cout<< mi<<endl;
     cout<<t<<endl;
