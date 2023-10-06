@@ -21,6 +21,7 @@ int main(){
 
     getline(cin,str);           // If you hard coded the Input , no need to do this
 
+    // Making the Input String as a Stream
     stringstream X(str);
 
     vector<string> arr;
