@@ -22,23 +22,23 @@ int main(){
     
     while(t--){
 
-            // In case of long long questions, take Input also in Long long
-            long long n, x;
-            cin >> n >> x;
-            
-            // Edge Case
-            if(x > n){
-                swap(n,x);
-            }
+        // In case of long long questions, take Input also in Long long
+        long long n, x;
+        cin >> n >> x;
         
-            // Inorder to avoid Overflow, use 1ll always in case of long long
-            long long ans1 = n * 1ll * (n+1)/2;
-            long long ans2 = x * 1ll * (x-1)/2;
-            
-            // Never do the operation in the cout statement, store it in a variable and then output it
-            long long res = ans1 - ans2;
-            
-            cout<< res<<"\n";
+        // Edge Case
+        if(x > n){
+            swap(n,x);
+        }
+    
+        // Inorder to avoid Overflow, use 1ll always in case of long long
+        long long ans1 = n * 1ll * (n+1)/2;
+        long long ans2 = x * 1ll * (x-1)/2;
+        
+        // Never do the operation in the cout statement, store it in a variable and then output it
+        long long res = ans1 - ans2;
+        
+        cout<< res<<"\n";
 
     }
     
