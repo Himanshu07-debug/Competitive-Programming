@@ -101,13 +101,25 @@ int main(){
     // NOTE : In most Compiler, long double Output will be same as double Output becz long double do not
     //          gaurantee that it will have 18 digits, its precision will be long double >= double
 
-    // REMEMBER : While Submiting, always use Long double becz this precision things vary from 
-
-
-
+    // REMEMBER : While Submiting, always use Long double becz this precision things vary from Compiler to Compiler.
+    //            The online judges of Codechef, Codeforces, both have this precision diff in double and long double
 
 
     
+
+    // ************************* IMP TIP WHILE USING FLOAT ****************************************
+
+    // Never Print BIG float Numbers, becz it gets print in Scientific value and it is NEVER Accepted by any Judge
+    // Convert it to int and then Print
+
+    long double g = 12312345.678;
+    float h = 123567689.09;
+
+    // Inorder to see the scientific value output, just comment down setprecision() function
+    cout << g << endl;
+    cout << h << endl;
+    cout << (int)g << " " << (int)h << endl;
+
     return 0;
 
 }
