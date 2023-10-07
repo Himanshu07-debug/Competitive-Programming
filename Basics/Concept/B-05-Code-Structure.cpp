@@ -7,16 +7,26 @@ using namespace std;
 // If not written , then use std :: (scope resolution operator)
 // They are used to avoid conflicting names
 
+// signed int => signed ( SAME )
+
 int main(){
 
     // ***************************************  FAST IO  *******************************
 
-    // It increases the execution time by taking fast Input and giving fast output, but there are some Drawbacks
+    // It increases the execution time by taking fast Input and giving fast output, it saves your Run time, 
+    // but there are some Drawbacks
 
     ios::sync_with_stdio(false);  // Removes sync between cout and printf
+
+    // The effect of Above statement will that agar mai Printf aur cout use krta hu code me to Printf wale phle 
+    // Print ho jaenge console before cout, even though printf wale niche likhe the cout se
+
+    cout << 1 << '\n';
+    printf("2\n");
+
     cin.tie(NULL);                // Removes sync between cout and cin
 
-    // endl vs "\n" :
+    // Effect of above statement : 
     cout << "Enter two values: ";
     int a, b;
     cin >> a >> b;
@@ -41,13 +51,20 @@ int main(){
 
     // WHEN TO NOT USE FAST IO -> While Debugging when you have to interact with the Output .. Becz fastio will so 
     //                             all outputs at the last after taking all Input
+    // FAST IO should not be used in Interactive Problems
+
+
 
 
     // SEARCH -> user defined header files ( HOW )
 
 
+
+
     // Without namespace
     std::cout << 5 << std::endl;
+
+
 
     // Compile time vs Run time  --------------> 
  
@@ -56,10 +73,12 @@ int main(){
     }
     cout << endl;
 
-    // Compile time -> time taken to build (COMPILE) and start the output, preparing the exec file
+    // Compile time -> time taken to build (COMPILE) and start the output, preparing the exec file (Code to Byte code)
     // Run time -> Time taken by the FOR LOOP to run when the Output starts
 
     // REMEMBER -> Code --> Compilation time --> Run time 
+
+    // C++ Documentation -> Devdocs.io
 
     return 0;
 
