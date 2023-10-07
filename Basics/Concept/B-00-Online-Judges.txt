@@ -1,0 +1,8 @@
+********************************** Online IDE **************************************
+
+    USACO IDE , replit IDE
+
+********************************* Offline IDE **************************************
+
+    Vscode ( average PC )       AND        CLion ( HighClass PC, becz it is much heavy software )
+
