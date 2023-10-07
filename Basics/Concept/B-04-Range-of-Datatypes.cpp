@@ -120,6 +120,18 @@ int main(){
     cout << h << endl;
     cout << (int)g << " " << (int)h << endl;
 
+
+    // ****************** OTHER CONCEPT :
+
+    // While loop is used when you want to increment and decrement your iterator at certain conditions. By while,
+    // It is Easy to do
+
+    // " auto " keyword can be used only when you are giving the value in front of it
+    // It is not used in an unitialized state
+
+    auto j = 12;
+    // auto j;   NOT ALLOWED
+
     return 0;
 
 }
