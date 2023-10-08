@@ -41,6 +41,15 @@ int main(){
         cout<< res<<"\n";
 
     }
+
+    // ******************************************** CONCEPT ***************************************
+
+    // In Finding Prime Questions, we do not use sqrt(), WHY ???
+
+    // sqrt() returns float values and also there may be error in Precision, therefore multiplication of int, int 
+    // i.e i*i is Preffered 
+
+
     
     return 0;
 }

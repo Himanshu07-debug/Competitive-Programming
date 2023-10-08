@@ -13,12 +13,15 @@ int main(){
 
     cin >> k >> s;
 
-    // We will consider all possible pairs of x and y and will see that either a Valid Triplet is forming or NOT
+    // We can generate all possible triplets in 3 loops but O( k^3 ) is not ACCEPTED
+
+    // So We Can consider all possible pairs of x and y and will see that either a Valid Triplet is forming or NOT
     // O( k^2 ) time is ACCEPTED in the given constraints
 
     long long cnt = 0;
 
     for(int i=0; i<=k; i++){
+        
         for( int j=0; j<=k; j++){
 
             int z = s - (i + j);
