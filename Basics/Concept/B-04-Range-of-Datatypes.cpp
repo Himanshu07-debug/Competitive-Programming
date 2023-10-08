@@ -132,6 +132,12 @@ int main(){
     auto j = 12;
     // auto j;   NOT ALLOWED
 
+    // *************** REMEMBER WHILE USING VECTOR *******************
+
+    // While using Vectors, if you are initializing its size during its declaration i.e arr(n) , then never use 
+    // push_back to add, use arr[i] to update, becz push_back will add a new element at the n+1 index of the arr
+
+
     return 0;
 
 }
