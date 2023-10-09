@@ -6,3 +6,23 @@
 
     Vscode ( average PC )       AND        CLion ( HighClass PC, becz it is much heavy software )
 
+
+Codeforces  ===> 
+
+-> Its Pretty Hard, Not Beginner Friendly Contest..
+-> Catalog tag -> Collection of articles
+
+
+NOTE : Atcoder Contest are Best for Beginners
+
+For Practicing Atcoder Problems -> kenkoooo.com 
+
+
+************************************* TIPS FOR CONTEST *****************************************
+
+1. Agar B question aapse nhi ho rha hai, bhut derr ho gye, Go to Contest Page and see the number of Submissions.. 
+   It might be Possible B is more Harder than C
+
+2. For EDGE-CASE : Before Submitting, see the Smallest and the largest Constraint and think will they somehow affect 
+                    my solution
+

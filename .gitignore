@@ -1,7 +1,7 @@
 # Prerequisites
 *.d
 
-Instructions.cpp
+Instructions.txt
 p.cpp
 
 .vscode
