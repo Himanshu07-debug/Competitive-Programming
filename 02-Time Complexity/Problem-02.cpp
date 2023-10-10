@@ -29,7 +29,7 @@ int main(){
             int t1 = i*i + j;
             int t2 = i + j*j;
 
-            if(t1==n && t2 == m){
+            if(t1 == n && t2 == m){
                 cnt ++;
             }
         }
@@ -41,7 +41,10 @@ int main(){
     // decrease upto 0 ho skti hai becz a,b >= 0 (Constraint) 
     // So b=0 pe a^2 = n i.e a value can be maximize upto sqrt(n) , above that It will not satisfy the first equation
 
+    // Similarly, we had find b, minimize a to get max value of b possible
 
+    // This is one of the Popular method of Maths when you are given a Equation : 
+    // Keep the equation satisfying, minimize at one side and maximize on other side
 
     cout << cnt << endl;
 
