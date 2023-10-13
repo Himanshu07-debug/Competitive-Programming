@@ -29,7 +29,57 @@ int main(){
 
     ios::sync_with_stdio(false); cin.tie(NULL);
 
+    int n;
+    string s;
+    cin >> n >> s;
 
+    int ans = 1;
+
+    if(s.size() == 1)  s = "00" + s;
+    if(s.size() == 2)  s = "0" + s;
+
+    // NOTE : Above idea is V.V.IMP, Apan logo ne logic last 3 numbers ko check karne ka banaya, 1 and 2 size ke
+    //        strings ko alag se if-else me handle krna padta, jo ki thoda sa complex ho jaata code likhne ko..
+    
+    // TIP : Code ek hi idea pe based kro if possible (becz sometimes you have to explicitly handle the edge case), 
+    //       but in such cases, do it, do not increase the length and complexity of your coding
+
+    n = s.size();
+
+    int x = (s[n-3]-'0')*100 + (s[n-2]-'0')*10 + (s[n-1]-'0');
+
+    if(x%8 == 0){
+
+        // POPPING THE ADDED CHARACTERS FROM STRING
+        reverse(s.begin(),s.end());
+        while(s.size() > 1 && s.back() == '0')  s.pop_back();
+        reverse(s.begin(),s.end());
+
+        cout << s << endl;
+        return 0;
+
+    }
+    
+    x = (s[n-3]-'0')*100 + (s[n-2]-'0')*10;
+
+    for(int i=0;i<=9;i++){
+        x += i;
+
+        if(x%8 == 0){
+
+            s[n-1] = '0' + i;
+
+            reverse(s.begin(),s.end());
+            while(s.size() > 1 && s.back() == '0')  s.pop_back();
+            reverse(s.begin(),s.end());
+
+            cout << s << endl;
+            break;
+
+        }
+
+        x -= i;
+    }
 
     
     return 0;

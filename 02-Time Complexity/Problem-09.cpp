@@ -1,18 +1,26 @@
-// Zookeeper is playing a game. In this game, Zookeeper must use bombs to bomb a string that consists of letters 'A' 
-// and 'B'. He can use bombs to bomb a substring which is either "AB" or "BB". When he bombs such a substring, 
-// the substring gets deleted from the string and the remaining parts of the string get concatenated.
+// You are given an integer n . In one move, you can either multiply n by two 
+// or divide n by 6 (if it is divisible by 6 without the remainder). 
+// Your task is to find the minimum number of moves needed to obtain 1 from n or determine if it's impossible to do that.
 
-// For example, Zookeeper can use two such operations: AABABBA → AABBA → AAA.
+// 1 <= n <= 10^9
 
-// Zookeeper wonders what the shortest string he can make is. Can you help him find the length of the shortest string?
+// Input : 1 -> 0 , 2 -> -1 , 3 -> 2
 
 
 
-// Logic : We can remove AB/BB ===> Observe this carefully, whatever is before B, A/B, we dont care ( ?B )
+// LOGIC : This types of questions are pure mathemathical, Math ke Problem jaisa socho and prove kro pen-paper me
 
-// Means we have to find B and remove the previous indx character of it
-// For this, We can use Stack , B aaya to if stack non-empty hai, remove, at last, stack size is our answer
-// We can Optimize it By using a length variable instead of Stack
+// Apne ko n ko reduce 1 me krna hai, 2 se multiply krke n 1 se durr honga aur, so we cant do that, Divide hi suitable
+// Operation hai
+
+// If n prime factorization contains numbers other than 2 and 3 , then it can never reduce to 1 becz 2*3 ko 6 cancel 
+// kar denga, Lekin jo samne ke factors rhnge wo waise hi rhnge and hence n equal to 1 nhi honga
+
+// n = 2^a * 3^b ( Agar aaisa n hai, tabhi aage proceed krnge 1 ke liye)
+
+// There can be 2 cases here :
+// a <= b : Hum multiply kar denge 2 se n ko till a == b
+// a > b  : multiplication by 3 is not allowed, so here also it is impossible to reduce N to 1
 
 
 
@@ -27,18 +35,31 @@ int main(){
 
     ios::sync_with_stdio(false); cin.tie(NULL);
 
-    string s;
-    cin >> s;
+    // Your code here
 
-    int stk = 0;
+    long long n;
+    cin >> n;
 
-    for(int i=0;i<s.size();i++){
-        if(stk!=0 && s[i]=='B') stk--;
-        else stk++;
+    int a=0 , b=0;
+
+    while(n%2 == 0){
+        a++;
+        n/=2;
     }
 
-    cout << stk << endl;
-  
+    while(n%3 == 0){
+        b++;
+        n/=3;
+    }
+
+    if(n>1){
+        cout << -1 << endl;
+        return 0;
+    }
+
+    if(a <= b) cout << (b - a) + b << endl;  // (b-a) power equal krne ke liye and b operation for dividing
+    else cout << -1 << endl;
+    
     return 0;
 }
 

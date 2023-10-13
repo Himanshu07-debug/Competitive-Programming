@@ -1,18 +1,24 @@
-// Given a string s and a parameter k, you need to check if there exist k+1 non-empty strings a1,a2...,ak+1 , such that -
-// s = a1 + a2 + … + ak + ak+1 + R(ak) + R(ak−1) + … + R(a1)
-// Here + represents concatenation. We define R(x) as a reversed string x
+// Given an array of student skills, your task is to find the maximum size `x` for which you can compose two teams, 
+// each with same size `x`, satisfying the following conditions:
 
-// Constraint : 1 <= n <= 100 , 1 <= k <= n/2 
+// 1. The first team should consist of students with distinct skills.
+// 2. The second team should consist of students with the same skills.
+// 3. Both team with same size
 
-// Input : n=5 , k=1 , s = qwqwq                      -> Yes
-// Input : n=22 , k=0 , s = dokidokiliteratureclub    -> Yes
-// Input : n=6 , k=3 , s = aaaaaa                     -> Yes
+// You need to return the maximum possible size `x` for a valid pair of teams.
+
+// Consider some examples (skills are given): 
+// [1,2,3] , [4,4] is not a good pair of teams because sizes should be the same; 
+// [1,1,2] , [3,3,3] is not a good pair of teams because the first team should not contain students with the same skills;
+//  [1,2,3] , [3,4,4] is not a good pair of teams because the second team should contain students with the same skills; 
+// [1,2,3] , [3,3,3] is a good pair of teams;
+// [5] , [6] is a good pair of teams. 
+
+// Constraint : 1 <= n <= 2 * 10^5
 
 
-// Logic : Hum check krnge kya string ko k+1 strings ko divide kar sakte hai kya , If yes , then
-//          hum k characters check krnge starting and ending ke .. same mile, then aage Yes , 
-//          becz k strings 1-1 character ki ban jayegi and aage equality check krne ki need nhi
-
+// LOGIC : Hum max cnt wla element nikalenge, and uss element ko second team me rkhnge and compare krnge uske cnt 
+//         ko other distinct elements of array se.. becz apne ko dono same size ka rkhna hai
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -21,52 +27,52 @@ using namespace std;
 const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
+
 void solve(){
 
     // Your code here
-    int n , k;
-    string s;
 
-    cin >> n >> k;
-    cin >> s;
+    int n;
 
-    // Checking for Valid String
-    if( n <= 2*k )  cout << "NO" << endl;
-    else{
+    cin >> n;
 
-        if(k==0){
-            cout << "YES" << endl;
-            return;
-        } 
+    vector<int>arr;
 
-        string x = s.substr(n-k);
-        reverse(x.begin(),x.end());
-
-        if(s.substr(0,k)==x){
-                cout << "YES" << endl;
-                return;
-        }
-
-        // It is similar to checking palindrome of string of length k 
-
-        for(int i=k-1;i<n/2;i++){
-
-            string x = s.substr(n-1-i);
-            reverse(x.begin(),x.end());
-
-            if(s.substr(0,i+1)==x){
-                cout << "YES" << endl;
-                return;
-            }
-
-            
-
-        }
-
-        cout << "NO" << endl;
+    for(int i=0;i<n;i++){
+        int a; cin >> a;
+        arr.push_back(a);
     }
 
+    unordered_map<int,int>m;
+    unordered_set<int>s;
+
+    int cnt = 0;
+    int mx = -1;
+
+    for(int x:arr){
+        m[x]++; 
+        if(m[x] > cnt) {
+            cnt = m[x];
+            mx = x;
+        }
+    }
+
+    for(int x:arr) {
+        if(x!=mx){
+            s.insert(x);
+        }
+    }
+
+    // Check max cnt wale element ko first team me include kar sakte hai kya
+    if(cnt >= (s.size() + 2)) {
+        cout << s.size() + 1 << endl;
+        return;
+    }
+
+    cout << min((int)s.size(),cnt) << endl;
+
 }
+
 
 int main() {
 
@@ -83,4 +89,3 @@ int main() {
     return 0;
 
 }
-
