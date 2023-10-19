@@ -21,8 +21,8 @@ int main(){
     // The effect of Above statement will that agar mai Printf aur cout use krta hu code me to Printf wale phle 
     // Print ho jaenge console before cout, even though printf wale niche likhe the cout se
 
-    cout << 1 << '\n';
-    printf("2\n");
+    // cout << 1 << '\n';
+    // printf("2\n");
 
     cin.tie(NULL);                // Removes sync between cout and cin
 
@@ -31,7 +31,7 @@ int main(){
     int a, b;
     cin >> a >> b;
     cout << a + b << endl;          // ---> Marker line
-    cout << " Enter Third : ";
+    cout << "Enter Third : ";
     int c ;
     cin >> c;
     cout << a + b + c << "\n";
@@ -62,16 +62,16 @@ int main(){
 
 
     // Without namespace
-    std::cout << 5 << std::endl;
+    // std::cout << 5 << std::endl;
 
 
 
-    // Compile time vs Run time  --------------> 
+    // // Compile time vs Run time  --------------> 
  
-    for(int i=0;i<10;i++){
-        cout << i << " ";
-    }
-    cout << endl;
+    // for(int i=0;i<10;i++){
+    //     cout << i << " ";
+    // }
+    // cout << endl;
 
     // Compile time -> time taken to build (COMPILE) and start the output, preparing the exec file (Code to Byte code)
     // Run time -> Time taken by the FOR LOOP to run when the Output starts
