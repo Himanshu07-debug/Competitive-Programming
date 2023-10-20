@@ -4,7 +4,7 @@ using namespace std;
 #define endl '\n'
 const long long MOD = 1e9 + 7;
 
-// Defining MOD in macro is not Recommended.. It gives Incorrect answer at some cases 
+// Defining MOD in macro is not Recommended.. It gives Incorrect answer at some cases, Our MOD is a long long variable
 
 const long long INF = LLONG_MAX >> 1;  // 4 * 10^18 [ / by 2 ] ( INF + INF will not give Error )
 

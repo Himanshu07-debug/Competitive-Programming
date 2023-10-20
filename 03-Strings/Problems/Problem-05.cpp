@@ -18,6 +18,9 @@
 // Example -> 08 16 24 32 40 48 56 64  .. see the first digit, all number in a number series will come serially.
 //            0  1  2  3  4  4  5  6
 
+
+// NOTE : Divisibilty by 3 -> Sum of digits of given number should be divisible by 3
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -86,4 +89,3 @@ int main(){
 }
 
 
-// NOTE : Divisibilty by 3 -> Sum of digits of given number should be divisible by 3
