@@ -7,6 +7,27 @@
 
 // P is Prime , so it will take only odd values, becz 2 is the only prime no. that is even
 
+#include<bits/stdc++.h>
+using namespace std;
 
+#define endl '\n'
+const long long MOD = 1e9 + 7;
+const long long INF = LLONG_MAX >> 1; 
+
+int main(){
+
+    ios::sync_with_stdio(false); cin.tie(NULL);
+
+    // Your code here
+
+    int p;
+    cin>> p;
+
+    // Remiander -> 1 always as 2 which is the only even Prime number is not in Constraint of P
+    cout << 2 << " " << (p-1) << endl;
+
+
+    return 0;
+}
 
 

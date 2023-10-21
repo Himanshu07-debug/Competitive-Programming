@@ -28,5 +28,13 @@ int main(){
 
     long long sub = (((a%mod - b%mod)%mod) + mod) % mod;
 
+
+    // ***************************************** REMEMBER ******************************************************
+
+    // MOD increases the time of computation, yes bhut kam increase krta hai, neglect kar sakte hai, but not a good Practice.. Avoid unnecessary
+    // MOD's
+
+    // Also const specified with MOD declaration make % faster
+
     return 0;
 }
