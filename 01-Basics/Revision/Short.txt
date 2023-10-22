@@ -1,0 +1,46 @@
+PROBLEM - 02 ------------------------> 
+
+=> To avoid Overflow -> Multiply by " 1ll "
+=> sqrt() returns float values, do not use it
+
+
+PROBLEM - 04 -------------------------->>
+
+=> Agar number of Characters fixed hai and if the number is less(<=6), then do not use string, take everyone separately
+   so that complexity naa badhe solution ki 
+
+
+PROBLEM - 05 ------------------------>>
+
+=> To check number is integer or not : n - (int)n == 0
+
+
+PROBLEM - 06 ------------------------->>
+
+=> If a = 1e9 , b = 1e9 , Find a*b last 2 digits? 
+   a = a%100 , b = b%100 ,  Ans = (a*b) % 100
+
+
+PROBLEM - 07 ------------------------>> 
+
+=> If Eqaution is given to solve,lekin Constraints are very tight, cant be solved in Brute way, Then try to observe 
+    and analyze the eqaution & reduce it to get answer
+
+=> In log, when base is not specified , it is default 2
+
+
+PROBLEM - 08 ------------------------>> 
+
+=> In order to get total number of Pairs in Brute way -> Use O(n^2)
+
+
+PROBLEM - 09 ---------------------->> 
+
+=> Never use Ceil , use ceil(a/b) => ( a + b -1 )/ b;
+=> Floor is By default in Integer division
+
+
+
+
+
+
