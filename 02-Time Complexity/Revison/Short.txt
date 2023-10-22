@@ -1,0 +1,39 @@
+PROBLEM-01 ----------------->> 
+
+--> Must see Question, when numbers are formed with Some Given set of Numbers. 
+    Numbers are formed with 1, 14, 144. Check the given number is VALID ?? Use substr() logic to test all possibilitis
+
+
+
+PROBLEM-02 ----------------->> 
+
+--> Equation -> a^2 + b = n .. Max value a can take?? Minimize b to the lowest to get the maximum value of all
+    Technique -> Minimize one will maximize the Other Other number in Equation to keep the equation VALID
+
+
+PROBLEM-04 ---------------->> 
+
+--> Modular Question : If you want the value of X in last valid cycle, try reducing the n To get the max possible
+                    value of x possible
+    DONT -> First Cycle me rem nikal liye and then usko cycle length se + kar rhe jab tk last cycle pe nhi pahucte, this
+    Approach can gice TLE, max chahiye, to RHS se chalu karo solving, naaki LHS se
+
+    N mod x = y ==> In this 2 cases are possible : rem >= y OR rem < y , You have to handle both
+
+
+PROBLEM-05 ---------------->> 
+
+---> Jaise Peak element me corner wale elements ke liye loop ke upar hi check kar lete the, We can take 3 copy of arr,
+        And middle wale me traverse krke answer nikal sakte hai
+
+
+PROBLEM-
+
+
+
+
+
+
+
+
+
