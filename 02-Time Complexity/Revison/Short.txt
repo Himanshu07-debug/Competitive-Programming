@@ -27,7 +27,27 @@ PROBLEM-05 ---------------->>
         And middle wale me traverse krke answer nikal sakte hai
 
 
-PROBLEM-
+PROBLEM 06 & 09 --------------->> 
+
+--> Pure Mathemathical Logic to see [ Mathemathical Questions have to be solved by pen and paper ]
+
+
+PROBLEM-10 ----------------->> 
+
+---> MATRIX Observation ( MUST SEE )
+
+
+PROBLEM-11 ----------------->> 
+
+--> To get kth sum of Odd numbers -> k*k      ( 1 + 4 + 9 + 16 + ... )
+    To get kth sum of Odd numbers -> k*(k+1)  ( 2 + 6 + 12 + 20 + ... )
+    NOTE : A.P ke sum wale formulae se nikale
+
+
+PROBLEM-12 ------------------->> 
+
+--> In multiset, To directly get the value -> int x = *mst.begin();
+--> A must see Question, Considering the Possiblity
 
 
 
