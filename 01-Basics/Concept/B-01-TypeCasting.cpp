@@ -16,8 +16,12 @@ int main(){
 
 
     char c = '4';
-    // How to convert this 4 to integer 4 
+    // Char --> Integer 
     cout << c - '0' << endl;
+
+    int j = 9;
+    // Integer to Char
+    cout << (char)('0'+j);
 
 
     // NOTE : Character must be in single quotes
