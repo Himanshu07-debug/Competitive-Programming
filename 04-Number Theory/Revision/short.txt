@@ -1,0 +1,26 @@
+PROBLEM - 01 ---------->>
+
+A Good Modulo Question To see. Remember -> 2 is the only prime no. i.e even
+
+
+PROBLEM - 02 ---------->>
+
+If all divisors of N are given in a SORTED order, then we can get n by multiplying arr[0]*arr[n-1] , arr[1]*arr[n-2] .. Same like palindrome
+** CONCEPT --> DIVISORS OF ANY NUMBER ALWAYS COMES IN PAIR
+
+
+PROBLEM - 03 ---------->> 
+
+IMP technique in the Question [ MUST SEE ]
+
+
+PROBLEM - 05 ----------->> 
+
+How to predict the numbers with atleast 4 divisors ? 
+If A number have atleast 2 distinct divisors p,q , then pq is the number with divisors 1, p, q, pq
+If divisors not distinct i.e a = p^k , then p^3 is the number with divisors 1, p, p^2, p^3
+
+
+
+
+
