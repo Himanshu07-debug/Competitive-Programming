@@ -21,6 +21,17 @@ If A number have atleast 2 distinct divisors p,q , then pq is the number with di
 If divisors not distinct i.e a = p^k , then p^3 is the number with divisors 1, p, p^2, p^3
 
 
+PROBLEM - 06 ----------->> 
 
+MUST SEE ---> Observing the edge case and reducing the equation for answer
+
+
+PROBLEM - 08 ----------->> 
+
+Number ke K prime factors honge, this can be determine by Checking that Total Number of divisors can be reduced to K values greater than 1.
+This K values can be even or Odd
+
+** No. = p1^a1 * p2^a2 ...
+** Total No. of divisors = (a1 + 1) * (a2 + 1) ....
 
 
