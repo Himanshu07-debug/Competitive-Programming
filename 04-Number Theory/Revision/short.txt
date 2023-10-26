@@ -35,3 +35,8 @@ This K values can be even or Odd
 ** Total No. of divisors = (a1 + 1) * (a2 + 1) ....
 
 
+PROBLEM - 09 -------------->> 
+
+Try to avoid doing TDS thing, Do only that much which is actually required.. In CP, First try for NAIVE in constraints
+
+
