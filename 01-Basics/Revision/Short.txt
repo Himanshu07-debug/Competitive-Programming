@@ -40,6 +40,11 @@ PROBLEM - 09 ---------------------->>
 => Floor is By default in Integer division
 
 
+PROBLEM - 12 ----------------------->> 
+
+Making the array elements equal by taking 2^x values from a[i] and giving it to a[j].. check is it Possible ?? 
+--> What will be the edge case? Approach ?
+
 
 
 
