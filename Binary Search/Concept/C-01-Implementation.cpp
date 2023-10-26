@@ -40,7 +40,7 @@ bool search1(vector<int> a, int target) {
 // ---> Target ke occ ke corners pe check krlo, Only consider aap jo bhi le rhe ho in 1st case, mera mid calculate krke wo naa aaye
 // Eg : Code ke below
 
-int search(vector<int> a, int target) {
+int search2(vector<int> a, int target) {
     int left = 0, right = a.size() - 1;
 
     while (left < right) {
@@ -62,7 +62,7 @@ int search(vector<int> a, int target) {
 
 // Question -> FIND THE FIRST INDEX OF THE TARGET
 
-int search(vector<int> a, int target) {
+int search3(vector<int> a, int target) {
     int left = 0, right = a.size() - 1;
 
     while (left < right) {

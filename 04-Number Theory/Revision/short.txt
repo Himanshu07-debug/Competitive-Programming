@@ -40,3 +40,10 @@ PROBLEM - 09 -------------->>
 Try to avoid doing TDS thing, Do only that much which is actually required.. In CP, First try for NAIVE in constraints
 
 
+10 - CONCEPT ------------->> 
+
+Given (x | y) * ( x ^ y ) = N and N is an Odd number, Find x & y ?? 
+===> When N is odd, Last bit is set and therefore :: N ^ (N - 1) ==> 1 , becz N - 1 will make change only at the last bit, resulting XOR in 1
+===> Similarly , OR will give N 
+
+
