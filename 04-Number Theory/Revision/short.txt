@@ -40,7 +40,12 @@ PROBLEM - 09 -------------->>
 Try to avoid doing TDS thing, Do only that much which is actually required.. In CP, First try for NAIVE in constraints
 
 
-10 - CONCEPT ------------->> 
+PROBLEM - 10 --------------->>
+
+A variation of Trapping RainWater Problem, Must see.. Keeping track of the boundaries for each element in the array
+
+
+11 - CONCEPT ------------->> 
 
 Given (x | y) * ( x ^ y ) = N and N is an Odd number, Find x & y ?? 
 ===> When N is odd, Last bit is set and therefore :: N ^ (N - 1) ==> 1 , becz N - 1 will make change only at the last bit, resulting XOR in 1
