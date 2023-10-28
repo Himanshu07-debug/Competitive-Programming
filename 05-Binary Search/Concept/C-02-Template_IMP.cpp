@@ -13,7 +13,9 @@
 
 // Binary Search will move : l to mid when predicate is True  AND r to mid when predicate is False
 
-// The Point where T and false are adjacent is called as Junction Point..  
+// The Point where T and F are adjacent is called as Junction Point.. 
+
+// The set of elements can be  F F F T T T based on your required goal
 
 
 // ************************************** EXAMPLE ********************************************
@@ -32,10 +34,10 @@
 
 // NOTE : Your Answer will be either T or F of JUNCTION POINT, not other than that
 
+// ************* REMEMBER ----------->>>>> 
 
-// ******************** REMEMBER **************************
-
-// It is Recommended, not to change the Order, True ko left me hi rhne do
+// It is Recommended, not to change the Order, True ko left me hi rhne do, but agar nhi rkhna chahte then also no Issue, answer will not 
+// change, T F ke jagah , ab F T ka JUNCTION POINT aayenga
 
 // FIRST INDEX :  UPDATED PREDICATE function ===> a[i] < Target
 
@@ -82,21 +84,27 @@ int main() {
     }
 
     // JUNCTION POINT : 
-    cout << l << endl;               // L always points to Last True
-    cout << r << endl;               // R wlways points to First False
+    cout << l << endl;               // L always points to Last True in T F junction
+    cout << r << endl;               // R wlways points to First False in T F junction
 
 
-    // In case of last occ, Ans is l AND for first occ, r , Change the Predicate function accordindly
+    // In case of last occ. Ans is l
+    // In case of first occ, Ans is r ( No matter aapne konsa T F or  F T ka junction lo )
+
+
+    // ************************** CONVERTING T F  --> F T junction ************************************
+
+    // predicate(m) ? r = m : l = m;
 
     return 0;
 
 }
 
 
-// POINTS TO NOTE : 
+// POINTS TO NOTE ------>> 
 // Never goes into an INFINITE LOOP 
-// Order of the set of elements is always T T ... T F ..... F F
-
+// No Problem of taking ceil or Floor values
+// RECOMMENDED -> To keep the T F junction ( NOT MANADATORY )
 
 // ******************************** OUR TASK *************************************
 
