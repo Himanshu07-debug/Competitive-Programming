@@ -34,10 +34,11 @@ PROBLEM - 08 ------------------------>>
 => In order to get total number of Pairs in Brute way -> Use O(n^2)
 
 
-PROBLEM - 09 ---------------------->> 
+PROBLEM - 10 ---------------------->> 
 
 => Never use Ceil , use ceil(a/b) => ( a + b -1 )/ b;
 => Floor is By default in Integer division
+=> NOTE --> a & b must be an integer for this formula, otherwise you have to use ceil()
 
 
 PROBLEM - 12 ----------------------->> 
