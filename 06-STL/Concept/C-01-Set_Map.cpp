@@ -20,8 +20,8 @@ int main(){
 
     unordered_map<int, vector<int>> um;
 
-    // Generally Always used set, map becz HashMap, Hashset has worst case of O(n) , but set has O(logn) for all case
-    // NOTE --> If using set give you TLE, then go for HashMap, Hashset
+    // Generally Always used set, map becz HashMap, Hashset has worst case of O(n) , but SET has O(logn) for all case
+    // NOTE --> If using SET give you TLE, then go for HashMap, Hashset
 
     
 

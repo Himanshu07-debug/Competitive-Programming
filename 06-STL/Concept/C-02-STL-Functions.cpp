@@ -5,9 +5,9 @@ using namespace std;
 const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
-// Comparator
+// COMPARATORS
 
-bool comp(int a, int b){
+bool cmp(int a, int b){
     return a < b;
 }
 
@@ -17,11 +17,25 @@ int main(){
 
     vector<int> arr{1,2,3,5,4,7,6};
 
-    // Comparator --> 
+    // ****************************** COMPARATOR ****************************************************
 
-    sort(arr.begin(),arr.end(), comp);   // --> Time Complexity --> O(N*logN) * Time Complexity of Comparator
+    sort(arr.begin(),arr.end(), cmp);   // --> Time Complexity --> O(N*logN) * Time Complexity of Comparator
 
-    // Max And Min ----------------->>
+    // decltype() is syntax to use Comparators in STL datatypes other than array like datatypes
+
+    priority_queue<int,vector<int>, decltype(&cmp) > pq(cmp);   
+
+    set<int, decltype(&cmp) > s(cmp);
+
+    // s.lower_bound() nhi use kar sakte agar set me user-defined Comparator daale
+
+    map<int,int, decltype(&cmp) > m(cmp);
+
+
+
+
+
+    // ************************************** Max And Min  ******************************
 
     int x = *min_element(arr.begin(),arr.end());
 
