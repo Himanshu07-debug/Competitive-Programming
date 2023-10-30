@@ -37,12 +37,5 @@ int main(){
     // NOTE -> Vector of pairs and HashMap Also can be traverse as Same
 
 
-
-    // https://codeforces.com/group/c3FDl9EUi9/contest/262795/problem/B
-    //  https://codeforces.com/group/c3FDl9EUi9/contest/262795/problem/C
-    // https://codeforces.com/group/c3FDl9EUi9/contest/262795/problem/D
-
-
-
     return 0;
 }
