@@ -2,4 +2,10 @@ PROBLEM - 01 --------->>
 
 Square of Prime Numbers(p^2) have exactly 3 divisors (1, p , p^2)
 
+PROBLEM - 03 --------->>
+
+
+
+PROBLEM - 01 --------->>
+
 
