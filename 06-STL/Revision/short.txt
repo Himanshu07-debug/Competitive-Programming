@@ -2,10 +2,22 @@ PROBLEM - 01 --------->>
 
 Square of Prime Numbers(p^2) have exactly 3 divisors (1, p , p^2)
 
+
 PROBLEM - 03 --------->>
 
+See Logic of Question To see the Significance of Sorting
 
 
-PROBLEM - 01 --------->>
+PROBLEM - 04 --------->>
+
+In Matrix Qs. , Never miss to check the all Possible cases from each 4 directions.. 
+Eg -> max( (x-1,y) , (x+1,y) , (x,y+1) , (x,y-1) ) , etc 
+
+
+PROBLEM - 05 ---------->>
+
+Agar koi Problem Efficiently solve ho sakta hai SET se, but usme cnt yaa indx jaisi thing ki need hai, PBDS is used as an alternative of SET
+less<int>       ---> SET 
+less_equal<int> ---> MULTISET
 
 

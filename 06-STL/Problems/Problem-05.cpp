@@ -43,6 +43,15 @@ typedef tree<int,null_type,less_equal<int>,rb_tree_tag,tree_order_statistics_nod
 const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
+// ERASE FUNCTION
+void myerase(PBDS &t, int v){
+    int rank = t.order_of_key(v);
+    auto it = t.find_by_order(rank);
+    t.erase(it);
+}
+
+// myerase(st,arr[i]);  --> TO DELETE
+
 
 int main(){
 
