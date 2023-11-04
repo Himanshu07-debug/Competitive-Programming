@@ -25,9 +25,7 @@
 // find_by_order(indx) => Returns iterator to the element at given indx
 // order_of_key(value) => Returns indx of the element ( PBDS have 0-based indexing )
 
-// NOTE -> If element is not present in the set, Nearest greater element return krta hai.. Same like lower_bound while returning iterator
-//         order_of_key returns 0 .. 
-
+// order_of_key() is same as lowerbound in SET...
 
 #include<bits/stdc++.h>
 
@@ -68,7 +66,15 @@ int main(){
 
     for(int i=0;i<n;i++){
 
-        cnt += ( st.size() - st.order_of_key(arr[i] + 1) );
+        cnt += ( st.size() - st.order_of_key(arr[i] + 1) );     // arr[i] + 1 ==> Handles DUPLICATES
+
+
+        // You can use only arr[i] in order_of_key() if it is ensured that duplicates are not there...
+        
+        // But in case of Duplicates, we have to ensure that ki indx arr[i] ke equal value ka na mile, next greater element ka mile
+        // [4, 5, 2, 2] ->
+        // At first 2, (2 - 0) will be done
+        // At second 2, (3 - 1) is done, agar (arr[i] + 1) nhi use krte to (3 - 0) hota i.e wrong
 
         st.insert(arr[i]);
 

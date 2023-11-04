@@ -21,3 +21,9 @@ less<int>       ---> SET
 less_equal<int> ---> MULTISET
 
 
+PROBLEM - 06 --------->> 
+
+Sliding Window + ===> MAP ( if duplicates are there in the array)
+                 ===> SET ( If no duplicates )
+
+
