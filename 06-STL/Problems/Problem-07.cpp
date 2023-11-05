@@ -10,11 +10,9 @@
 
 // LOGIC --> 
 
-// Approach 1 ->
+// Approach 1 -> Using 2 stacks , one will keep track of the minimum element and One as a Normal stack
 
-// Approach 2 -> Using 2 stacks , one will keep track of the minimum element and One as a Normal stack
-
-
+// SPACE Optimized -> Instead of using 2 stacks, we can use a Stack of pairs.. first element for normal stack and second for Minimum track
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -27,41 +25,33 @@ const long long INF = LLONG_MAX >> 1;
 class MinStack {
 public:
 
-    stack<int>st;
-    stack<int> min_st;
+    stack<pair<int,int>> st;
 
     MinStack(){
 
     }
     
     void push(int val) {
-        if(min_st.size()){
-            if(val <= min_st.top()){
-                min_st.push(val);
-            }
+        if(st.size()){
+            st.push({val, min(val,st.top().second)});
         }
         else{
-            min_st.push(val);
+            st.push({val,val});
         }
-        
-        st.push(val);
-
     }
     
     void pop() {
-
-        if(st.top() == min_st.top()) min_st.pop();
 
         st.pop();
 
     }
     
     int top() {
-        return st.top();
+        return st.top().first;
     }
     
     int getMin() {
-        return min_st.top();
+        return st.top().second;
     }
 };
 
