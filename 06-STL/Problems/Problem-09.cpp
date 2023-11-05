@@ -34,6 +34,8 @@
 
 // At each indx i , arr.back() + (i * 2) + (i - 1)
 
+// This is Observed By diagram, for each height h, h*2 card is to be added to make pyramid lines and (h-1) for base lines to the prev. (h-1) pyramid
+
 
 #include<bits/stdc++.h>
 using namespace std;
