@@ -50,19 +50,40 @@ int main(){
     pq.push(1);
 
     // MIN Heap
-    priority_queue<int,vector<int>,greater<int>> p;
+    priority_queue<int,vector<int>,greater<int>> pq2;
 
     // 1st -> datatype, 2nd -> PQ are built on vectors or any other Contiguos loca. DS, 3rd --> Responsible for Sorting in ascending
 
     // At 2nd , you can take deque<int> , arr, but vector is Recommended
 
-    
 
-    
+    // *************************** SORTING IN PRIORITY QUEUE *********************************
+
+    // If the datatypes are numeric in pairs, then never use comparators... Wo Cmp ke bina bhi ho sakta hai
+
+    // In numeric values, aap minus use kar sakte ho, Kyuki minus greatest value ko samllest kar denga..
+    // EXAMPLE -> In max heap, 10 is in the top, if I will do -10, then it will at the bottom
+
+    // SORT --> First element => ascending and Second element => descending
+
+    priority_queue<pair<int,int>> p;   // MAX HEAP
+
+    for(int i=0;i<5;i++){
+        int a,b;
+        cin >> a >> b;
+
+        p.push({-a, b});  // Humne a ko -ve kar diye, so ab first element ascending order me sort honge
+        
+    }
+
+    // DO NOT FORGOT WHILE PRINTING, REMOVE THE MINUS SIGN
+    while(!p.empty()){
+        cout << -p.top().first << " " << p.top().second << endl;
+        p.pop();
+    }
 
 
-
-
+    // Similarly you can Sort as (desc, desc) , (desc, asc) , (asc, asc)
 
     return 0;
 }
