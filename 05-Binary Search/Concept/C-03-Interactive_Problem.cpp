@@ -130,6 +130,7 @@ int main() {
 
     // Another way : (query(m+1) > query(m)) ? r = m : l = m;   .. ( FT JUNCTION )
     //               cout << r << endl;
+    
     return 0;
 
 }

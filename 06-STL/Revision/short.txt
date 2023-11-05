@@ -14,6 +14,7 @@ In Matrix Qs. , Never miss to check the all Possible cases from each 4 direction
 Eg -> max( (x-1,y) , (x+1,y) , (x,y+1) , (x,y-1) ) , etc 
 
 
+
 PROBLEM - 05 ---------->>
 
 Agar koi Problem Efficiently solve ho sakta hai SET se, but usme cnt yaa indx jaisi thing ki need hai, PBDS is used as an alternative of SET
@@ -22,9 +23,26 @@ less_equal<int> ---> MULTISET
 
 ==> Question was the Typical Inversion Count Problem -> Approach of PBDS when there are no duplicates and duplicates are there in array ???
 
+
+
 PROBLEM - 06 --------->> 
 
 Sliding Window + ===> MAP ( if duplicates are there in the array)
                  ===> SET ( If no duplicates )
+
+
+
+PROBLEM - 07 --------->> 
+
+Space Optimized approach to getMin() from the Stack Question ---> Using One Stack 
+
+
+PROBLEM - 08 --------->> 
+
+If I/P ka structure bhut azeeb diya hai, Aur You cant store it in a defined Datatype, use Struct and make Your own Datatype
+
+
+
+
 
 
