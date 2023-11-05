@@ -37,12 +37,15 @@ PROBLEM - 07 --------->>
 Space Optimized approach to getMin() from the Stack Question ---> Using One Stack 
 
 
+
 PROBLEM - 08 --------->> 
 
 If I/P ka structure bhut azeeb diya hai, Aur You cant store it in a defined Datatype, use Struct and make Your own Datatype
 
 
+PROBLEM - 09 ---------->>
 
+If You want all values <= x, do not increase the complexity by using lowerBound, Simply take Upperbound and reduce the iterator by 1
 
 
 
