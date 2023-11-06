@@ -9,7 +9,6 @@
 
 // Used in Sum of Range or Other Range related Problems. It gives answer in O(1)  , Only Precomputation takes O(N)
 
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -44,9 +43,10 @@ int main(){
     for(int i=1;i<n;i++){
         prefix[i] = prefix[i-1] + a[i];
     }
-
-    for(auto x : prefix) cout << x << " ";
+   for(auto x : prefix) cout << x << " ";
 
 }
+
+// Time Complexity for the queries -> O(N) + O(Q)
 
 
