@@ -126,7 +126,7 @@ int main() {
 
     }
 
-    cout << l << endl;
+    cout << "!" << l << endl;
 
     // Another way : (query(m+1) > query(m)) ? r = m : l = m;   .. ( FT JUNCTION )
     //               cout << r << endl;
