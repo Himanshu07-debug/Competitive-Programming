@@ -47,6 +47,6 @@ int main(){
 
 }
 
-// Time Complexity for the queries -> O(N) + O(Q)
+// Time Complexity for the Queries -> O(N) + O(Q)
 
 
