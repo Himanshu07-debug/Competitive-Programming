@@ -45,7 +45,16 @@ PROBLEM - 10 --------------->>
 A variation of Trapping RainWater Problem, Must see.. Keeping track of the boundaries for each element in the array
 
 
-11 - CONCEPT ------------->> 
+PROBLEM - 11 --------------->>
+
+In array Rotation Type of Problem, Agar n se rotate kiye to firse Same Array mil jaega .. Try to think in this way..
+
+NOTE --> Modulo also helps in Rotation type of Problem becz array moves cyclic
+EXAMPLE --> Top element of the array after x Rotation ==> arr[ x % n]
+
+
+
+12 - CONCEPT ------------->> 
 
 Given (x | y) * ( x ^ y ) = N and N is an Odd number, Find x & y ?? 
 ===> When N is odd, Last bit is set and therefore :: N ^ (N - 1) ==> 1 , becz N - 1 will make change only at the last bit, resulting XOR in 1

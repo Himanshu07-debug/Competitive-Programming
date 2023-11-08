@@ -48,4 +48,10 @@ PROBLEM - 09 ---------->>
 If You want all values <= x, do not increase the complexity by using lowerBound, Simply take Upperbound and reduce the iterator by 1
 
 
+PROBLEM - 10 ---------->>
+
+Jab bhi circular array aaye, either append the array to the back of the original array or If k given, go for Sliding window ..
+Appending is the Most used Techinque as it is then easy to make LOGIC
+
+
 

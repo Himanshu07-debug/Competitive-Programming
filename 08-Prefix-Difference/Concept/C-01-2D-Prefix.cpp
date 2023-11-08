@@ -73,7 +73,7 @@ int main(){
         int a, b, c, d;
         cin >> a >> b >> c >> d;
 
-        cout << pref[c][d] - pref[a-1][d] - pref[b][c-1] + pref[a-1][b-1] << endl;
+        cout << pref[c][d] - pref[a-1][d] - pref[c][b-1] + pref[a-1][b-1] << endl;
 
     }
 
