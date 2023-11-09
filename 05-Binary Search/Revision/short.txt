@@ -1,0 +1,9 @@
+PROBLEM - 01 -------------------------->> 
+
+MUST SEE Question... An Interactive Problem... Binary Search is always used in this ...
+Whenever You have a MONOTONIC Range of Number where Your Answer can lie, You can find the max/min VALID pt. by BINARY Search
+
+
+PROBLEM - 02 ------------------------->>
+
+MAP, SET, lowerbound, Upperbound this can be used in Binary Search LOGIC other than BS code ...

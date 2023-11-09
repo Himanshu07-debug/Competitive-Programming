@@ -28,6 +28,12 @@ int main(){
 
     long long sub = (((a%mod - b%mod)%mod) + mod) % mod;
 
+    // "+ MOD" krne se phle ek aur baar MOD kyu lagaye (a%mod - b%mod) pe ????????
+    // --> Agar Aap Ensure that (a-b) will be greater than -MOD, then mat lagao, Lekin agar (a-b) -MOD se less than hua to MOD se + hoke bhi 
+    //     wo negative hi rhnga and ANSWER will come Wrong..
+
+    // NOTE --> Agar Kisi ne pucha then the Logic behind that is this.. Otherwise Always use this General Template for all cases
+
 
     // ***************************************** REMEMBER ******************************************************
 

@@ -14,6 +14,20 @@
 
 // LOGIC -->
 
+
+// NAIVE ------------------->>>
+
+
+// for(i = 0 to r)
+//      for(j=0 to c)
+//          for(a = max(i-k,0)  to  cl = min(i+k,r-1))
+//              for(b = max(j-k,0) to d = min(j+k,c-1))
+
+// TIME ----> O(r * c * k^2 )
+
+
+
+
 // If You Observed how subgrids are making for each cell, You will see that Prefix sum can be used to solve the Problem, first Prepare the
 // Prefix Matrix and then Generating the Range Points for each cell
 
