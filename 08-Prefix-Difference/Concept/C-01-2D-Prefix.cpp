@@ -66,6 +66,33 @@ int main(){
     // NOTE -> You can do the following calculation while taking Input of the Matrix
 
 
+    // ANOTHER WAY OF MAKING THE 2D - PREFIX MATRIX ---->> 
+
+    // Prefix Lagao at each col by considering it as an 1D-array and then Updated Matrix me PREFIX each col me, row and col ka order can be changed
+
+    // MAKING ARR AS 2D - PREFIX ARRAY
+
+    // Col wise Prefix ---->
+    for(int i=1;i<=n;i++){
+        for(int j=2;j<=m;j++){
+            arr[i][j] += arr[i][j-1];
+        }
+    }
+    
+    // Row wise Prefix --> 
+    for(int i=2;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            arr[i][j] += arr[i-1][j];
+        }
+    }
+
+    // NOW , arr is the Prefix array
+
+
+    // NOTE --> There is a SUFFIX array, usme Prefix niche se hota hai...
+
+
+
     // For Answering Queries ------------------->>
 
     while(q1--){

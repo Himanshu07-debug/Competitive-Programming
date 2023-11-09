@@ -1,3 +1,8 @@
 PROBLEM - 01 ------------------->>
 
 Fixed size(Constant) container traversing is O(1) ==> cnt[256] or cnt[26] ...
+
+
+PROBELM - 02 -------------------->>
+
+SET + Index ==> ORDERED SET ( PBDS )
