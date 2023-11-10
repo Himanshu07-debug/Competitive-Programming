@@ -1,0 +1,3 @@
+PROBLEM - 05 ---------------->>
+
+2D - Difference Matrix  ... How to make ???? Where to add -1 and how to Nullify them

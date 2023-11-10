@@ -81,7 +81,7 @@ int main(){
     
     // Row wise Prefix --> 
     for(int i=2;i<=n;i++){
-        for(int j=1;j<=n;j++){
+        for(int j=1;j<=m;j++){
             arr[i][j] += arr[i-1][j];
         }
     }
