@@ -124,6 +124,13 @@ void solve2(){
 
 }
 
+// *********************************** NOTE ******************************************
+
+// Time -> Each state 6 iteration -> n * 6 => O(N)
+
+// Approach 1 -> dp[0] se dp[n]   ===> TABULATION (Bottom up)
+// Approach 2 -> dp[n] se dp[0]   ===> MEMOIZATION (Top - down)
+
 int main() {
 
     ios::sync_with_stdio(false); cin.tie(NULL);
