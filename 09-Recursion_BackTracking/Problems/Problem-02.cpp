@@ -35,6 +35,7 @@ void fun(int n, vector<string> &ans, string &temp, int open = 0, int close = 0){
         fun(n, ans, temp, open + 1, close);
         temp.pop_back();
         // Removal of Open is IMP from String becz next if me apan close ko append krnge uske jagah
+        // BackTracking as We had taken temp By reference 
     }
 
     // No need to check " close < n " as It is ensured By Open
