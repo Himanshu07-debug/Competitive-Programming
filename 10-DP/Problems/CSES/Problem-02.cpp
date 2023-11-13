@@ -14,6 +14,8 @@
 // If We know the No. of ways of Forming sun = X - c1, then we can get X by just adding c1 to it ...
 // Similarly for X - c2, X - c3 .......
 
+// NOTE --> In the Recursion Tree, bhut saare Overlapping Subproblems .....
+
 // Defining the STATE --> dp[K] = minimum no. of coins required to construct a Sum of K
 
 // NOTE --> In Previous Problem, We aim to get all no. of ways so we were adding all the Subproblems, But in this Question, We want that 
@@ -41,6 +43,28 @@ const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
 
+// RECURSIVE ( MEMOIZATION ) --->
+
+// int fun(vector<int> &arr,int n, vector<int> &dp, int X){
+
+//     if(X < 0)  return 1e9;
+
+//     if(X == 0) return 0;
+
+//     if(dp[X] != 1e9)  return dp[X];
+
+//     for(int i=0;i<n;i++){
+//         if(X - arr[i] >= 0){
+//             int res = fun(arr,n,dp,X - arr[i]) + 1;
+//             dp[X] = min(dp[X] , res);
+//         }
+//     }
+
+//     return dp[X];
+
+// }
+
+
 
 int main(){
 
@@ -66,9 +90,20 @@ int main(){
             }
         }
     }
+
     
     // Final SubProblem
     cout << (dp[x] < 1e9 ? dp[x] : -1 ) << endl;
+
+    // Once You click the Iterative, It is very Easy to convert the Iterative -> Recursive
+    // In Recursive, You have to handle Outer Loop i.e states recursively
+
+    // NOTE -> Iterative Code ko comment kar dena, becz dp has been changed in it
+
+    // int ans = fun(arr,n, dp, x);
+
+    // cout << (ans < 1e9 ? ans : -1 ) << endl;
+
 
     return 0;
 }
