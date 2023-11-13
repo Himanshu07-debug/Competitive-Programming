@@ -58,6 +58,26 @@ void solve(){
 
 }
 
+// ONE MORE QUESTION SAME ON THIS CONCEPT ---->
+
+// You are given a Binary array. You can Perform the operation on the string -> You can flip the bits at any Indx i..
+// You have to find out the minimum no. of operation/Flips required to sort the Binary array..
+
+// INPUT -> 1 0 0 1 0 1 1 1    ==> 2  --> 0 0 0 1 1 1 1 1
+
+// Constraint -> 1 <= n <= 10^5
+
+// LOGIC --> 
+
+// Prefix array banao that will store the no. of 1's till indx i from 0
+// Suffix array to store no. of zeroes till indx i from n-1
+
+// Now Traverse kro array --> 
+// At every indx, we will assume that ki yeah last zero ko position hai, iske aage sab 1 honge.. By this we will figure out all possible Combinations
+// 0111111 , 0011111, 0001111,  0000111, ......
+// At any indx i, No. of operation required will be (No. of 1's from indx 0 -> i) + (No. of 0's from indx i+1 -> n-1)
+// Ans -> Min. no. operation jo aayenge saare indx me
+
 int main() {
 
     ios::sync_with_stdio(false); cin.tie(NULL);

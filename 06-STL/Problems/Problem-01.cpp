@@ -3,6 +3,10 @@
 
 // Constraint -> 1 <= arr[i] <= 10^12   , 1 <= n <= 10^5
 
+// 3
+// 4 5 6
+// Yes No No
+
 // LOGIC -->
 
 // Let p be a prime. As noted by others before, the only (positive) divisors of p^2 are 1 , p , and p2 . Therefore p^2 has exactly 
@@ -25,15 +29,9 @@ int main(){
 
     ios::sync_with_stdio(false); cin.tie(NULL);
 
-    // Your code here
-    int n;
-    cin >> n;
-
-    vector<long long> arr(n);
-
-    for(int i=0;i<n;i++) cin >> arr[i];
-
     vector<long long> seive(1000002,0);
+
+    seive[0] = seive[1] = 1;
 
     for(int i=2;i*i<=1e6;i++){
         if(seive[i] == 0){
@@ -43,23 +41,30 @@ int main(){
         }
     }
 
-    set<long long> s;
 
-    for(int i=2;i<=1e6;i++){
-        if(seive[i]==0){
-            s.insert(i*1ll*i);
-        }
-    }
+    // Your code here
+    int n;
+    cin >> n;
 
-    for(int i=0;i<n;i++){
-        if(s.find(arr[i])!=s.end()){
-            cout << "YES" << endl;
+    while(n--){
+        long long x; cin>> x;
+
+        long long sq = sqrt(x);
+
+        // Checking x was a perfect sqaure or not ???  --> for 10 -> 3 * 3 != 10
+        if( (sq * sq) == x ){
+            if(seive[sq] == 0){
+                cout << "YES" << endl;
+            }
+            else{
+                cout << "NO" << endl;
+            }
         }
         else{
             cout << "NO" << endl;
         }
-    }
-    
+
+    }    
 
     
     return 0;

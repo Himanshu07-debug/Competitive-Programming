@@ -9,10 +9,9 @@
 // LOGIC : 
 
 // Hint 1 : Integer have exactly 4 divisors, if it is of form pq or p3 for some primes p and q . In the first case it have divisors 1, p, q ,pq
-//  In the second case it have divisors 1 , p , p^2 , p^3 .
+//          In the second case it have divisors 1 , p , p^2 , p^3 .
 
 // Hint 2 : Instead of finding integer with at least 4 divisors, find integer with exactly 4 divisors. 
-// Hint 3 : Let p be the smallest prime factor of a . Then, p ≥ d+1 .
 
 // Task 1 -> Numbers that have 4 divisors : Agar Number ke atleast 2 distinct prime factors hai p,q , p * q will have exactly 4 divisors
 //           Agar 1 hi prime factor mila i.e p^k (k > 3) , then p^3 will have 4 divisors -> 1, p, p^2 , p^3
@@ -72,6 +71,8 @@ void solve()
         }
     }
     cout << min(1ll * p[0] * p[1], 1ll * p[0] * p[0] * p[0]) << "\n";
+
+    // NOTE -->  Here we have to guess the Number, so it is IMP that we handle both the cases .. p^3 bhi min. ho sakta hai yaa p*q bhi 
 }
 
 int main()
