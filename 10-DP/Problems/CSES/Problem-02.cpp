@@ -45,24 +45,22 @@ const long long INF = LLONG_MAX >> 1;
 
 // RECURSIVE ( MEMOIZATION ) --->
 
-// int fun(vector<int> &arr,int n, vector<int> &dp, int X){
+int fun(vector<int> &arr,int n, vector<int> &dp, int X){
 
-//     if(X < 0)  return 1e9;
+    if(X < 0)  return 1e9;
 
-//     if(X == 0) return 0;
+    if(X == 0) return 0;
 
-//     if(dp[X] != 1e9)  return dp[X];
+    if(dp[X] != 1e9)  return dp[X];
 
-//     for(int i=0;i<n;i++){
-//         if(X - arr[i] >= 0){
-//             int res = fun(arr,n,dp,X - arr[i]) + 1;
-//             dp[X] = min(dp[X] , res);
-//         }
-//     }
+    for(int i=0;i<n;i++){
+        int res = fun(arr,n,dp,X - arr[i]) + 1;
+        dp[X] = min(dp[X] , res);
+    }
 
-//     return dp[X];
+    return dp[X];
 
-// }
+}
 
 
 
@@ -100,9 +98,9 @@ int main(){
 
     // NOTE -> Iterative Code ko comment kar dena, becz dp has been changed in it
 
-    // int ans = fun(arr,n, dp, x);
+    int ans = fun(arr,n, dp, x);
 
-    // cout << (ans < 1e9 ? ans : -1 ) << endl;
+    cout << (ans < 1e9 ? ans : -1 ) << endl;
 
 
     return 0;
