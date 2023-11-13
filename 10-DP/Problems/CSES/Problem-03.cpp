@@ -41,19 +41,19 @@ int main(){
     // dp[i] -> minimum coins to generate a sum of i
 
     // Base case -> 
-    // dp[0] = 1;
+    dp[0] = 1;
 
-    // for(int i = 1;i <= x; i++){
-    //     for(int j=0;j<n;j++){
-    //         if(i - arr[j] >=0){
-    //             dp[i] = (dp[i] + dp[i - arr[j]])%MOD;
-    //         }
-    //     }
-    // }
+    for(int i = 1;i <= x; i++){
+        for(int j=0;j<n;j++){
+            if(i - arr[j] >=0){
+                dp[i] = (dp[i] + dp[i - arr[j]])%MOD;
+            }
+        }
+    }
 
     
     // // Final SubProblem
-    // cout << dp[x] << endl;
+    cout << dp[x] << endl;
 
     int ans = fun(arr,n, dp, x);
 
