@@ -30,3 +30,70 @@
 // THEREFORE, If there are consecutive elements in Array in case 3 condition, Answer will be No
 
 
+#include<bits/stdc++.h>
+using namespace std;
+
+#define endl '\n'
+const long long MOD = 1e9 + 7;
+const long long INF = LLONG_MAX >> 1; 
+const long long NINF = LLONG_MIN;
+
+void solve(){
+
+    // Your code here
+    long long n; cin >> n;
+
+    bool one = false, two = false , zero = false;
+
+    vector<int> arr(n);
+
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+
+        if(arr[i] == 1)  one = true;
+
+        if(arr[i] == 2)  two = true;
+
+        if(arr[i] == 0)  zero = true;
+    }
+
+    if(one && (zero || two))  cout << "NO" << endl;
+
+    else if(!one) cout << "YES" << endl;
+
+    else{
+        
+        sort(arr.begin(),arr.end());
+
+        int i;
+        for(i=1;i<n;i++){
+            if(arr[i] == arr[i-1] + 1){
+                cout << "NO" << endl;
+                break;
+            }
+        }
+
+        if(i==n) cout << "YES" << endl;
+
+    }
+
+
+}
+
+int main() {
+
+    ios::sync_with_stdio(false); cin.tie(NULL);
+
+    int t; cin >> t;
+
+    while(t--){
+
+        solve();
+        
+    }
+    
+    return 0;
+
+}
+
+
