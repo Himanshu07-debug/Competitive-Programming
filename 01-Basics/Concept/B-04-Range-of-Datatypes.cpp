@@ -136,6 +136,7 @@ int main(){
 
     // While using Vectors, if you are initializing its size during its declaration i.e arr(n) , then never use 
     // push_back to add, use arr[i] to update, becz push_back will add a new element at the n+1 index of the arr
+    // For 0-based indexing vector, You can Input it directly by cin >> arr
 
 
     return 0;

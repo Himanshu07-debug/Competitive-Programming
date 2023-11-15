@@ -36,14 +36,14 @@ PROBLEM - 08 ------------------------>>
 
 PROBLEM - 10 ---------------------->> 
 
-=> Never use Ceil , use ceil(a/b) => ( a + b -1 )/ b;
+=> Never use Ceil , use ceil(a/b) => ( a + b -1 )/ b
 => Floor is By default in Integer division
 => NOTE --> a & b must be an integer for this formula, otherwise you have to use ceil()
 
 
 PROBLEM - 12 ----------------------->> 
 
-Making the array elements equal by taking 2^x values from a[i] and giving it to a[j].. check is it Possible ?? 
+Making the array elements equal by taking 2^x values from a[i] i.e a[i] - 2^x and giving it to a[j] i.e a[j] + 2^x.. check is it Possible ?? 
 --> What will be the edge case? Approach ?
 
 

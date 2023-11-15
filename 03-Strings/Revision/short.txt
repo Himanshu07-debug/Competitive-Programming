@@ -1,0 +1,16 @@
+PROBLEM - 02, 03 ------------------->>
+
+Must see Question ...
+
+
+PROBLEM - 04 -------------->>
+
+A string can be make Palindrome only if ->
+Length even -> All character cnt should be even 
+Length odd -> Only one character with odd cnt is allowed
+
+PROBLEM - 05 -------------------->>
+
+A number is Divisble By 8 only if last 3 digits are Divisble by 8 
+SEE THE QUESTION TO GET CLEAR HOW YOU CAN EFFICIENTLY HANDLES STRING ??
+

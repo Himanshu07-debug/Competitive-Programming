@@ -10,8 +10,8 @@
 
 
 // Logic : Hum check krnge kya string ko k+1 strings ko divide kar sakte hai kya , If yes , then
-//          hum k characters check krnge starting and ending ke .. same mile, then aage Yes , 
-//          becz k strings 1-1 character ki ban jayegi and aage equality check krne ki need nhi
+//         hum k characters check krnge starting and ending ke .. same mile, then aage Yes , 
+//         becz k strings 1-1 character ki ban jayegi and aage equality check krne ki need nhi
 
 
 #include<bits/stdc++.h>
@@ -43,8 +43,8 @@ void solve(){
         reverse(x.begin(),x.end());
 
         if(s.substr(0,k)==x){
-                cout << "YES" << endl;
-                return;
+            cout << "YES" << endl;
+            return;
         }
 
         // It is similar to checking palindrome of string of length k 
@@ -58,8 +58,6 @@ void solve(){
                 cout << "YES" << endl;
                 return;
             }
-
-            
 
         }
 

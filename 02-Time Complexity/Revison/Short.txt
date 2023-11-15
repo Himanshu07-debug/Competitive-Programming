@@ -13,10 +13,10 @@ PROBLEM-02 ----------------->>
 
 PROBLEM-04 ---------------->> 
 
---> Modular Question : If you want the value of X in last valid cycle, try reducing the n To get the max possible
-                    value of x possible
-    DONT -> First Cycle me rem nikal liye and then usko cycle length se + kar rhe jab tk last cycle pe nhi pahucte, this
-    Approach can gice TLE, max chahiye, to RHS se chalu karo solving, naaki LHS se
+--> Modular Question : 
+    If You have a equation K % X = Y .. And You have to find the maximum value of K [1 <= k <= N] ===>
+    DONT -> Remainder y pta hai, usko add kar denge last cycle valid cycle tk
+    Approach can gice TLE, max chahiye, to RHS se chalu karo solving, i.e last cycle ke baare me socho, naaki LHS se
 
     N mod x = y ==> In this 2 cases are possible : rem >= y OR rem < y , You have to handle both
 

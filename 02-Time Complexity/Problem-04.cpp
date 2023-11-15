@@ -1,5 +1,5 @@
 // You are given three integers x,y and n. Your task is to find the maximum integer k such that 0 ≤ k ≤ n that k mod x = y, where mod
-// is modulo operation. Many programming languages use percent operator % to implement it.
+// is modulo operation. 
 
 // Constraint :  2 ≤ x ≤ 10^9 ; 0 ≤ y < x;  y ≤ n ≤ 10^9
 

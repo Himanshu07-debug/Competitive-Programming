@@ -30,7 +30,7 @@ int main(){
 
     // TIPS : 
     // In CP, if it is said that insert a character, delete a character, no need to do complex operation on given string..
-    // cout the inerted one or if not possible, take an auxilary string
+    // cout the inserted one or if not possible, take an auxilary string
 
     s[0] = toupper(s[0]);
 

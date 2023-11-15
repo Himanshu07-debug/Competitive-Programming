@@ -1,5 +1,6 @@
 // Once upon a time, bartender Decim found three threadlets and a pair of scissors.
-// In one operation, Decim chooses any threadlet and cuts it into two threadlets, whose lengths are positive integers and their sum is equal to the length of the threadlet being cut.
+// In one operation, Decim chooses any threadlet and cuts it into two threadlets, whose lengths are positive integers and their sum is 
+// equal to the length of the threadlet being cut.
 
 // For example, he can cut a threadlet of length 5 -> 2 and 3, but he cannot cut it -> 2.5 and 2.5, or lengths 0 and 5
 

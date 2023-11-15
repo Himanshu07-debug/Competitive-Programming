@@ -1,4 +1,5 @@
-// Fibonacci :
+// Given an Integer n, You have to find out 3 fibonacci numbers such that there sum == n ..
+// NOTE -> N is also an Fibonacci Numbers
 
 // Constraints are TIGHT , try to find out something from the equation
 
