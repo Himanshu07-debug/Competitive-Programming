@@ -30,7 +30,7 @@ int lcm(int a, int b){
 
     THEN GCD is p1^(min(a1,b1)) * p2^(min(a2,b2)) * p3^min(a3,b3)
 
-    LCM -> p1^(max(a1,b1)) * p2^(max(a2,b2)) * p3^max(a3,b3)
+    LCM -> p1^(max(a1,b1)) * p2^(max(a2,b2)) * p3^max(a3,b3))
 
 2. PROVE -> gcd(a, b) * lcm(a, b) = a * b;
 

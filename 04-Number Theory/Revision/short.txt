@@ -1,6 +1,6 @@
 PROBLEM - 01 ---------->>
 
-A Good Modulo Question To see. Remember -> 2 is the only prime no. i.e even
+A Good Modulo Question To see. Remember -> 2 is the only prime Number i.e even
 
 
 PROBLEM - 02 ---------->>
@@ -11,7 +11,9 @@ If all divisors of N are given in a SORTED order, then we can get n by multiplyi
 
 PROBLEM - 03 ---------->> 
 
-IMP technique in the Question [ MUST SEE ]
+IMP technique in the Question [ MUST SEE ] 
+.. Agar Humko koi digit maximum baar produce krna hai apne Number me ??
+-> For example 2478  -> 9 produce krna hai ===> 2469 , 2399, 1999  .... KAISE KRONGE ???
 
 
 PROBLEM - 05 ----------->> 
@@ -24,6 +26,7 @@ If divisors not distinct i.e a = p^k , then p^3 is the number with divisors 1, p
 PROBLEM - 06 ----------->> 
 
 MUST SEE ---> Observing the edge case and reducing the equation for answer
+==> x + y = z  -> Condition => One should be exactly divisible by a*b only and two should be divisible by a only.. Find x,y,z ?
 
 
 PROBLEM - 08 ----------->> 
@@ -37,7 +40,8 @@ This K values can be even or Odd
 
 PROBLEM - 09 -------------->> 
 
-Try to avoid doing TDS thing, Do only that much which is actually required.. In CP, First try for NAIVE in constraints
+Try to avoid doing TDS thing, Do only that much which is actually required.. In CP, First try for NAIVE in constraints..
+EXAMPLE -> Remove krne ko bola hai, lekin min/max removal ki condition nhi hai, So All possibilties check krlo by assuming any no. of removals
 
 
 PROBLEM - 10 --------------->>
