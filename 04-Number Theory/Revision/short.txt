@@ -6,7 +6,7 @@ A Good Modulo Question To see. Remember -> 2 is the only prime Number i.e even
 PROBLEM - 02 ---------->>
 
 If all divisors of N are given in a SORTED order, then we can get n by multiplying arr[0]*arr[n-1] , arr[1]*arr[n-2] .. Same like palindrome
-** CONCEPT --> DIVISORS OF ANY NUMBER ALWAYS COMES IN PAIR
+CONCEPT --> DIVISORS OF ANY NUMBER ALWAYS COMES IN PAIR
 
 
 PROBLEM - 03 ---------->> 
@@ -40,13 +40,18 @@ This K values can be even or Odd
 
 PROBLEM - 09 -------------->> 
 
-Try to avoid doing TDS thing, Do only that much which is actually required.. In CP, First try for NAIVE in constraints..
-EXAMPLE -> Remove krne ko bola hai, lekin min/max removal ki condition nhi hai, So All possibilties check krlo by assuming any no. of removals
+Try to not think TDS for the question, First see can you do it in a NAIVE way
+Question -> Determine is it possible to remove some of the digits(possibly not remove any digit at all) so that the result contains 
+            atleast one digit, no leading zeroes and is divisible by 8
+LOGIC -> Here question ne nhi bola hai min/max removal, isliye Try out all the possible digits number divisible by sum.. HOW ??? 
+
+TIP --> This is mostly when string is given in Input
 
 
 PROBLEM - 10 --------------->>
 
-A variation of Trapping RainWater Problem, Must see.. Keeping track of the boundaries for each element in the array
+A variation of Trapping RainWater Problem ...
+Qs. => Change a[i] to min(a[l],a[r]) for l < i < r , Return max possible sum of array
 
 
 PROBLEM - 11 --------------->>
@@ -54,7 +59,7 @@ PROBLEM - 11 --------------->>
 In array Rotation Type of Problem, Agar n se rotate kiye to firse Same Array mil jaega .. Try to think in this way..
 
 NOTE --> Modulo also helps in Rotation type of Problem becz array moves cyclic
-EXAMPLE --> Top element of the array after x Rotation ==> arr[ x % n]
+EXAMPLE --> Top element of the array after x Rotation ==> arr[ x % n ]
 
 
 

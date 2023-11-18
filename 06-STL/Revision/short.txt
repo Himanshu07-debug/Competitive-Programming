@@ -5,7 +5,9 @@ Square of Prime Numbers(p^2) have exactly 3 divisors (1, p , p^2)
 
 PROBLEM - 03 --------->>
 
-See Logic of Question To see the Significance of Sorting
+Two arrays with distinct integers. Prepare pairs with distinct sums.. 
+
+HINT -> To avoid repeatable sums, Sorting can help, HOW ?? 
 
 
 PROBLEM - 04 --------->>
@@ -34,7 +36,7 @@ Sliding Window + ===> MAP ( if duplicates are there in the array)
 
 PROBLEM - 07 --------->> 
 
-Space Optimized approach to getMin() from the Stack Question ---> Using One Stack 
+Space Optimized approach to getMin() from the Stack Question ---> Using Two stack or one Stack with pair 
 
 
 

@@ -1,5 +1,4 @@
-// You are given an integer n . In one move, you can either multiply n by two 
-// or divide n by 6 (if it is divisible by 6 without the remainder). 
+// You are given an integer n . In one move, you can either multiply n by two or divide n by 6 (if it is divisible by 6 without the remainder). 
 // Your task is to find the minimum number of moves needed to obtain 1 from n or determine if it's impossible to do that.
 
 // 1 <= n <= 10^9
@@ -10,8 +9,7 @@
 
 // LOGIC : This types of questions are pure mathemathical, Math ke Problem jaisa socho and prove kro pen-paper me
 
-// Apne ko n ko reduce 1 me krna hai, 2 se multiply krke n 1 se durr honga aur, so we cant do that, Divide hi suitable
-// Operation hai
+// Apne ko n ko reduce 1 me krna hai, 2 se multiply krke n 1 se durr honga aur, so we cant do that, Divide hi suitable Operation hai
 
 // If n prime factorization contains numbers other than 2 and 3 , then it can never reduce to 1 becz 2*3 ko 6 cancel 
 // kar denga, Lekin jo samne ke factors rhnge wo waise hi rhnge and hence n equal to 1 nhi honga

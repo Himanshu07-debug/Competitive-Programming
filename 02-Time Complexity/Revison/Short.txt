@@ -4,7 +4,6 @@ PROBLEM-01 ----------------->>
     Numbers are formed with 1, 14, 144. Check the given number is VALID ?? Use substr() logic to test all possibilitis
 
 
-
 PROBLEM-02 ----------------->> 
 
 --> Equation -> a^2 + b = n .. Max value a can take?? Minimize b to the lowest to get the maximum value of all
@@ -29,13 +28,19 @@ PROBLEM-05 ---------------->>
 
 PROBLEM 06 & 09 --------------->> 
 
---> Pure Mathemathical Logic to see [ Mathemathical Questions have to be solved by pen and paper ]
+Some questions are Pure Mathemathical, Some examples are here.. Either the logic is very NAIVE or you have to Derive
+
+Q.s -> You have reduce n to 1. You can either multiply n by 2 or divide by 6 in each operation.. How ?? 
+HINT -> Is it beneficial to multiply against divide. Aur divide bhi kab answer denga
+
+Q.s -> n can be formed by 3 fib. no.s [n is also fibonccai] ? 
+
+Q.S -> Find two Composite integers such that a - b = n .. n is given ???
 
 
 PROBLEM-10 ----------------->> 
 
 ---> MATRIX Observation ( MUST SEE )
-
 
 PROBLEM-11 ----------------->> 
 
@@ -47,7 +52,10 @@ PROBLEM-11 ----------------->>
 PROBLEM-12 ------------------->> 
 
 --> In multiset, To directly get the value -> int x = *mst.begin();
---> A must see Question, Considering the Possiblity
+
+Q.s -> Apko 3 integers diye hai, can you make them equal in atmost 3 operations (kisi bhi integer ko cut kr skte ho unequal yaa equal parts me)
+
+HINT -> Kya aap teeno integer pe kar sakte ho kya operation, And if Yes, then WHEN ???
 
 
 

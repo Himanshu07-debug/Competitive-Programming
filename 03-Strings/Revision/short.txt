@@ -1,6 +1,14 @@
-PROBLEM - 02, 03 ------------------->>
+PROBLEM - 02 ------------------->>
 
-Must see Question ...
+String made up of A and B. Smallest String that we can make by removing AB/BB ...
+HINT -> Is there any common thing in the removal that you can take for removal
+
+
+PROBLEM - 03 ---------------------------->>
+
+0001101010 .. Can you make it SORTED by removing a subset of character only once. You cant take adjacent indexes in Subset selection..
+
+TIP -> Aaise Question You have to think for the case where You cant select the Subset
 
 
 PROBLEM - 04 -------------->>
@@ -11,6 +19,5 @@ Length odd -> Only one character with odd cnt is allowed
 
 PROBLEM - 05 -------------------->>
 
-A number is Divisble By 8 only if last 3 digits are Divisble by 8 
-SEE THE QUESTION TO GET CLEAR HOW YOU CAN EFFICIENTLY HANDLES STRING ??
-
+A number is Divisble By 8 only if last 3 digits are Divisble by 8
+TIP -> last three digits ko number me convert krna sahi rhnga yaa wahi last three characters ko handle krna
