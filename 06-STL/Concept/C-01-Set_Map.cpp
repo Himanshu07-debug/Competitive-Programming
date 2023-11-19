@@ -46,7 +46,7 @@ int main(){
     // Erase can be by value ans Iterator
     // By iterator
     st.erase(st.begin());
-    st.erase(st.end()--);
+    st.erase(--st.end());
 
     // REMEMBER, Aap reverse iterator nhi use kar sakte erase, Erase function interprates them differently
     // NOT -->
@@ -56,7 +56,7 @@ int main(){
     // While Comparing Values, You can use any combo begin() & rbegin()
 
     // while(st.begin() == st.rbegin())  ==> ERROR
-    // while(st.begin() == st.end()--)   ==> No ERROR
+    // while(st.begin() == --st.end())   ==> No ERROR
     // while(*st.begin() == *st.rbegin())   ==> NO ERROR, by value any combo allowed
     
 

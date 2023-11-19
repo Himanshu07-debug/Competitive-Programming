@@ -99,6 +99,12 @@ int main(){
 // 2. Bit Dependent -> Cannot solve for each bit separately. All the bits are interconnected. (Addition -> Carry prev. bits ka)
 
 
+// ***************************** PROPERTIES ********************************************
+
+// 1. If A ^ B = C , then A ^ C = B
+// 2. A & B <= min(A, B)
+// 3. A | B >= max(A, B)
+// 4. (A | B) + (A & B) = A + B
 
     return 0;
 }
