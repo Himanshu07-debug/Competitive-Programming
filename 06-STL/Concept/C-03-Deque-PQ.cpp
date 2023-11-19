@@ -42,7 +42,7 @@ int main(){
 
     // ****************************** Priority_queue *******************************
 
-    // Priority queue are much faster than set, but you only get LAST value
+    // Priority queue are much faster than SET, but you only get LAST value
 
     priority_queue<int> pq;   // Max heap
     pq.push(5);

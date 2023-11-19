@@ -1,9 +1,15 @@
 PROBLEM - 01 -------------------------->> 
 
-MUST SEE Question... An Interactive Problem... Binary Search is always used in this ...
-Whenever You have a MONOTONIC Range of Number where Your Answer can lie, You can find the max/min VALID pt. by BINARY Search
+In Interactive Problem... Binary Search is always used ...
+TIP -> Whenever You have a MONOTONIC Range of Number where Your Answer can lie, You can find the max/min VALID pt. by BINARY Search
+
+EXAMPLE -> All vertices have integer coordinates within [-1000, 1000] and non-negative y-coordinates. [-1000, 1000] is our Search Space
+
+NOTE -> MUST SEE QUESTION.. How we decode all required lengths by using BINARY Search ..
 
 
 PROBLEM - 02 ------------------------->>
 
-MAP, SET, lowerbound, Upperbound this can be used in Binary Search LOGIC other than BS code ...
+In Binary Search Logic, we can use MAP, SET, LOWER-BOUND, UPPER-BOUND as they all are built on sorted data having O(logn) complexity
+
+Example -> BS code se element search krne se aacha SET ka find() se krlo
