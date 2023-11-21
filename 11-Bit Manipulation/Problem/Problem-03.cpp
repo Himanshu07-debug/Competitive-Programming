@@ -7,59 +7,86 @@
 // LOGIC --> 
 
 // From A & B, we can guess X for maximum Product ..
-// A ka first bit 1 then b ke saare 1
+// A = 0 & B = 0 --> X = 1
+// A = 1 & B = 1 --> X = 0
+// If A & B are different -> 
+// A ka first bit 1 then b ke saare 1 
 
+// NEW TECHINQUE HERE --> As the no. of bits are fixed , We can create Binary arrays of 30 to represent different numbers
 
 
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
 
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    
-    ll t, n, a, b, i, j, x, first;
-    ll ca[30], cb[30];
-    
-    cin>>t;
-    
-    while(t--)
-    {
-        cin>>n>>a>>b;
-        first=0;
-        
-        for(int i=0;i<n;i++){
-            ca[i] = (a & (1LL << i)) > 0 ? 1 : 0;
-            cb[i] = (b & (1LL << i)) > 0 ? 1 : 0;
+#define endl '\n'
+const long long MOD = 1e9 + 7;
+const long long INF = LLONG_MAX >> 1; 
+const long long NINF = LLONG_MIN;
+
+
+
+void solve(){
+
+    // Your code here
+    int n, a , b;
+    cin >> n >> a >> b;
+
+    int arr[31] = {0} , brr[31] = {0};
+
+    for(int i=0;i<31;i++){
+
+        if((a & (1 << i))) arr[i] = 1;
+
+        if((b & (1 << i))) brr[i] = 1;
+
+    }
+
+    int x = 0;
+
+    bool first = true;
+
+    for(int i=0;i<31;i++){
+
+        if(arr[i] == brr[i]){
+            if(arr[i] == 0) x += (1 << i);
         }
+        else{
 
-        x=0;
-        
-        for(i=n-1; i>=0; i--)
-        {
-            if(ca[i]==0 && cb[i]==0)
-            {
-                x=x+(1<<i);
-            }else if(ca[i]==1 && cb[i]==0){
-                if(first==0)
-                {
-                    first++;
-                }else{
-                    x=x+(1<<i);
+            if(first){
+
+                if(arr[i] == 0){
+                    x += (1 << i);
                 }
-            }else if(ca[i]==0 && cb[i]==1){
-                if(first==0){
-                    first++;
-                    x=x+(1<<i);
-                }
+
+                first = false;
+
             }
-            
+            else{
+
+                if(brr[i] == 0) x += (1 << i);
+
+            }
+
         }
+
+        cout << x << endl;
+
+    }
+
+}
+
+int main() {
+
+    ios::sync_with_stdio(false); cin.tie(NULL);
+
+    int t; cin >> t;
+
+    while(t--){
+
+        solve();
         
-        cout<<x<<"\n";
     }
     
+    return 0;
+
 }
