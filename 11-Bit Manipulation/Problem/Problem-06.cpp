@@ -1,6 +1,6 @@
 // find the Permutation of Size N such that A[i] != A[i-1] OR A[i-2] for all 3 <= i <= N
 
-// Permutation contains 1 to N no. exactly once 
+// Permutation contains 1 to N no. exactly once (DISIINCT)
 
 // CONSTRAINT --> 3 <= N <= 10^5
 
@@ -10,9 +10,12 @@
 
 // LOGIC ----------------------->>>
 
-// REMEMBER , Constraint mostly Logic deviate krne ke liye hote hai
+// We know that -> 
+// Let X = a OR b  ---> X will be equal to either a / b , or X value will be greater ... This are only the 2 possibilities ...
 
-// OBSERVATION -->   
+// So agar hum arr[i-1] and arr[i-2] ko arr[i] se bigger rkhe to hum arr[i] kabhi equal nhi arr[i-1] OR arr[i-2] ke
+
+// REMEMBER , Constraint mostly Logic deviate krne ke liye hote hai .. Ek bhi Sorted OUTPUT nhi diya hai
 
 
 #include<bits/stdc++.h>
