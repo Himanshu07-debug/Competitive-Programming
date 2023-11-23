@@ -29,9 +29,9 @@ vector<string> findRepeatedDnaSequences(string s) {
 
     for(int i=0; i <= (n - 10) ; i++){
 
-        string t = s.substr(i,10);
+        string t = s.substr(i,10);    // s.substr() takes time equal to length i.e O(10) in this case
 
-        m[t]++;
+        m[t]++;     // O(log K) ( k -> k is the number of unique substrings of length 10 inserted in map)
 
     }
 

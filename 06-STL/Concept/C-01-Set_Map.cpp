@@ -35,6 +35,14 @@ int main(){
     // NOTE -> Vector of pairs and HashMap Also can be traverse as Same
 
 
+    // *************** TIME COMPLEXITY ****************************
+
+    // Set and map have time complexity O(log N) where N => container (set / map) size
+    
+    // Suppose You have an array of N elements ==> 
+    // Worst case -> All N elements distinct --> O(log N) for Insertion/ Deletion
+    // Best case -> All N same --> O(1) (only 1 time insertion and then updation in Map .. In set no Updation)
+
 
     // ********************** NOTE *******************************************
 

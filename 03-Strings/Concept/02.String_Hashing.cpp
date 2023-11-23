@@ -38,12 +38,15 @@ int main(){
     // Both line above take O(n) time ...
 
 
-    // Here also Collision can occur becz we are finding HASH value by taking MODULO ( CYCLE ) .... The probability is 1/MOD for an element
+    // Here also Collision can occur becz we are finding HASH value by taking MODULO ( CYCLE ) ..
+    // Probability of Collisions ---->> 1 / MOD ==> 1 / 10^9
+
     // How we can more OPTIMIZE IT ??? 
     // REMEMBER -> We cant optimize the MOD value as it is the max. that we can take .. 
 
     // 1. Use DOUBLE HASHING --> 
     // MOD Se bhi hash value nikalo and Another Prime no. 98245.. (GOOGLE) se bhi hash nikalo.. Now if agar both hashes match hue, them CORRECT
+    // Probability of Collisions now become ---->> 1 / (MOD * MOD) ==> 1 / 10^18
 
 
     // 2. Prefix Hashes

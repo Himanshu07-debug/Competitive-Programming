@@ -27,6 +27,9 @@ int main(){
     string t(s.size(),'a');   
     // NOTE : In vector, initializing value was optional, here mandatory
 
+    string ans = s.substr(0,2); 
+    // This takes time = length of Substring i.e O(2) in this case
+
 
     // TIPS : 
     // In CP, if it is said that insert a character, delete a character, no need to do complex operation on given string..
