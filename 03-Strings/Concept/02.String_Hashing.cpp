@@ -98,6 +98,8 @@ int main(){
 
     // Whwnwver you have to compare lots of strings, use STRING HASHING
 
+    // If bhut saare test cases pass ho gye and error big length strings me aa rha hai, then hashing me collision aane se ho sakta hai Error
+
 
     
     return 0;

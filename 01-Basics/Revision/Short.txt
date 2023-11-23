@@ -46,6 +46,11 @@ PROBLEM - 12 ----------------------->>
 Making the array elements equal by taking 2^x values from a[i] i.e a[i] - 2^x and giving it to a[j] i.e a[j] + 2^x.. check is it Possible ?? 
 --> What will be the edge case? Approach ?
 
+PROBLEM - 13 ----------------------->>
+
+In Matrix questions, Observe the Number of cases, Edge cases and solve
+NOTE -> If 2 given hai then blindly number of cases observe kro , logic mat socho, becz 2 se no. of cases kam hote hai
+
 
 
 
