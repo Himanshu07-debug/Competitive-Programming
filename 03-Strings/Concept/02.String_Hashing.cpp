@@ -39,6 +39,7 @@ int main(){
 
 
     // Here also Collision can occur becz we are finding HASH value by taking MODULO ( CYCLE ) ..
+    // Agar I/P me no. of strings 1e9 + 7 se jyada hai, Collision honga
     // Probability of Collisions ---->> 1 / MOD ==> 1 / 10^9
 
     // How we can more OPTIMIZE IT ??? 
@@ -47,6 +48,8 @@ int main(){
     // 1. Use DOUBLE HASHING --> 
     // MOD Se bhi hash value nikalo and Another Prime no. 98245.. (GOOGLE) se bhi hash nikalo.. Now if agar both hashes match hue, them CORRECT
     // Probability of Collisions now become ---->> 1 / (MOD * MOD) ==> 1 / 10^18
+
+    // DOUBlE HASHING is also called as ROLLING HASH
 
 
     // 2. Prefix Hashes

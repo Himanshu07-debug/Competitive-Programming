@@ -42,6 +42,27 @@ int powerModulo(int a,int b){
 
 }
 
+// Binary Power MOD
+long long bin_powerModulo(int a, int b){
+
+    a %= MOD;
+
+    long long res = 1;
+
+    while(b > 0){
+
+        if(b&1)  res = res * a % MOD;
+
+        a = a * a % MOD;
+
+        b = b >> 1;
+
+    }
+
+    return res;
+
+}
+
 int main(){
 
     ios::sync_with_stdio(false); cin.tie(NULL);
@@ -53,6 +74,7 @@ int main(){
 
     cout << power(a,b) << endl;
     cout << powerModulo(a,b) << endl;
+    cout << bin_powerModulo(a,b) << endl;
     
     return 0;
 }
