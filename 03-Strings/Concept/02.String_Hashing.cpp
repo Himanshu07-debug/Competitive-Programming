@@ -103,6 +103,14 @@ int main(){
 
     // If bhut saare test cases pass ho gye and error big length strings me aa rha hai, then hashing me collision aane se ho sakta hai Error
 
+    // NOTE ---> 
+    // If String Contains only lowercase letters         --> p = 31
+    // If String Contains mix of uppercase and lowercase --> p = 53
+
+    // In DOUBLE HASHING --> 
+    // lowercase letters -> p1 = 29 and p2 = 31
+    //  mix              -> p1 = 53 and p2 = 127
+    // MOD-1 = 1e9 + 7  ... MOD-2 = 1e9 + 9
 
     
     return 0;
