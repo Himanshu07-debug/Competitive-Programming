@@ -8,9 +8,7 @@
 
 // prefix of length i = suffix of length i
 
-// There are 2 Approaches ------>>
-
-// Approach 1 ===========================>
+// Approach ===========================>
 // We know that ki border n/2 se jyada nhi honga becz same substring muje right me bhi chahiye .. n/2 se big kiya to right wali less that n/2 hongi
 // To hum first n/2 characters ke hash aaise nikalenge --> hash[i] = hash[i-1] + (s[i] * p )  ,, p = p * 31
 // Last ke n/2 hum reverse traverse krnge and unka hash --> hash[i] = hash[i+1]*p + s[i]  ,, p = p * 31
@@ -27,73 +25,119 @@
 
 
 
-// NOTE => Hum Second Approach use krnge .. First one is also easy ..
-// In Both of them, For Double hashing, use 2 hash array -> hash1  & hash2
 
-
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-#define endl '\n'
-const long long MOD = 1e9 + 7;
-const long long INF = LLONG_MAX >> 1; 
-const long long NINF = LLONG_MIN;
+typedef long long ll;
+const ll MOD = 1e9+7;
+const ll p1 = 53;
+const ll p2 = 127;
+const int maxN = 1e6+5;
 
-long long bin_powerModulo(int a, int b){
-
-    a %= MOD;
-
-    long long res = 1;
-
-    while(b > 0){
-
-        if(b&1)  res = res * a % MOD;
-
-        a = a * a % MOD;
-
-        b = b >> 1;
-
-    }
-
-    return res;
-
-}
+long long pow1[maxN], pow2[maxN], ph1, ph2, sh1, sh2;
 
 
 int main(){
 
-    ios::sync_with_stdio(false); cin.tie(NULL);
-
     string s; cin >> s;
 
-    long n = s.size();
+    int n = s.size();
 
-    long long p1 = 31 , mod1 = 1e9 + 7;
-    long long p2 = 37, mod2 = 1e9 + 9;
-
-    vector<long long> hash1(n, 0) , hash2(n, 0);
-
-    hash1[0] = hash2[0] = s[0] - 'a' + 1;
-
-    for(long long i = 1; i < n ; i++){
-
-        hash1[i] = (hash1[i-1] + (s[i] - 'a' + 1) * bin_powerModulo(p1, i)) % mod1;
-        hash2[i] = (hash2[i-1] + (s[i] - 'a' + 1) * bin_powerModulo(p2, i)) % mod2;
-
+    pow1[0] = pow2[0] = 1;
+    
+    for(int i = 1; i < n; i++){
+        pow1[i] = (pow1[i-1] * p1) % MOD;
+        pow2[i] = (pow2[i-1] * p2) % MOD;
     }
 
-    for(int i = 1; i < n ; i++){
+    for(int i = 0; i < n-1; i++){
+        int l = (s[i] - 'a' + 1);
+        int r = (s[n-i-1] - 'a' + 1);
 
-        // Checking hashPrefix = hashSuffix
+        ph1 = (ph1 + l * pow1[i]) % MOD;
+        ph2 = (ph2 + l * pow2[i]) % MOD;
+        sh1 = (sh1 * p1 + r) % MOD;
+        sh2 = (sh2 * p2 + r) % MOD;
 
-        long long hash1prefix = hash1[i-1];
-        long long hash2prefix = hash2[i-1];
-
-        
-
+        if(ph1 == sh1 && ph2 == sh2)
+            printf("%d ", i+1);
     }
-
-    
-    
-    return 0;
 }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+ 
+// using ll = long long;
+// using vi = vector<int>;
+// #define f first
+// #define s second
+// #define pb push_back
+// #define all(x) begin(x), end(x)
+ 
+// #define F0R(i,a) for(int i=0; i<(a); i++)
+// #define FOR(i,a,b) for(int i=(a); i<=(b); i++)
+// #define R0F(i,a) for(int i=(a)-1; i>=0; i--)
+// #define ROF(i,a,b) for(int i=(b); i>=a; i--)
+// #define trav(a,x) for (auto& a: x)
+ 
+// /* source: ekzlib */
+// typedef pair<ll, ll> pll;
+ 
+// const int MOD = 1e9 + 7;
+// const pll BASE = {9973, 7817};
+ 
+// pll operator+(const pll& a, const pll& b) {
+// 	return { (a.first + b.first) % MOD, (a.second + b.second) % MOD };
+// }
+// pll operator+(const pll& a, const ll& b) {
+// 	return { (a.first + b) % MOD, (a.second + b) % MOD };
+// }
+// pll operator-(const pll& a, const pll& b) {
+// 	return { (MOD + a.first - b.first) % MOD, (MOD + a.second - b.second) % MOD };
+// }
+// pll operator*(const pll& a, const pll& b) {
+// 	return { (a.first * b.first) % MOD, (a.second * b.second) % MOD };
+// }
+// pll operator*(const pll& a, const ll& b) {
+// 	return { (a.first * b) % MOD, (a.second * b) % MOD };
+// }
+ 
+// pll get_hash(string s) {
+// 	pll h = {0, 0};
+// 	for (int i = 0; i < s.size(); i++) {
+// 		h = BASE * h + s[i];
+// 	}
+// 	return h;
+// }
+ 
+// struct hsh {
+// 	int N;
+// 	string S;
+// 	vector<pll> pre, pp;
+ 
+// 	void init(string S_) {
+// 		S = S_;
+// 		N = S.size();
+// 		pp.resize(N);
+// 		pre.resize(N + 1);
+// 		pp[0] = {1, 1};
+// 		for (int i = 0; i < N; i++) {
+// 			pre[i + 1] = pre[i] * BASE + S[i];
+// 			if (i) { pp[i] = pp[i - 1] * BASE; }
+// 		}
+// 	}
+ 
+// 	pll get(int s, int e) {
+// 		return pre[e] - pre[s] * pp[e - s];
+// 	}
+// };
+ 
+// int main() {
+ 
+//     string s; cin >> s;
+//     hsh n; n.init(s);
+//     FOR(i,1,n.N-1) {
+//         if(n.get(0,i) == n.get(n.N-i, n.N)) cout << i <<" ";
+//     }
+// }
