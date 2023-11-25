@@ -1,37 +1,66 @@
 PROBLEM - 02 ------------------------> 
 
 => To avoid Overflow -> Multiply by " 1ll "
+=> For Float division -> Multiply by " 1.0 "
 => sqrt() returns float values, do not use it
+
+
 
 
 PROBLEM - 04 -------------------------->>
 
-=> Agar number of Characters fixed hai and if the number is less(<=6), then do not use string, take everyone separately
-   so that complexity naa badhe solution ki 
+Agar Input me Big String dii hai with fixed words in it and word cnt is small --> Saare Word ko separate string me I/P le sakte ho
+EX -> Given two person names {"the first name" + "the second name"} . Determine whether they are brothers or not. (Same surname)
+
+Similarly agar No. of Characters fixed hai Input String me for all test case -> Lelo utne characters Input
+EX -> A + B = C, A - B = C and A * B = C --> Fixed length strings -> 5 characters lelo
+
+
 
 
 PROBLEM - 05 ------------------------>>
 
-=> To check number is integer or not : n - (int)n == 0
+=> To check number is integer or Float : n - (int)n == 0
+
+
 
 
 PROBLEM - 06 ------------------------->>
 
-=> If a = 1e9 , b = 1e9 , Find a*b last 2 digits? 
-   a = a%100 , b = b%100 ,  Ans = (a*b) % 100
+=> If a = 1e9 , b = 1e9 , Find a*b last 2 digits?
+ANS => a = a%100 , b = b%100 ,  Ans = (a*b) % 100
+
+Question ----> Print the last 2 digits from their Multiplication. ( A * B * C * D) where 2 <= A,B,C,D <= 10^9
+
+NOTE -> Rule is Valid for Addition and Bitwise Independent Problems
+
+
 
 
 PROBLEM - 07 ------------------------>> 
 
-=> If Eqaution is given to solve,lekin Constraints are very tight, cant be solved in Brute way, Then try to observe 
+=> If Math Eqaution is given to solve,lekin Constraints are very tight, cant be solved in Brute way, Then try to observe 
     and analyze the eqaution & reduce it to get answer
 
-=> In log, when base is not specified , it is default 2
+Question => A^B > C^D print "YES" otherwise, print "NO" .. Here  1 ≤ A,C ≤ 10^7, 1 ≤ B,D ≤ 10^12
+
+NOTE -> In log, when base is not specified , it is default 2
+
 
 
 PROBLEM - 08 ------------------------>> 
 
 => In order to get total number of Pairs in Brute way -> Use O(n^2)
+
+
+
+PROBLEM - 09 ------------------------>>
+
+Q. Minimum no. of operation to make no. of even and odd elements equal ? In one operation, You can add 1 or minus 1 from arr[i]
+--> Odd kitne chahiye : n/2 --> Dekhlo kitne hai cnt krke ... abs(n/2 - cnt) will be answer .. Abs becz even kam rhe to even ko n/2 krne ka cnt
+--> OR Nhi to diff nikal lo even odd ka and half distribute krdo dono me
+
+
 
 
 PROBLEM - 10 ---------------------->> 
@@ -41,10 +70,16 @@ PROBLEM - 10 ---------------------->>
 => NOTE --> a & b must be an integer for this formula, otherwise you have to use ceil()
 
 
+
+
 PROBLEM - 12 ----------------------->> 
 
 Making the array elements equal by taking 2^x values from a[i] i.e a[i] - 2^x and giving it to a[j] i.e a[j] + 2^x.. check is it Possible ?? 
---> What will be the edge case? Approach ?
+--> Kyuki Array values distribute ho rhe hai -> Total_sum must be divisible by N and equal elements honge Sum/n ..
+--> Aage ab ??
+
+
+
 
 PROBLEM - 13 ----------------------->>
 
