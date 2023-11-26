@@ -2,18 +2,32 @@ PROBLEM - 01 --------->>
 
 Square of Prime Numbers(p^2) have exactly 3 divisors (1, p , p^2)
 
+Q.s -> Given an Array, Determine the each No. is T-prime i.e no. with exactly 3 divisors or not ?? 1 <= n <= 1e5 and 1 <= arr[i] <= 10^12
+
+
+
+PROBLEM - 02 ----------->>
+
+Minimal No. of Operation to make all array elements ODD. For the one move, you can choose any even value c and divide by two all elements 
+that equal c . (c value choosen from the array)
+
+
 
 PROBLEM - 03 --------->>
 
-Two arrays with distinct integers. Prepare pairs with distinct sums.. 
+Two array with Distinct inegers -> arr(n) and brr(m) . Can You make n + m - 1 pairs with distinct sum ???
+HINT -> How you will ensure that ki arr[i] se bana hua sum koi aur arr[i] na banaye ... SORTING ...
 
-HINT -> To avoid repeatable sums, Sorting can help, HOW ?? 
 
 
 PROBLEM - 04 --------->>
 
-In Matrix Qs. , Never miss to check the all Possible cases from each 4 directions.. 
-Eg -> max( (x-1,y) , (x+1,y) , (x,y+1) , (x,y-1) ) , etc 
+Q.s -> N , M given hai N*M grid ka. arr[i][j] can be '.' or '*' . '.' for weed and '*' for plant. K cells given hai jha pe plant hai, Grid nhi diya
+    hai. Find the no. of fences to build. Plant ke any side me weed hai to fence build kro, yaa agar boundary pe hai plant then build kro..
+    1 <= N, M <= 1e9
+NOTE -> Aap Grid me Traverse nhi kar sakte becz TLE aayenga. How to solve ??
+HINT ==> Plant ki position given hai.. Hum iska Help le sakte hai .. HOW ??
+HINT2 ==> SET data structure
 
 
 
@@ -21,9 +35,10 @@ PROBLEM - 05 ---------->>
 
 Agar koi Problem Efficiently solve ho sakta hai SET se, but usme cnt yaa indx jaisi thing ki need hai, PBDS is used as an alternative of SET
 less<int>       ---> SET 
-less_equal<int> ---> MULTISET
+less_equal<int> ---> MULTISET (in this , PBDS me apko apna erase function implement krna padta)
 
-==> Question was the Typical Inversion Count Problem -> Approach of PBDS when there are no duplicates and duplicates are there in array ???
+==> Question was the Typical Inversion Count Problem -> 
+--> How to solve by PBDS when there are no duplicates and duplicates are there in array ???
 
 
 
@@ -32,28 +47,42 @@ PROBLEM - 06 --------->>
 Sliding Window + ===> MAP ( if duplicates are there in the array)
                  ===> SET ( If no duplicates )
 
+NOTE -> Subarray/Substring + Window size OR max/min length ---->> SLIDING Window HINTS
+
 
 
 PROBLEM - 07 --------->> 
 
-Space Optimized approach to getMin() from the Stack Question ---> Using Two stack or one Stack with pair 
+Space Optimized approach to getMin() from the Stack ( DSA ) ---> One Stack with pair<int,int>
 
 
 
 PROBLEM - 08 --------->> 
 
-If I/P ka structure bhut azeeb diya hai, Aur You cant store it in a defined Datatype, use Struct and make Your own Datatype
+If I/P ka structure bhut azeeb diya hai, Aur You cant store it in a defined Datatype, use STRUCT of C++ and make Your own Datatype
 
 
 PROBLEM - 09 ---------->>
 
-If You want all values <= x, do not increase the complexity by using lowerBound, Simply take Upperbound and reduce the iterator by 1
+Agar value <= x chahiye, then use Upperbound and it-- krdo directly.. lowerBound use kiye to *it == x and *(--it) check krna padega
 
+Q.s -> Link is in the Problem file.. See the diagram ...
 
+NOTE --> In such type of Question, Monotonicity hamesha rhti hai as the value increases , So we can think for BS, lowerBound, set, etc
+    ---> Also, in such Questions, Sometimes starting ke kuch values pe answer ki series banake we can get a General term series (OEIS)
+
+ 
+ 
 PROBLEM - 10 ---------->>
 
 Jab bhi circular array aaye, either append the array to the back of the original array or If k given, go for Sliding window ..
 Appending is the Most used Techinque as it is then easy to make LOGIC
 
+NOTE -> Appending ka logic lga sakte hai without even actually Appending by using modulo in array indexes .. Range -> [1 to 2*n]
+
+Q.s --> return the next greater number for every element in the given circular array, if no next greater element, give -1
+        [1, 2, 1] => [2, -1, 2]
+
+HINT --> Use Stack + Appending logic + MODULO 
 
 

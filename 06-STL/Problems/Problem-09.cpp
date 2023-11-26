@@ -1,4 +1,4 @@
-//A card pyramid of height 1 is constructed by resting two cards against each other. 
+// A card pyramid of height 1 is constructed by resting two cards against each other. 
 // For h > 1, 2 pyramid niche me, and One at the top ke liye card lagenge, one more card for as a base for the top one pyramid..
 
 // See Diagram here --> https://codeforces.com/problemset/problem/1345/B

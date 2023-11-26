@@ -70,7 +70,7 @@ void solve(){
     vector<int> ans(n,-1);
     stack<int>s;
 
-    for(int i=2*n-2;i>=0;i--){
+    for(int i=2*n-1;i>=0;i--){
 
         while(!s.empty() && s.top() <= arr[i%n] ){
             s.pop();

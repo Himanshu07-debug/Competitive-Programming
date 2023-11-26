@@ -1,3 +1,45 @@
+PROBLEM - 02 ---------->>
+
+Q.s => Each arr[i][j] is the sum of all elements mat[r][c] for: i - k <= r <= i + k, j - k <= c <= j + k . (k is given)
+
+--> Observation -> Each arr[i][j] have (a,b) & (c,d) jinko hum Query consider krke 2D - Prefix with Query ka logic laga sakte hai
+
+TASK -> How you will generate the valid (a,b) & (c,d) for each arr[i][j] ? 
+HINT -> a = max(i-k,0) , b = max(j-k,0) , c = min(r-1, i+k) 
+
+
+
+PROBLEM - 03 ---------->>
+
+Q.s -> An array is Given and list of m operation are given. Each operation look like (li,ri,di) i.e add di to arr[li] to arr[ri] .. 
+       Now You are given K queries. In each Query(xi,yi), Apko xi se yi index tk ka operation lgana hai operation wali list se array me. 
+       Output the final Array .. Constraint -> 1 <= n,m,k <= 1e5  ,,  1 <= xi <= yi <= n
+
+NOTE -> Yha pe apko " Query on Array of Queries " krna hai .. Constraint are TIGHT, Pakka TLE denga, how to do it ???
+
+HINT -> Difference array to get the occurence of Each Query(operation) from the m sized list of operation.
+     -> Make the Difference array that will store the Contribution of Each operation. Add this Contribution to the Original Array ..
+
+
+FLOW --> K queries se M list queries ka occurence and then calculating the Contri of each of the m query . Adding to the Final one ..
+
+
+
+PROBLEM - 04 ----------->>
+
+Q.s -> Rearrange the Array elements to maximize the total sum of the K queries. In each query(l,r) , take sum of a[l] to a[r]..
+       Also Print the Rearranged Array..
+--> Maximum wale elements array ka most occured index pe rhna chahiye 
+
+HINT --> Difference Array can be used
+
+
+
 PROBLEM - 05 ---------------->>
 
-2D - Difference Matrix  ... How to make ???? Where to add -1 and how to Nullify them
+Q.s -> 2D Binary Matrix is given .. K queries are given with (a,b) and (c,d). In one query, You can flip all the bits from topmost (a,b) to
+       (c,d) bottom-most. Print the Updated Matrix ...
+
+NOTE => Agar Each cell kitne baar occured hua query me pta chal jaaye to we can guess the final value of that cell , HOW ??
+
+HINT -> Use 2D Difference Array for occurence part

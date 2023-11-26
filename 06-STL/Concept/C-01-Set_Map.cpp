@@ -41,7 +41,7 @@ int main(){
     
     // Suppose You have an array of N elements ==> 
     // Worst case -> All N elements distinct --> O(log N) for Insertion/ Deletion
-    // Best case -> All N same --> O(1) (only 1 time insertion and then updation in Map .. In set no Updation)
+    // Best case -> All N elements same --> O(1) (only 1 time insertion and then updation in Map .. In set no Updation)
 
 
     // ********************** NOTE *******************************************
@@ -57,8 +57,7 @@ int main(){
     st.erase(--st.end());
 
     // REMEMBER, Aap reverse iterator nhi use kar sakte erase, Erase function interprates them differently
-    // NOT -->
-    // st.erase(st.rbegin());  OR st.erase(st.rend()++);
+    // NOT -->  st.erase(st.rbegin());  OR st.erase(st.rend()++);
 
     // REMEMBER, while comparing iterators, compare begin() with end()  AND rbegin() with rend()
     // While Comparing Values, You can use any combo begin() & rbegin()

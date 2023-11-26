@@ -37,7 +37,7 @@
 // Constaint -> 1 <= N, M <= 1e9
 
 
-// LOGIC --> N, M - 10^9  ==> Iterating over teh grid isnt possible
+// LOGIC --> N, M - 10^9  ==> Iterating over the grid isnt possible
 
 // For every K cells, we will check its adjacent neighbour. For this, we will initally store the K cells in a set
 
