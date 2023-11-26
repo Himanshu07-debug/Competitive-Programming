@@ -4,11 +4,13 @@ String made up of A and B. Smallest String that we can make by removing AB/BB ..
 HINT -> Is there any common thing in the removal that you can take for removal
 
 
+
 PROBLEM - 03 ---------------------------->>
 
 0001101010 .. Can you make it SORTED by removing a subset of character only once. You cant take adjacent indexes in Subset selection..
 
-TIP -> Aaise Question You have to think for the case where You cant select the Subset
+TIP -> Jab Question YES/NO ka aaye, then Aaise Question me You have to think for the case where You can't select the Subset
+
 
 
 PROBLEM - 04 -------------->>
@@ -17,7 +19,77 @@ A string can be make Palindrome only if ->
 Length even -> All character cnt should be even 
 Length odd -> Only one character with odd cnt is allowed
 
+
+
 PROBLEM - 05 -------------------->>
 
-A number is Divisble By 8 only if last 3 digits are Divisble by 8
-TIP -> last three digits ko number me convert krna sahi rhnga yaa wahi last three characters ko handle krna
+CONCEPT -> A number is divisble by 8 if its last three digits are divisible by 8 
+
+Question -> Can You make the given number is Divisble by 8 ??
+HINT -> Agar Divisor less than 10 hai to unit place digit ko leave krke usase phle saare number aa sakte hai 1 to infinity .. becz increment to the 
+        the next value in table is less than 10. 
+        EX -> 8 KE LIYE ==> 000, 008, 016, 024, 032, ..... , 096, 104 ..... So on 
+
+TASK -> We have to only ensure that ki uss number ke sath wla unit digit 0-9 me se usme lagado..
+
+
+
+PROBLEM - 07 --------------------->>>
+
+LPS ka Question DSA wla .. Here done with String Hashing..
+-> There are 2 Approaches --->>
+==> 1 -> Front se hash alag way me nikalo and Back se alag way me ... Figure out this way so that hash Front and back ki same rahe at i and n-i-1
+==> 2 -> V.V.IMP --> String Hashing with Answering Range Queries ..
+
+
+
+CONCEPT --> Agar Single Hashing se Bahut Test cases pass ho gye, lekin Kuch testcase with Bigger String length Wrong Asnwer de rhe, Yeah Collision se 
+            hai ,, USE DOUBLE - Hashing
+
+
+
+
+PROBLEM - 08 --------------------->>>
+Q.s --> Find the length of the longest substring without repeating characters.
+HINT --> Variable length Sliding Window
+
+
+
+
+PROBLEM - 10 --------------------->>>
+
+Q.s -> Find the no. of possible substrings with "bear" as a substring ??
+
+TASK 1 --> 1 <= s.size() <= 5000 i.e 5 * 10^3
+HINT --> We can check out all the Substring .. Constraint is not TIGHT ... Code kaise kronge (V.V.IMP) ?? PSEUDO ??
+
+TASK 2 --> 1 <= s.size() <= 5 * 10^5
+HINT --> RABIN KARP occ. ki list de denga.. Occ ke index se how to guess kitne substring me "bear" rhnga ????
+HINT 2 --> No. of Starting Point possible and No. of Ending Pt. possible se kuch kar sakte hai kya ???
+
+
+
+PROBLEM - 11 -------------------->>
+
+MAP / SET me string me string insert krte ho to TIME ==> O(s.size() * log(container size)) , container size -> No. of distinct strings inserted
+WHY THIS HAPPEN ?? After insertion, To store in SORTED WAY, Comparison happen
+
+NOTE -> Agar inserted string worst case me n length ki possible hai to TIME --> O( n * log(k) ) ==> O(nlogn) ...
+        So in such case , insert HASH value of String
+
+Q.s -> No. of distinct Substrings , String size can be of 1500 characters max .. 1 <= n <= 1.5 * 10^3
+HINT -> Hum Brute way me No. of Substrings nikal sakte hai but substring SET me insert krnge which can be n size ==> O(n * nlog(n)) -> TLE
+        
+NOTE --> Insert HASH value in SET .. See Code How to do so by Double Hashing ???
+
+
+
+PROBLEM - 12 --------------------->>
+
+Q.s -> Find the longest Substring which is prefix, suffix and in middle of prefix, suffix .. All separately .. 1 <= n <= 10^5
+==> lps se Prefix suffix pta chal jayega, beech ka kya.. You cant traverse becz it will O(n^2) .. 
+HINT --> Store the indexes of Valid lps in an array. Ab Binary search lagado array me for finding longest length.. Predicate me Rabin Karp for 
+        checking that the occ. is >= 3 or not ..
+
+
+

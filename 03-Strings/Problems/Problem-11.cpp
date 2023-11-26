@@ -6,7 +6,7 @@
 // 01000000000000000000000000 [ 26 alaphabets ke liye hai , 0 -> bad , 1 -> good]
 // k = 1
 
-// OUTPUT ==> 5  ( "a", "ab", "b", "ba", "bab" )
+// OUTPUT ==> 5  ( "a", "ab", "b", "ba", "bab" ) [ only the distinct ones ]
 
 // Constraint ==> s can be max of 1500 characters ==> 1 <= n <= 1.5 * 10^3   , 0 <= k <= n
 

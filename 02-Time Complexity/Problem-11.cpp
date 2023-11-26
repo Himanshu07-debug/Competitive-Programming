@@ -15,7 +15,7 @@
 // k=3 but n = 3 ==> Then n < sum of k odd numbers, --->> NO
 
 // To get kth sum of Odd numbers -> k*k      ( 1 + 4 + 9 + 16 + ... )
-// To get kth sum of Odd numbers -> k*(k+1)  ( 2 + 6 + 12 + 20 + ... )
+// To get kth sum of Even numbers -> k*(k+1)  ( 2 + 6 + 12 + 20 + ... )
 
 // A.P ke sum wale formulae se nikale
 

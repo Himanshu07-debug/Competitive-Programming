@@ -59,7 +59,7 @@ PROBLEM-10 ----------------->>
 PROBLEM-11 ----------------->> 
 
 --> To get kth sum of Odd numbers -> k*k      ( 1 + 4 + 9 + 16 + ... )
-    To get kth sum of Odd numbers -> k*(k+1)  ( 2 + 6 + 12 + 20 + ... )
+    To get kth sum of Even numbers -> k*(k+1)  ( 2 + 6 + 12 + 20 + ... )
     NOTE : A.P ke sum wale formulae se nikale
 
 
