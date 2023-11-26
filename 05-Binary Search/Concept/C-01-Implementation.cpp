@@ -37,10 +37,12 @@ bool search1(vector<int> a, int target) {
 // l = mid OR r = mid 
 // ---> Koi bhi ek array banake target ke liye check karlo, Easy hai ( OBSERVATION )
 // Either to take floor value of mid or ceil value
-// ---> Target ke occ ke corners pe check krlo, Only consider aap jo bhi le rhe ho in 1st case, mera mid calculate krke wo naa aaye
-// Eg : Code ke below
+// ---> Target ke occ ke corners pe check krlo, Ensure kro ki jiss pointer ko mid ke equal kronge.. mera calculated mid wo pointer naa aaye 
+// Eg : Smajho Range is [l,r] and app l = mid kar rhe ho.. Then calculate mid kabhi bhi l naa aaye ..(similarly jiss bhi pointer se equate kronge)
+
 
 int search2(vector<int> a, int target) {
+
     int left = 0, right = a.size() - 1;
 
     while (left < right) {
@@ -53,7 +55,7 @@ int search2(vector<int> a, int target) {
         if (a[mid] > target) right = mid - 1;
     }
 
-    return (a[left] == target) ? left : -1;
+    return (a[left] == target) ? left : -1; 
 }
 
 // Eg : [2,2] -> floor value liye to mid = 0, l = 0, l != r and Range is not changed, Therefore kitne baar bhi iterate kronge, mid, Range change 
@@ -74,7 +76,7 @@ int search3(vector<int> a, int target) {
         if (a[mid] >= target) right = mid;
     }
 
-    return (a[left] == target) ? left : -1;
+    return (a[left] == target) ? left : -1;   // left == right .. So left yaa right kisi se bhi check kar sakte ho
 }
 
 

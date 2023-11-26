@@ -11,5 +11,10 @@ NOTE -> MUST SEE QUESTION.. How we decode all required lengths by using BINARY S
 PROBLEM - 02 ------------------------->>
 
 In Binary Search Logic, we can use MAP, SET, LOWER-BOUND, UPPER-BOUND as they all are built on sorted data having O(logn) complexity
-
 Example -> BS code se element search krne se aacha SET ka find() se krlo
+
+Q.s -> Find the Number of pairs in array such that arr[i] - arr[j] == k ... (i < j or j < i)
+HINT ==> (i < j or j < i) aaisa diya rhe to no need to worry arr[i] > arr[j] .. jo bada rha wo i ho jayega,
+        only search arr[i] ke liye (arr[i] + k) present hai kya array ... For Searching, use MAP or SET .. 
+        But SET nhi kar sakte use, WHY ??? 
+

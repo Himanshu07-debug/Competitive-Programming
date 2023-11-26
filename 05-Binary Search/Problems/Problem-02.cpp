@@ -34,6 +34,7 @@ void solve(){
             if(m.count(x.first + k)) ans++;
         }
     }
+    // if k == 0, then arr[i] kitne baar present hai
     else{
         for(auto x:m){
             if(x.second > 1) ans++;
