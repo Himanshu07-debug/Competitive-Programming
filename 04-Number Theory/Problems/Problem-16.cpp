@@ -1,5 +1,5 @@
 // You are given an array of n non-negative integers a1,a2,…,an . You can make the following operation: choose an integer x≥2 and replace 
-// each number of the array by the remainder when dividing that number by x , that is, for all 1≤i≤n set ai to aimodx . 
+// each number of the array by the remainder when dividing that number by x , that is, for all 1≤i≤n set ai to a[i] mod x . 
 // Determine if it is possible to make all the elements of the array equal by applying the operation zero or more times.
 
 // Constraint --> 1 <= m <= 10^5  ,, 0 <= arr[i] <= 10^9

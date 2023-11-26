@@ -8,7 +8,7 @@
 
 // LOGIC --> 
 
-// We have to find the greatest divisor of n, but it should be K
+// We have to find the greatest divisor of n, but it should be less that equal to K
 
 #include<bits/stdc++.h>
 using namespace std;

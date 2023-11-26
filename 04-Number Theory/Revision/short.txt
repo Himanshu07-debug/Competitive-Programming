@@ -13,7 +13,7 @@ PROBLEM - 03 ---------->>
 
 IMP technique in the Question [ MUST SEE ] 
 .. Agar Humko koi digit maximum baar produce krna hai apne Number me ??
--> For example 2478  -> 9 produce krna hai ===> 2469 , 2399, 1999  .... KAISE KRONGE ???
+-> For example 2478  -> max 9 produce krna hai ===> 2469 , 2399, 1999  .... KAISE KRONGE ???
 
 
 PROBLEM - 05 ----------->> 
@@ -31,11 +31,15 @@ MUST SEE ---> Observing the edge case and reducing the equation for answer
 
 PROBLEM - 08 ----------->> 
 
-Number ke K prime factors honge, this can be determine by Checking that Total Number of divisors can be reduced to K values greater than 1.
-This K values can be even or Odd
+=> N = p1^a1 * p2^a2 ...
+=> Total No. of divisors for N = (a1 + 1) * (a2 + 1) ....
 
-** No. = p1^a1 * p2^a2 ...
-** Total No. of divisors = (a1 + 1) * (a2 + 1) ....
+Question -> Can we find an Integer A that have X divisors out of which K are Prime Factors ?? Return YES / No -
+HINT -> X is the total number of Divisors. X me terms == No. of Prime Factors in a No. . Can I use this Logic -->
+
+NOTE -> If not getting, see Answer logic .. Nicely Explained in Problem
+
+
 
 
 PROBLEM - 09 -------------->> 
@@ -46,6 +50,8 @@ Question -> Determine is it possible to remove some of the digits(possibly not r
 LOGIC -> Here question ne nhi bola hai min/max removal, isliye Try out all the possible digits number divisible by sum.. HOW ??? 
 
 TIP --> This is mostly when string is given in Input
+
+
 
 
 PROBLEM - 10 --------------->>

@@ -9,17 +9,27 @@
 
 // LOGIC :
 
-// "A" must have k prime factors. A = p1^a1 * p2^a2 ...
-// Total number of Divisors is (a1 + 1) * (a2 + 1) ....
+// "A" must have K prime factors . A = p1^a1 * p2^a2 ... pk^ak
+// Total no. of divisors of A will be -> (a1 + 1) * (a2 + 1) .... (ak + 1)
 
-// Agar hum X ko k values greater than 1 me reduce kar paaye, then we can say that "A" is having K prime factors.
+// OBSERVE -> Dono me No. of values multiplication me equal hai i.e K (no. of Prime factor)
+//           Agar mai X ko K values me reduce kar pau each value greater than 1 , then I can get A with K prime factors.
 
-// So Our Problem get reduced to determining is it possible to write X as a product of K values greater than 1 or not.
+
+// Why Greater than 1 ?? 
+// Total no. of divisors me each value min. 1  rhngi (1 + ?)
+
+// NOTE -> So Our Problem get reduced to determining is it possible to write X as a product of K values greater than 1 or not.
+
+// If reduced value cnt > k aaya to merge kar denge K krne ke liye cnt kyuki X ke reduction me value Non-Prime bhi rhi to chalta Kyuki 
+// X me to (powers + 1) multiply ho rhe hai.....
+// Eg -> X = 12 , K = 2 ... Reduced(X) = 2, 2, 3
+// Merko X me 2 hi terms chahiye becz K = 2, Therfore Merge any two values -> 4, 3  OR  2, 6
 
 
-// This reduced values of X can be even, odd. Only it must be greater than 1 becz in formula it is (1 + ?)
-// Also If reduced Values > K, then we can merge the reduced values to make them equal to K .
-// Eg -> X = 12 , K = 2 .. reduced(X) = 2, 2, 3  ...  Merge any two value i.e 4, 3 OR 2, 6
+// GUESSING THE VALUE A ???
+// Above wla hi Example lo .. A = 2^(4-1) * 3^(3-1) ==> 8 * 9 => 72
+// This A will have only two prime divisors -> 2 and 3
 
 
 #include<bits/stdc++.h>

@@ -4,10 +4,14 @@ PROBLEM-01 ----------------->>
     Numbers are formed with 1, 14, 144. Check the given number is VALID ?? Use substr() logic to test all possibilitis
 
 
+
+
 PROBLEM-02 ----------------->> 
 
 --> Equation -> a^2 + b = n .. Max value a can take?? Minimize b to the lowest to get the maximum value of all
     Technique -> Minimize one will maximize the Other Other number in Equation to keep the equation VALID
+
+
 
 
 PROBLEM-04 ---------------->> 
@@ -20,10 +24,14 @@ PROBLEM-04 ---------------->>
     N mod x = y ==> In this 2 cases are possible : rem >= y OR rem < y , You have to handle both
 
 
+
+
 PROBLEM-05 ---------------->> 
 
 ---> Jaise Peak element me corner wale elements ke liye loop ke upar hi check kar lete the, We can take 3 copy of arr,
         And middle wale me traverse krke answer nikal sakte hai
+
+
 
 
 PROBLEM 06 & 09 --------------->> 
@@ -32,21 +40,29 @@ Some questions are Pure Mathemathical, Some examples are here.. Either the logic
 
 Q.s -> You have reduce n to 1. You can either multiply n by 2 or divide by 6 in each operation.. How ?? 
 HINT -> Is it beneficial to multiply against divide. Aur divide bhi kab answer denga
+NOTE -> Yha pe multiply by 2 ka kya significance hai ?? 
+==> For divisibility, N kisi bhi no. x se divisible tabhi hota hai jab x ke prime factors N me bhi hai 
 
 Q.s -> n can be formed by 3 fib. no.s [n is also fibonccai] ? 
 
 Q.S -> Find two Composite integers such that a - b = n .. n is given ???
 
 
+
+
 PROBLEM-10 ----------------->> 
 
 ---> MATRIX Observation ( MUST SEE )
+
+
 
 PROBLEM-11 ----------------->> 
 
 --> To get kth sum of Odd numbers -> k*k      ( 1 + 4 + 9 + 16 + ... )
     To get kth sum of Odd numbers -> k*(k+1)  ( 2 + 6 + 12 + 20 + ... )
     NOTE : A.P ke sum wale formulae se nikale
+
+
 
 
 PROBLEM-12 ------------------->> 

@@ -31,7 +31,7 @@
 // => For 2, N = N - 4*2 , now N will be divide by 6 ...
 
 // For 4 -> Even remainder possible are => 0, 2
-// => For 0, ans = N/6
+// => For 0, ans = N/4
 // => For 2, N = N - 6 , now N will be divide by 4
 
 
