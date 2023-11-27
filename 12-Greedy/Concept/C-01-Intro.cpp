@@ -92,6 +92,43 @@ long long circular_kadane(vector<long long> &arr, int n){
 }
 
 
+// REMEMBER --> Greedy me hum bhut baar sort krte hai.. so Agar Pair hai, to usko comparator se sort mat kro (-ve krke insert krne wali technique)
+
+
+// ********************************* GREEDY ON STRINGS ********************************************
+
+// Lexicographically Minimum String --> Dictionary me sabse phle aane wali string
+// Lexicographically Maximum String --> Dictionary me sabse last me aane wali string 
+
+// Comparison all happens character by character between two strings. No Problem of size Equality
+// aba > aaa
+// aaaa < z
+// b > aa
+// aaaa > aaa
+
+
+// Given an n Length string. Generate Lexicographically Minimum form of it -->
+// cnt[26] ka banalo, har index ke liye traverse kro and fill kro
+// TIME -> O(n * 26)
+
+
+
+// ****************************** GREEDY ON RANGES *******************************************
+
+// In such question, two arrays are given -> one for starting and another for ending time OR a single array with pair<int,int> 
+
+// Maximizing the no. of activites that will can occured --> ACTIVITY SELECTION PROBLEM
+
+// We know that -> Sort with ending time, becz the early an activity end, it will allow other activities to ocuur at that time
+// TIP -> When new "en" is to set -> en = arr[i].second + 1 .. becz we do not want that any other activity should start immediately after the
+//          current activity end
+
+// QUESTION -> Why not Sorted as first with starting time and then With Duration ????
+// Suppose (1,100), (101, 105), (103,107) 
+// (1,100) was not colliding but kyuki humne duration based pe sort kiye wo cnt me include nhi hua
+
+
+
 
 int main(){
 

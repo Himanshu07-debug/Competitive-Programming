@@ -86,3 +86,10 @@ Q.s --> return the next greater number for every element in the given circular a
 HINT --> Use Stack + Appending logic + MODULO 
 
 
+
+CONCEPT ---------------->>>
+
+In an Question, Agar aap there are many places where erase, find krna padega.. Efficiently krne ke liye map use kro, SET nhi ...
+Becz in map, m[x] == 0 is same as ERASE, m[x] > 0 is same as find out ... insertion m[x]++
+
+

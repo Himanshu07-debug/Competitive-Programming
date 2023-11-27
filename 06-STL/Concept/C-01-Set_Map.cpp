@@ -65,6 +65,9 @@ int main(){
     // while(st.begin() == st.rbegin())  ==> ERROR
     // while(st.begin() == --st.end())   ==> No ERROR
     // while(*st.begin() == *st.rbegin())   ==> NO ERROR, by value any combo allowed
+
+
+    // NOTE --> In MULTI-SET, s.find(x) points to the first occ of x if x occured multiple times in multiset
     
 
     return 0;
