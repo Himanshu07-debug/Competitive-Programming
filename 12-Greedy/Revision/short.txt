@@ -1,0 +1,23 @@
+PROBLEM - 01 -------------------------->>>
+
+Q.s -> Array arr is given. arr[i] denotes that ki hum jump ith index se 1 se arr[i] tk ka le sakte hai. If starting from first index, kya mai 
+       last index tk pahuch paunga ?
+       [2,3,1,1,4] -> YES    ,, [3,2,1,0,4] -> NO
+
+HINT --> Keeping track of maximum reachable index
+
+
+PROBLEM - 02 ---------------------------->>>
+
+In SET, s.clear() takes O(K) time where K -> no. of unique elements in the SET
+
+
+
+PROBLEM - 03 --------------------------->>
+
+If You have added diff/same powers of 2 , then the no. of set bits in Total sum denotes that there is a sequence of added powers of 2 or 
+any single power of 2 that have contributed to the set bit.
+
+Therefore, Agar Array diya hai Powers of 2 ka, then kitne sequence possible hai jo sum Powers of 2 denge -> No. of bits in Total sum 
+Example -> [2,2,8,4,8] -> 2^4 [2,2,8,4] and 2^3 [8] are possible ... Total Sum in bitwise manner -> 11000
+

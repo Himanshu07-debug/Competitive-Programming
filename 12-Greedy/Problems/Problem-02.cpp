@@ -60,7 +60,7 @@ int main(){
         if(s.find(arr[i]) != s.end()){
             ans.push_back({st+1,i+1});
             st = i+1;
-            s.clear();
+            s.clear();        // time => O(K) .. K = no of distinct elements in the SET
         }
         else{
             s.insert(arr[i]);
