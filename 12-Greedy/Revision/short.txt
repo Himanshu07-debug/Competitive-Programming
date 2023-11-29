@@ -1,10 +1,11 @@
 PROBLEM - 01 -------------------------->>>
 
 Q.s -> Array arr is given. arr[i] denotes that ki hum jump ith index se 1 se arr[i] tk ka le sakte hai. If starting from first index, kya mai 
-       last index tk pahuch paunga ?
+       last index tk pahuch paunga jump leke ?
        [2,3,1,1,4] -> YES    ,, [3,2,1,0,4] -> NO
 
 HINT --> Keeping track of maximum reachable index
+
 
 
 PROBLEM - 02 ---------------------------->>>
@@ -15,9 +16,26 @@ In SET, s.clear() takes O(K) time where K -> no. of unique elements in the SET
 
 PROBLEM - 03 --------------------------->>
 
-If You have added diff/same powers of 2 , then the no. of set bits in Total sum denotes that there is a sequence of added powers of 2 or 
-any single power of 2 that have contributed to the set bit.
+Agar Aapke pass Powers of 2 hai and unko Agar aapne add kiya to , Total sum me ke bitwise form me jitne bits SET hai, to each SET bit uski koi
+distinct sequence of Added powers of 2 se bni hongi yaa koi Single Added no. se SET hui hongi
 
-Therefore, Agar Array diya hai Powers of 2 ka, then kitne sequence possible hai jo sum Powers of 2 denge -> No. of bits in Total sum 
-Example -> [2,2,8,4,8] -> 2^4 [2,2,8,4] and 2^3 [8] are possible ... Total Sum in bitwise manner -> 11000
+Therefore, Agar Array diya hai Powers of 2 ka, then kitne sequence possible hai jo addition Powers of 2 denge -> No. of bits in Total sum 
+Example -> [2,2,8,4,8] -> 2^4 [2,2,8,4] and 2^3 [8] are 2 possible sequences ... Total Sum in bitwise manner -> 11000
+
+NOTE -> If cnt of 2^x is y , THEN --> Apne position bit pe -> (y % 2) * 2^x  AND  carry to next bit --> (y / 2) * 2^(x+1)
+
+
+
+PROBLEM - 04 -------------------------->>
+
+Agar N elements hai and unko M buckets me rkhna hai, maximum min. value jo possible hai kisi bhi Bucket me --> N/M
+Eg -> N = 6 , M = 3 --> Distribution --> [2,2,2] -> min = 2 , [1,2,3] -> min = 1 , [0,3,3] -> min = 0 ==> 2 max. minimum value hai bucket ki .. 
+Eg -> N = 7 , M = 3 --> Here N is not multiple of M so unequal aayenga Distribution --> [2,2,3] , [1,3,3] , [1,2,3] .. Here also N/M as max
+
+
+NOTE -> Agar Question me diya N elements diye hai, M ka subset lena hai in such a way that the minimum among the numbers will be as large as 
+        possible OR max. possible value of Minimum and Return the min. value ..
+
+HINT --> Aaise Question me it is asked to maximize the Minimum elements in all possible subsets ... Wo line ka yeah matlab hai
+       Eg -> N elements -> [1,1,2,4,3,5] , M = 3 , possible Combo => [1,1,2] , [2,3,4] , [4,3,5] .. 3 is the max. min possible
 
