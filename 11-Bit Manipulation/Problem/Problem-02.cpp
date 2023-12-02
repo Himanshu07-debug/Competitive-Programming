@@ -1,4 +1,4 @@
-// You are Given an Integer C. Let d be the smaller integer sucht that 2^d is strictly greater than C.
+// You are Given an Integer C. Let d be the smaller integer such that 2^d is strictly greater than C.
 // Consider all pairs of non-negative integers (A, B) such that A, B < 2^d and A ^ B = C..
 
 // Find the maximum value of A * B over all this pairs..

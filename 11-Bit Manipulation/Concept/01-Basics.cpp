@@ -14,7 +14,7 @@
 // We know that ki 32 bit numbers ke liye int ki range -> [ -2^31 to 2^31 - 1 ].. HOW IN BIT ???
 
 // Lets understand this with 4 bit -> Range -> [ -2^3 to 2^3 - 1 ]  => -8 to 7
-// Remember first bit decides +ve and -ve ... 0 -> +ve and 1 -> -ve
+// REMEMBER --> first bit decides +ve and -ve ... 0 -> +ve and 1 -> -ve
 
 // Positive No.s -> 0000 to 0111 ==> 0 to 7
 // Negative No.s -> 1000 to 1111 ==> -8 to -15 
@@ -102,8 +102,14 @@ int main(){
 // ***************************** PROPERTIES ********************************************
 
 // 1. If A ^ B = C , then A ^ C = B
+
 // 2. A & B <= min(A, B)
+// => A & B ki value hamesha yaa to min(A,B) ke equal hongi OR lesser than hongi A , B se
+
 // 3. A | B >= max(A, B)
+// => A | B ki value hamesha yaa to max(A,B) ke equal hongi OR greater than hongi A , B se
+
+
 // 4. (A | B) + (A & B) = A + B
 
     return 0;

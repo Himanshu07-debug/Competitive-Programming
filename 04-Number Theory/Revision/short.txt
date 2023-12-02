@@ -68,6 +68,14 @@ NOTE --> Modulo also helps in Rotation type of Problem becz array moves cyclic
 EXAMPLE --> Top element of the array after x Rotation ==> arr[ x % n ]
 
 
+PROBLEM - 20 ---------------->>
+
+Q.s -> find out whether the number n can be represented as the sum of a certain number of numbers 2020 and a certain number of numbers 2021.
+HINT --> Koi Pattern to lag nhi rha no. me , kyu
+Remember, Aaise Question equation me reduce hote hai --> N =  2020*x + 2021*y , where x >=0 and y >= 0
+
+
+
 
 12 - CONCEPT ------------->> 
 

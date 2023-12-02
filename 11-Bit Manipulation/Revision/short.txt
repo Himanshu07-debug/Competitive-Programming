@@ -1,0 +1,69 @@
+TIP --> 
+
+1. Think in Chunks i.e each equation and also every number in their Bitwise form
+2. After You built the Logic, Always Check the EDGE CASES becz Bit ke Question me hamesha kuch cases hote hai jha pe Apna Logic Fail krnga. 
+3. Mostly, Corner values of the Constraint becomes the Edge Cases where Logic fails.
+
+
+CONCEPT --> (1 << 32) gives Error becz of Shifting with large values , use (1LL << 32) while Shifting
+
+
+PROBLEM - 01 --------------------->>
+
+Q.s -> ( (a & b) | c ) ^ d = N . Find Distinct values of a,b,c,d (1 <= a,b,c,d <= 1e18). Also 0 <= N <= 2^32.
+
+NOTE -> (a & b) = 0 --> Take Two Diff. powers of 2, They will always satisfy this .. ( a = 2^33 and b = 2^34 )
+        (c ^ d) = N --> c = 1 and d = ( N ^ 1 )  ---> 1 ^ (N ^ 1) = N
+
+--> What will be the Edge Cases ?? 
+HINT --> See the Corner values of N = 0 and N = 1. 
+HINT2 --> If the no. of edge cases are small and then You can hard code the answer which will satisfy the Case always.(Fixed Ans likh do)
+
+
+
+PROBLEM - 02 ---------------------->>
+
+Q.s -> You are Given an Integer C. Let d be the smaller integer such that 2^d is strictly greater than C. Consider all pairs of non-negative 
+        integers (A, B) such that A, B < 2^d and A ^ B = C.. Find the maximum value of A * B over all this pairs..
+        Constraint --> 1 <= C <= 10^9
+
+NOTE -> Are You going to Check all possible Pair ??
+HINT -> This is an Bit-Independent Question..
+
+=> A ^ B = C ... Whenever You want to form A and B such that Product between them is MAXIMUM -->
+-> C me jha pe bhi 1 aayenga wha pe bit diff chahiye, 0 aaya to A & B dono ki wo bit 1 kar denge
+-> For Diff bit ke liye, C ki MSB A ko dedo sirf, Baaki har jagah B me 1 set krdo and A me 0 ..
+
+REMEMBER => This Rule of Generation of Maximum Product between 2 number.
+
+
+CONCEPT -> Given Integer ka Bit Form app aaise bhi kar sakte ho ==> For loop me Check -> ( n & (1LL << i) ) . 
+
+
+
+PROBLEM - 03 ------------------------>>
+
+Q.s -> Find X such that (A ^ X) * (B ^ X) is Maximum ... 0 <= X, A, B < 2^N .. N = 30
+
+HINT -> This is also an Bit Independent Question . How to Find X ???
+
+
+
+PROBLEM - 04 ------------------------>>
+
+Q.s -> Given an array and an Integer K . Find the minimum no. of Operations required to convert all integers to 0 . In one operation -> 
+        Choose a non-negative integer p (p >= 0)  -> Select at most k indices in the array (k indices picked can be non-contigous) 
+        -> For each selected index i, replace arr[i] with (arr[i] ^ pow(2,p) )
+
+HINT --> pow(2,p) .. isko Bit ka HINT le sakte ho.... BIT Independent Question .. HOW ??
+HINT-2 --> Array ke no.s ka each bit position me total kitna cnt hai, isase kuch kar sakte hai ???
+
+Question -> Isme aap MAP use kronge or 32 size ka array ???
+
+
+
+
+
+
+
+

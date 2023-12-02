@@ -29,8 +29,6 @@
 // FOR N == 1, d will come as 0 -> Not Allowed
 // c = 3, d = 2
 
-// For N = 2^32 - 1
-
 
 // TIP -> Bit is nothing but breaking the Problem into Small - small cases
 

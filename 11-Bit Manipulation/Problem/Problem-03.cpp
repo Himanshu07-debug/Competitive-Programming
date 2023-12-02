@@ -1,4 +1,4 @@
-// Find X such that A ^ X * B ^ X is maximum ... 0 <= X , A, B < 2^N
+// Find X such that A ^ X * B ^ X is maximum ... 0 <= X, A, B < 2^N
 // N, A , B are given
 
 // 1 <= N <= 30
