@@ -39,3 +39,10 @@ NOTE -> Agar Question me diya N elements diye hai, M ka subset lena hai in such 
 HINT --> Aaise Question me it is asked to maximize the Minimum elements in all possible subsets ... Wo line ka yeah matlab hai
        Eg -> N elements -> [1,1,2,4,3,5] , M = 3 , possible Combo => [1,1,2] , [2,3,4] , [4,3,5] .. 3 is the max. min possible
 
+
+
+PROBLEM - 05 -------------------------->>>
+
+Maximum Product Subarray Sum ??? 
+HINT -> When -ve arr[i] encounter hota hai, effect on Current Maximum and Current Minimum ...
+
