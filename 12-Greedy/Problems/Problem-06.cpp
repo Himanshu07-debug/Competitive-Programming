@@ -22,3 +22,81 @@
 
 // REMEMBER -> In KADANE, hamesha window ki size min. consider hoti hai i.e [0, 8] -> size = 1 ( 0  consider nhi hota bhale hi same sum hai)
 //                                                                           [8, 0] -> size = 1 (last wla 0 not considered)
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+#define endl '\n'
+const long long MOD = 1e9 + 7;
+const long long INF = LLONG_MAX >> 1; 
+const long long NINF = LLONG_MIN;
+
+
+
+void solve(){
+
+    // Your code here
+    int n; cin >> n;
+
+    vector<long long> arr(n);
+
+    long long sum = 0;
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+        sum += arr[i];
+    }
+
+    long long res = arr[0];
+    long long maxEnding = arr[0];
+
+    int st = 0;
+    int max_st = 0;
+    int max_en = 0;
+
+    for(int i=1;i<n;i++){
+
+        maxEnding = max(arr[i], maxEnding + arr[i]);
+
+        // new Subarray started
+        if(maxEnding == arr[i]) st = i;
+
+        if(res < maxEnding){
+            res = max(res,maxEnding);
+            max_st = st;
+            max_en = i;
+        }
+
+    }
+
+    if(res > sum){
+        cout << "NO" << endl;
+    }
+    else if(res == sum){
+        if((max_en - max_st + 1) < n) cout << "NO" << endl;
+        else cout << "YES" << endl;  
+    }
+    else cout << "YES" << endl;
+
+}
+
+// Maximum Window consider hoye, iske liye update -->
+// prevEnding == maxEnding --->  maxEnding = max(arr[i], maxEnding + arr[i]);   --> if(maxEnding == arr[i] && prevEnding != 0 ) st = i;
+// if(res <= maxEnding )
+
+
+int main() {
+
+    ios::sync_with_stdio(false); cin.tie(NULL);
+
+    int t; cin >> t;
+
+    while(t--){
+
+        solve();
+        
+    }
+    
+    return 0;
+
+}

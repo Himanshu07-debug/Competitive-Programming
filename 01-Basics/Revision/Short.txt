@@ -1,10 +1,39 @@
-PROBLEM - 02 ------------------------> 
+PROBLEM - 02 -----------------------------------------------------------> 
 
 => To avoid Overflow -> Multiply by " 1ll "
 => For Float division -> Multiply by " 1.0 "
 => sqrt() returns float values, do not use it
 
 
+PROBLEM - 06 ---------------------------------------------------------->>
+
+=> If a = 1e9 , b = 1e9 , Find a*b last 2 digits?
+ANS => a = a%100 , b = b%100 ,  Ans = (a*b) % 100
+
+Question ----> Print the last 2 digits from their Multiplication. ( A * B * C * D) where 2 <= A,B,C,D <= 10^9
+
+NOTE -> Rule is Valid for Addition and Bitwise Independent Problems
+
+
+PROBLEM - 10 ----------------------------------------------------------->> 
+
+=> Never use Ceil , use ceil(a/b) => ( a + b - 1 )/ b
+=> Floor is By default in Integer division
+=> NOTE --> a & b must be an integer for this formula, otherwise you have to use ceil()
+
+
+
+PROBLEM - 12 ------------------------------------------------------------>> 
+
+Making the array elements equal by taking 2^x values from a[i] i.e a[i] - 2^x and giving it to a[j] i.e a[j] + 2^x.. check is it Possible ?? 
+--> Kyuki Array values distribute ho rhe hai -> Total_sum must be divisible by N and equal elements honge Sum/n ..
+--> Aage ab ??
+
+
+
+*************************************************************************************************************************************************
+
+*************************************************************************************************************************************************
 
 
 PROBLEM - 04 -------------------------->>
@@ -21,18 +50,6 @@ EX -> A + B = C, A - B = C and A * B = C --> Fixed lengt
 PROBLEM - 05 ------------------------>>
 
 => To check number is integer or Float : n - (int)n == 0
-
-
-
-
-PROBLEM - 06 ------------------------->>
-
-=> If a = 1e9 , b = 1e9 , Find a*b last 2 digits?
-ANS => a = a%100 , b = b%100 ,  Ans = (a*b) % 100
-
-Question ----> Print the last 2 digits from their Multiplication. ( A * B * C * D) where 2 <= A,B,C,D <= 10^9
-
-NOTE -> Rule is Valid for Addition and Bitwise Independent Problems
 
 
 
@@ -62,30 +79,10 @@ Q. Minimum no. of operation to make no. of even and odd elements equal ? In one 
 
 
 
-
-PROBLEM - 10 ---------------------->> 
-
-=> Never use Ceil , use ceil(a/b) => ( a + b -1 )/ b
-=> Floor is By default in Integer division
-=> NOTE --> a & b must be an integer for this formula, otherwise you have to use ceil()
-
-
-
-
-PROBLEM - 12 ----------------------->> 
-
-Making the array elements equal by taking 2^x values from a[i] i.e a[i] - 2^x and giving it to a[j] i.e a[j] + 2^x.. check is it Possible ?? 
---> Kyuki Array values distribute ho rhe hai -> Total_sum must be divisible by N and equal elements honge Sum/n ..
---> Aage ab ??
-
-
-
-
 PROBLEM - 13 ----------------------->>
 
 In Matrix questions, Observe the Number of cases, Edge cases and solve
-NOTE -> If 2 given hai then blindly number of cases observe kro , logic mat socho, becz 2 se no. of cases kam hote hai
-
+NOTE -> If num = 2 given hai then blindly number of cases observe kro , logic mat socho, becz 2 se no. of cases kam hote hai
 
 
 

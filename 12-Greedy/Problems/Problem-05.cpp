@@ -10,9 +10,17 @@
 // LOGIC -------------------------------------->>>
 
 // OBSERVATION --> 
-// Agar arr[i] < 0 i.e -ve aaya to ==>
-// Maximum Product multiply hoke Minimum Possible product banayenga ( +ve * -ve => -ve )
-// Minimum Product multiply hoke Maximum Possible product banayenga ( -ve * -ve => +ve )
+
+// Let mx , mi are the current max and minimum
+
+// If arr[i] +ve aaya to --> mx * arr[i] > mi * arr[i]     --> In this case, max. Product is mx * arr[i]
+
+// If arr[i] -ve aaya to --> mx * arr[i] < mi * arr[i]     --> In this case, max. Product is mi * arr[i] 
+// EXAMPLE ====>
+// mx = 6, mi = 2 , arr[i] = -2 ,   -12 < -4
+// mx = 6, mi = -2 , arr[i] = -2 ,  -12 < 4
+// mx = -2, mi = -6 , arr[i] = -2 ,  4 < 12
+
 
 // So hum KADANE lagayenge, for each index i, we will decide either to include the arr[i] into the Previous Subarray or Start a new subarray
 

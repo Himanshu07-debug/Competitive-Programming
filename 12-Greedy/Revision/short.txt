@@ -1,4 +1,4 @@
-PROBLEM - 01 -------------------------->>>
+PROBLEM - 01 ----------------------------------------------------------->>>
 
 Q.s -> Array arr is given. arr[i] denotes that ki hum jump ith index se 1 se arr[i] tk ka le sakte hai. If starting from first index, kya mai 
        last index tk pahuch paunga jump leke ?
@@ -8,40 +8,62 @@ HINT --> Keeping track of maximum reachable index
 
 
 
-PROBLEM - 02 ---------------------------->>>
+PROBLEM - 02 ------------------------------------------------------------->>>
 
 In SET, s.clear() takes O(K) time where K -> no. of unique elements in the SET
 
 
 
-PROBLEM - 03 --------------------------->>
+PROBLEM - 03 -------------------------------------------------------------->>
 
-Agar Aapke pass Powers of 2 hai and unko Agar aapne add kiya to , Total sum me ke bitwise form me jitne bits SET hai, to each SET bit uski koi
-distinct sequence of Added powers of 2 se bni hongi yaa koi Single Added no. se SET hui hongi
-
-Therefore, Agar Array diya hai Powers of 2 ka, then kitne sequence possible hai jo addition Powers of 2 denge -> No. of bits in Total sum 
-Example -> [2,2,8,4,8] -> 2^4 [2,2,8,4] and 2^3 [8] are 2 possible sequences ... Total Sum in bitwise manner -> 11000
-
-NOTE -> If cnt of 2^x is y , THEN --> Apne position bit pe -> (y % 2) * 2^x  AND  carry to next bit --> (y / 2) * 2^(x+1)
+TRICK --> 
+Agar Array diya hai Powers of 2 ka, then kitne sequence(subset) possible hai jo add hoke Powers of 2 me denge sum -> No. of bits in 
+                                                                                                                     Total sum of array 
+Example ------> [2,2,8,4,8] -> 2^4 [2,2,8,4] and 2^3 [8] are 2 possible sequences ... Total Sum in bitwise manner -> 11000
 
 
+In Bitwise arrays -->
+TRICK --> If cnt of 2^x bit is y , THEN --> Apne position bit pe -> (y % 2) * 2^x  AND  carry to next bit --> (y / 2) * 2^(x+1)
 
-PROBLEM - 04 -------------------------->>
+
+
+
+
+PROBLEM - 04 ----------------------------------------------------->>
 
 Agar N elements hai and unko M buckets me rkhna hai, maximum min. value jo possible hai kisi bhi Bucket me --> N/M
 Eg -> N = 6 , M = 3 --> Distribution --> [2,2,2] -> min = 2 , [1,2,3] -> min = 1 , [0,3,3] -> min = 0 ==> 2 max. minimum value hai bucket ki .. 
-Eg -> N = 7 , M = 3 --> Here N is not multiple of M so unequal aayenga Distribution --> [2,2,3] , [1,3,3] , [1,2,3] .. Here also N/M as max
+Eg -> N = 7 , M = 3 --> Here N is not multiple of M so unequal aayenga Distribution --> [2,2,3] , [1,3,3] , [1,2,3] .. Here also N/M as max. min
 
 
-NOTE -> Agar Question me diya N elements diye hai, M ka subset lena hai in such a way that the minimum among the numbers will be as large as 
-        possible OR max. possible value of Minimum and Return the min. value ..
+NOTE --> Agar question me diya hai --> Find the minimum value as large as possible OR 
+                                   --> Find the maximum possible value of the minimum among the given numbers 
+       ==> This means all possible Distribution i.e subset of numbers me Maximize krna hai minimum value
 
-HINT --> Aaise Question me it is asked to maximize the Minimum elements in all possible subsets ... Wo line ka yeah matlab hai
-       Eg -> N elements -> [1,1,2,4,3,5] , M = 3 , possible Combo => [1,1,2] , [2,3,4] , [4,3,5] .. 3 is the max. min possible
-
+ 
 
 
 PROBLEM - 05 -------------------------->>>
 
 Maximum Product Subarray Sum ??? 
 HINT -> When -ve arr[i] encounter hota hai, effect on Current Maximum and Current Minimum ...
+
+
+
+
+PROBLEM - 06 --------------------------->>
+
+Maximum Sum Subarray with st and ending index of the Max. sum subarray..
+NOTE --> Min. window size consider hoye uska code ???          [0, 8] , [8, 0]  ==> Size = 1
+         Max. Window size consider hoye uska code ????         [0, 8] , [8, 0]  ==> Size = 2
+
+
+
+PROBLEM - 07 --------------------------->>
+
+Can You make the array as a1 < a2 < … < ak and ak > ak+1 > … > an ,,, 1 ≤ k ≤ n  by doing any no. of operation. 
+In one Operation, You can decrement an arr[i] > 0 by 1
+
+HINT --> Think about Valid Prefixes and Suffixes which will store that kha tk valid assignment(0, 1, 2, ...) ho sakta hai.. Now ???
+
+

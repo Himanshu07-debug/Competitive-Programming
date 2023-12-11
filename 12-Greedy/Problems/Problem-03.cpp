@@ -17,7 +17,7 @@
 
 // Sequence of no.s lena hai i.e subset, Contigous no.s nhi lena hai ( SUBARRAY )
 
-// OBSERVATION ===============> 
+// OBSERVATION ========================================================================> 
 
 // If You will sum the whole 2^arr[i] of array , the no. of bits in the Total sum will be the answer ..
 

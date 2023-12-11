@@ -19,7 +19,9 @@
 // Constraint --> 1 <= m <= n <= 1e6   ,,,  1 <= arr[i] <= 10^9
 
 
-// LOGIC ---------------------------->>>
+
+
+// LOGIC ----------------------------------------------------->>>
 
 // We define as bj the number of songs the group j is going to perform tomorrow 
 // --> Yha grp j ke place pe "band" likhna tha => Confuse krne ke liye diya hai
@@ -28,7 +30,7 @@
 //                                                                                                                  value possible
 
 // Polycarp likes bands with the numbers from 1 to m
-// We have M buckets and N elements   ----> So Each Bucket me Max. N/M elements to aayenge ...
+// We have M buckets and N elements   ----> So Each Bucket me Max. min N/M elements to aayenge ...
 
 // DRY RUN ------------>>
 // If N % M == 0 ---> Then equally divide honga each bucket me i.e ->
