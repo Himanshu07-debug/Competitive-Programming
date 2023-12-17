@@ -67,20 +67,26 @@ In one Operation, You can decrement an arr[i] > 0 by 1
 HINT --> Think about Valid Prefixes and Suffixes which will store that kha tk valid assignment(0, 1, 2, ...) ho sakta hai.. Now ???
 
 
-PROBLEM - 08 --------------------------->>
+
+
+PROBLEM - 08 ------------------------------------->>
 
 Given a number n. Find a,b,c such that a * b * c = n where 2 <= a,b,c and a,b,c are distinct ..
 
 HINT --> Prime Factorize jaisa dikh rha hai.. So Prime Factors se Kronge ki Normal Divisors of n se and Jisase bhi Kronge, to why ???
 
 
-PROBLEM - 09 ---------------------------->>
+
+
+PROBLEM - 09 ------------------------------------->>
 
 Agar Apko kuch set of characters diye hai and bola hai ki efficiently rearrange kro ki wo lexicographically minimal bane ???
 
 TRICK --> Don't go for Efficiency.. Agar lexicographically minimal string bnana hai to always try to put the minimal character at the starting.. 
          bhale hi uske baad ordering Characters ki inefficient hi kyu na ho jaaye becz of conditions provided ... Yeah minimal hi rhnga becz 
-         all characters ka minimal front i.e index = 0 pe hai...
+         all characters ka minimal front i.e index = 0 pe hai... SIMILARLY lexicographically Maximal string ..
+
+NOTE ==> If Duplicates are there in String, Then use vector<vector<int>> arr(26) .. List of List .. Outer for character and Inner for Occ.
 
 TIP --> In String Rearranging type question, Stack based Approach are used most Commonly ... So ek baar iske baare me bhi socho
 
@@ -88,9 +94,31 @@ TIP --> In String Rearranging type question, Stack based Approach are used most 
 Q.s => Petya has a string s. He wants to empty s and string t, while creating a new string u that is lexicographically minimal. He can 
        either move the first character of s to t or the last character of t to u. How can Petya achieve his goals?
 
+HINT --> t ke operation STACK jaisa hai ... Yha pe bhi lexicographically minimal hai, then We can use the prev. logic 
+
+
 
 
 PROBLEM - 10 --------------------------------->>
+
+
+Q.s -> 2 arrays are given arr, brr . Select atmost one subarray and swap this subarray indx in two arrays. You have to maximize the wt of any
+       of the array..
+       Ex => nums1 = [60,60,60], nums2 = [10,90,10]
+       Choosing left = 1 and right = 1, we have nums1 = [60,90,60] and nums2 = [10,60,10] -> max(sum(nums1), sum(nums2)) = max(210, 80) = 210.
+
+HINT --> Kadane laga sakte hai, Lekin normal Arrays pe nhi, Apko ek Array banana hai and uspe Kadane lagana hai, Kaise banonge Aux. Array..
+
+
+
+
+PROBLEM - 11 ------------------------------->>
+
+Can You make the Array elements non-decreasing by increasing or decreasing adjacent pairs by 1
+
+HINT --->> Calculate the No. equal pairs that can be make .. Is it possible to make equal value pairs each time ???
+
+
 
 
 

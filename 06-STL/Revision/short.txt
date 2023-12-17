@@ -35,7 +35,7 @@ PROBLEM - 05 ---------->>
 
 Agar koi Problem Efficiently solve ho sakta hai SET se, but usme cnt yaa indx jaisi thing ki need hai, PBDS is used as an alternative of SET
 less<int>       ---> SET 
-less_equal<int> ---> MULTISET (in this , PBDS me apko apna erase function implement krna padta)
+less_equal<int> ---> MULTISET (in this , PBDS me apko apna erase function implement krna padta, Kaise kronge)
 
 ==> Question was the Typical Inversion Count Problem -> 
 --> How to solve by PBDS when there are no duplicates and duplicates are there in array ???
@@ -83,13 +83,15 @@ NOTE -> Appending ka logic lga sakte hai without even actually Appending by usin
 Q.s --> return the next greater number for every element in the given circular array, if no next greater element, give -1
         [1, 2, 1] => [2, -1, 2]
 
-HINT --> Use Stack + Appending logic + MODULO 
+HINT1 --> Use Stack + Appending logic + MODULO 
+HINT2 --> Array ko Traverse 2 times and Aux. array Updation
+
 
 
 
 CONCEPT ---------------->>>
 
-In an Question, Agar aap there are many places where erase, find krna padega.. Efficiently krne ke liye map use kro, SET nhi ...
+If insertion, Deletion, Searching Operation is COSTLY , use MAP ----------------->>>
 Becz in map, m[x] == 0 is same as ERASE, m[x] > 0 is same as find out ... insertion m[x]++
 
 

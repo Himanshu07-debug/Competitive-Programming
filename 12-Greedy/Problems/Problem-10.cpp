@@ -28,7 +28,7 @@
 // Similar case if nums2 me values bigger hai...
 
 
-// Inorder to do this, humko nums2[i] - nums1[i] se bane array me KADANE lagana padega for sum(nums1) .. So that maximum difference sum mil jaaye
+// Inorder to do this, humko nums2[i] - nums1[i] se bane array me KADANE lagana padega for sum(nums1) .. So that max diff subarray sum mil jaaye
 // For sum(nums2) , humko nums1[i] - nums2[i] se bane array me KADANE lagana padega .. So that maximum difference sum mil jaaye
 
 
@@ -40,12 +40,53 @@ const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 const long long NINF = LLONG_MIN;
 
+long long max_diff_sum(vector<long long> arr1, vector<long long> arr2, int n){
+
+    vector<long long> diff(n);
+
+    for(int i=0;i<n;i++){
+        diff[i] = arr2[i] - arr1[i];
+    }    
+
+    long long sum = diff[0];
+    long long ans = diff[0];
+
+    for(int i=1;i<n;i++){
+
+        sum = max(diff[i],sum + diff[i]);
+
+        ans = max(ans, sum);
+
+    }
+
+    return ans;
+
+}
+
 void solve() {
 
     int n; cin >> n;
 
-    
+    vector<long long> arr(n) , brr(n);
 
+    long long t1 = 0, t2 = 0;
+
+    for(int i=0; i<n; i++){
+        cin >> arr[i];
+        t1 += arr[i];
+    }  
+
+    for(int i=0; i<n; i++){
+        cin >> brr[i];
+        t2 += brr[i];
+    }  
+
+    long long sum1 = max_diff_sum(brr,arr,n);
+
+    long long sum2 = max_diff_sum(arr,brr,n);
+
+    cout << max(t1 + sum1 , t2 + sum2) << endl;
+    
 }
 
 int main() {
