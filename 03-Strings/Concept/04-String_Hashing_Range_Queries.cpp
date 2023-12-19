@@ -63,8 +63,10 @@ int main(){
             hash = hash2[r];
         }
         else{
-            hash = (hash2[r] - (hash2[l-1] * pow1[r-l+1])%MOD)%MOD;  
+            hash = (hash2[r] - (hash2[l-1] * pow1[r-l+1])%MOD)%MOD;   
             // REMEMBER --> Power indx calculation ( r - (l-1) )
+            // Here kyuki bola hai ki l and r ki size pattern ki size rhngi, Aap fixed power se multiply kar sakte ho hash2[l-1] ko
+
             if(hash < 0)  hash += MOD;
         }
 

@@ -21,6 +21,7 @@ vector<int> rabin_karp(string s, string t){
 
     long long p = 1;
 
+    // Highest Power of 31 Possible in any Window
     for(int i=0; i < m-1 ;i++)  p = (p * 31) % MOD;
 
     vector<int> pos;

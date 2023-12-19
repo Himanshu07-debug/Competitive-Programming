@@ -92,4 +92,12 @@ HINT --> Store the indexes of Valid lps in an array. Ab Binary search lagado arr
         checking that the occ. is >= 3 or not ..
 
 
+PROBLEM - 13 -------------------->>
+
+Q.s -> you're given a string. The string should start with 'm' or 'M', followed by 'e' or 'E', then 'o' or 'O', and finally 'w' or 'W'.
+       Ex -> MmeEoOwW -> YES ,,,, Mweo --> NO,  meowA -> NO 
+
+
+
+
 
