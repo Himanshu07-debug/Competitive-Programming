@@ -31,6 +31,36 @@ const long long NINF = LLONG_MIN;
 // Define the Notion ( IMP to do ) -->
 // GOOD SEGMENT --> A segment in the array that satisfies the condition Provided by the Question ...
 
+// If a Subarray is of Length X is GOOD, then all the segments contained in X are also GOOD ...
+
+
+void longestSubarray(vector<int> arr, int n,int k){
+
+    int ans = 0 , sum = 0;
+
+    int i=0, j=0;
+
+    while(j < n){
+
+        sum += arr[j];
+
+        while( i <= j && sum > k){
+            sum -= arr[i];
+            i++;
+        }
+
+        ans = max(ans, j - i + 1);
+
+        j++;
+
+    }
+
+    cout << ans << endl;
+
+}
+
+
+
 
 
 

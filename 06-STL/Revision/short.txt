@@ -88,6 +88,16 @@ HINT2 --> Array ko Traverse 2 times and Aux. array Updation
 
 
 
+PROBLEM - 11 ------------->>
+
+Q.S --> 3 array of n lengths are given. You have to select 3 values (one value from each array) all with different indexes such that 
+        a + b + c is maximized ...
+        3 <= n <= 10^5
+
+HINT ---> All possible subsets of indexes nikal ke ho jaenga .. but Yeah TLE denga ... THEN kaise ??
+HINT2 --> Kya saare indexes ka subset nikalna zaroori hai yeah Question solve krne ke liye, Kuch specific indexes ka nikal ke nhi ho jaenga ??
+
+
 
 CONCEPT ---------------->>>
 
