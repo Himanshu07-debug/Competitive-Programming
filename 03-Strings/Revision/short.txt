@@ -1,7 +1,8 @@
 PROBLEM - 02 ------------------->>
 
 String made up of A and B. Smallest String that we can make by removing AB/BB ...
-HINT -> Is there any common thing in the removal that you can take for removal
+HINT -> Is there any common thing in the removal that you can take for removal...
+HINT2 -> String me Removal kronge kya.. Complex nhi honga ?? Alternative kya hai 
 
 
 
@@ -9,7 +10,8 @@ PROBLEM - 03 ---------------------------->>
 
 0001101010 .. Can you make it SORTED by removing a subset of character only once. You cant take adjacent indexes in Subset selection..
 
-TIP -> Jab Question YES/NO ka aaye, then Aaise Question me You have to think for the case where You can't select the Subset
+TIP -> Jab Question YES/NO ka aaye, then Aaise Question me You have to think for the case where You can't select the Subset..
+HINT --> So yeah answer konse Case pe NO honga..
 
 
 
@@ -18,6 +20,8 @@ PROBLEM - 04 -------------->>
 A string can be make Palindrome only if ->
 Length even -> All character cnt should be even 
 Length odd -> Only one character with odd cnt is allowed
+
+TIP --> Whenever there are Deterministic Type of Thinking for Palindrome in Your mind(YES/NO) , Consider this
 
 
 
@@ -31,6 +35,23 @@ HINT -> Agar Divisor less than 10 hai to unit place digit ko leave krke usase ph
         EX -> 8 KE LIYE ==> 000, 008, 016, 024, 032, ..... , 096, 104 ..... So on 
 
 TASK -> We have to only ensure that ki uss number ke sath wla unit digit 0-9 me se usme lagado..
+
+NOTE : Divisibilty by 3 -> Sum of digits of given number should be divisible by 3
+
+
+
+PROBLEM - 06 ---------------------------->>>
+
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [ ["bat"], ["nat","tan"], ["ate","eat","tea"] ]
+Constraints -> 1 <= strs.length <= 10^4   ,,  0 <= strs[i].length <= 100
+
+HINT ---> 0 <= strs[i].length <= 100  ,,, Array ke strings ki length small hai, Can You do something ....
+
+TIP --> In Anagram, sorting helps, cnt[26] array helps, 2 anagrams are nothing but permutation of each other ( REMEMBER IN CASE OF STRINGS )
+        In case of Numbers, Permutation should have distinct numbers from 1 to n
+
 
 
 
