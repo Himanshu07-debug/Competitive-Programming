@@ -12,9 +12,9 @@ int main(){
 
     // Your code here
 
-    int n, k; cin >> n >> k; 
+    long long n, k; cin >> n >> k; 
 
-    vector<int> arr(n);
+    vector<long long> arr(n);
 
     for(int i=0;i<n;i++) cin >> arr[i];
 
@@ -28,13 +28,13 @@ int main(){
 
         sum += arr[j];
 
-        while( i <= j && sum >= k){
-
-            cnt += (n - j);
+        while(sum >= k){
             
             sum -= arr[i];
             i++;
         }
+        
+        cnt += i;
 
         j++;
 

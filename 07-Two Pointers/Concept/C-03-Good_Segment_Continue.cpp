@@ -51,3 +51,44 @@ void numberOfSubarrays(vector<int> arr, int n,int k){
 
 
 // Decreasing Condition ------------------------->>
+
+// Given an Array of +ve integers, find the Number of Subarrays with sum >= k
+
+// Kyuki saare Subarray enclosing the GOOD one will be the Valid Subarrays, 
+// So hum any j se end hone wale GOOD subarray ke liye kitne valid starting pt [0...i] possible hai, Wo add kar denge Final cnt me becz
+// Samne se utne Subarray Good honge current GOOD ke liye
+
+
+
+void numberOfSegments(vector<int> arr, int n,int k){
+
+    long long cnt = 0;
+
+    int sum = 0;
+
+    int i=0, j=0;
+
+    while(j < n){
+
+        sum += arr[j];
+
+        while(sum >= k){
+            
+            sum -= arr[i];
+            i++;
+        }
+        
+        // Possible Starting pt. added.. Last Valid starting pt. i-1 honga lekin 0-based indexing ke wajah se [0...i-1] -> i subarray possible hai
+        cnt += i;
+
+        j++;
+
+    }  
+
+    cout << cnt << endl;
+
+}
+
+
+
+
