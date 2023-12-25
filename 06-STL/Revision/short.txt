@@ -37,6 +37,16 @@ Agar koi Problem Efficiently solve ho sakta hai SET se, but usme cnt yaa indx ja
 less<int>       ---> SET 
 less_equal<int> ---> MULTISET (in this , PBDS me apko apna erase function implement krna padta, Kaise kronge)
 
+REMEMBER --> Multiset ke liye Another alternative hai ki aap pair<int,int> Datatype use krlo with (value, indx) as pair PBDS me.. 
+            Duplicates elements bhi indx ke wajah se distinct consider honge.. (1,0) , (1,1)
+
+
+TIP -> less_equal<int> knowledge ke liye rkho, otherwise always use pair<int,int> for PBDS with duplicates...
+
+NOTE ==> order_of_key(x) -> return indx of x   ,, find_by_order(indx) -> return iterator at indx
+
+
+
 ==> Question was the Typical Inversion Count Problem -> 
 --> How to solve by PBDS when there are no duplicates and duplicates are there in array ???
 
