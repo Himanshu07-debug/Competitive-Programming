@@ -1,11 +1,3 @@
-// Given an array of n integers ai . Let's say that a segment of this array a[l..r] (1 ≤ l ≤ r ≤ n ) is good if the difference between the 
-// maximum and minimum elements on this segment is at most k . Your task is to find the number of different good segments.
-
-// Input -> k = 3, [2 6 4 3 6 8 9]  
-// Output -> 16
-
-// 1 <= n <= 10^5
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -27,22 +19,24 @@ int main(){
 
     int i=0 , j = 0;
 
-    multiset<int> s;
+    long long sum = 0;
 
     long long res = 0;
 
     while(j < n){
 
-        s.insert(arr[j]);
+        sum += arr[j];
 
-        while( i<=j && (*s.rbegin() - *s.begin()) > k){
+        while( i<=j && sum > k){
             
-            s.erase(s.find(arr[i]));
+            sum -= arr[i];
 
             i++;
         }
 
-        res += (j - i + 1);
+        long long x = (j - i + 1);
+
+        res += (x * (x + 1))/2;
 
         j++;
 
