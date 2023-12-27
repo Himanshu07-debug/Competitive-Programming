@@ -6,7 +6,7 @@
 // Output: [ "AAAAACCCCC" , "CCCCCAAAAA" ] 
 // NOTE -> Yhi 2 repeat hue.. First time 5 'C' hai, and second time 6 'C' hai contiguosly
 
-// Constraint --> 1 <= s.length <= 105
+// Constraint --> 1 <= s.length <= 10^5
 
 
 // LOGIC ----------------------->>>

@@ -69,8 +69,9 @@ CONCEPT --> Agar Single Hashing se Bahut Test cases pass ho gye, lekin Kuch test
 
 
 PROBLEM - 08 --------------------->>>
+
 Q.s --> Find the length of the longest substring without repeating characters.
-HINT --> Variable length Sliding Window
+HINT --> Two Pointers ( Variable length Sliding Window )
 
 
 
@@ -84,22 +85,26 @@ HINT --> We can check out all the Substring .. Constraint is not TIGHT ... Code 
 
 TASK 2 --> 1 <= s.size() <= 5 * 10^5
 HINT --> RABIN KARP occ. ki list de denga.. Occ ke index se how to guess kitne substring me "bear" rhnga ????
-HINT 2 --> No. of Starting Point possible and No. of Ending Pt. possible se kuch kar sakte hai kya ???
+HINT 2 --> No. of Starting Point possible and No. of Ending Pt. possible se kuch kar sakte hai kya ??? ( When occ. is 1 and when it is Multiple)
 
 
 
 PROBLEM - 11 -------------------->>
 
-MAP / SET me string me string insert krte ho to TIME ==> O(s.size() * log(container size)) , container size -> No. of distinct strings inserted
+MAP / SET me string insert krte ho to TIME ==> O(s.size() * log(container size)) , container size -> No. of distinct strings inserted
 WHY THIS HAPPEN ?? After insertion, To store in SORTED WAY, Comparison happen
 
 NOTE -> Agar inserted string worst case me n length ki possible hai to TIME --> O( n * log(k) ) ==> O(nlogn) ...
         So in such case , insert HASH value of String
 
 Q.s -> No. of distinct Substrings , String size can be of 1500 characters max .. 1 <= n <= 1.5 * 10^3
-HINT -> Hum Brute way me No. of Substrings nikal sakte hai but substring SET me insert krnge which can be n size ==> O(n * nlog(n)) -> TLE
+HINT -> Hum Brute way me No. of Substrings nikal sakte hai but substring SET me insert krnge which can be n size ==> O(n^2 * nlog(n)) -> TLE
         
 NOTE --> Insert HASH value in SET .. See Code How to do so by Double Hashing ???
+
+
+NOTE --> This Question was to Understand the CONCEPT about string insertion in map, set and also to Learn Double Hashing...
+        Otherwise Hum 2 pointers use krnge -> Maintaining a cnt variable of bad ones -> O(n)
 
 
 
