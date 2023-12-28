@@ -44,6 +44,34 @@ int main(){
 
     cout << c << endl;
 
+
+    // ******************************* TWO POINTERS ************************************************
+
+    // Observe, This Question can be deduce as => Number of Subarrays with arr[j] - arr[i] > k .. arr[j] > arr[i] + k
+
+    // A Decreasing GOOD segment technique Question
+
+
+    int i = 0, j = 0;
+
+    long long ans = 0;
+
+    while(j < n){
+
+        while( i <= j && arr[j] - arr[i] > k ){
+            i++;
+        }
+
+        ans += i;
+
+        j++;
+
+    }
+
+    cout << ans << endl;
+
+
+
         
 
     return 0;

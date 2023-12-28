@@ -109,3 +109,10 @@ int main() {
 // ******************************** OUR TASK *************************************
 
 // Observe the Question and Find the Predicate function such that the answer is always the LAST TRUE or the FIRST FALSE
+// Simply, a function jo aapke answer ke search space me Ek junction pt. create kar paaye( Continous true's and then Continous False, Vice versa)
+
+
+// ******************************** TIP ****************************************
+
+// Wnenever there is Max-min Type of Question Such as Maximize the Minimum, or Minimize the Maximum ... BS on answer will help surely
+

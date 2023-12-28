@@ -6,6 +6,14 @@ const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
 
+// ************************ THINKING WAY ***************************************
+
+// Just Ask the Question to you if You trying to apply BS ??
+// 1. If mid pe true aaya, to kya mai surely kah sakta hu kya a portion of answer i.e either 0 -> mid - 1 OR mid + 1 -> n bhi True honga ?
+// 2. Similarly Agar mid == false aaya to koi half of answer bhi surely False honga ?
+// If 1 & 2 ans -> YES, Use Binary Search
+
+
 // *********************************************************** Binary Search Variations *************************************************
 
 // Agar hum teeno indexes ke change handle kar rhe hai i.e mid, mid - 1, mid + 1, Then left <= right
