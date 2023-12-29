@@ -94,7 +94,7 @@ PROBLEM - 11 -------------------->>
 MAP / SET me string insert krte ho to TIME ==> O(s.size() * log(container size)) , container size -> No. of distinct strings inserted
 WHY THIS HAPPEN ?? After insertion, To store in SORTED WAY, Comparison happen
 
-NOTE -> Agar inserted string worst case me n length ki possible hai to TIME --> O( n * log(k) ) ==> O(nlogn) ...
+NOTE -> Agar inserted string worst case me n length ki possible hai to TIME of insertion --> O( n * log(k) ) ==> O(nlogn) ..
         So in such case , insert HASH value of String
 
 Q.s -> No. of distinct Substrings , String size can be of 1500 characters max .. 1 <= n <= 1.5 * 10^3

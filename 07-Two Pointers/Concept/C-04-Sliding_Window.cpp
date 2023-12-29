@@ -54,7 +54,7 @@ void maxSumSubarray(vector<int> arr, int n,int k){
 
 }
 
-// REMEMBER -> Time Complexity of Slding Window is do not depend on K becz O(k) + O(n - k)  --> O(n) .. Hum n se upar iteration nhi kar rhe
+// REMEMBER -> Time Complexity of Sliding Window is do not depend on K becz O(k) + O(n - k)  --> O(n) .. Hum n se upar iteration nhi kar rhe
 
 
 // Find the first negative elements in every subarray of size K ... 
