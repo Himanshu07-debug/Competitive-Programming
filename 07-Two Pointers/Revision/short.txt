@@ -3,3 +3,12 @@ PROBLEM - 01 ------------------->>
 Fixed size(Constant) container traversing is O(1) ==> cnt[256] or cnt[26] ...
 
 Permutation of required Characters is same as ANAGRAM CHECKING
+
+
+CONCEPT --------------------->>
+
+Agar Apko set of numbers diye hai and ->
+If You have to make all the elements equal in min. number of Operation and In one Operation, it is allowed to increase or Decrease the elements 
+value by any number x , Making all the elements equal to the Middle element or Median is the Optimal Option
+
+-> Each window of size k ke elements equal banao.. So Median ke equal kr dena 
