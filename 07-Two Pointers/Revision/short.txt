@@ -1,8 +1,53 @@
 PROBLEM - 01 ------------------->>
 
-Fixed size(Constant) container traversing is O(1) ==> cnt[256] or cnt[26] ...
-
 Permutation of required Characters is same as ANAGRAM CHECKING
+
+Q.s -> Count of occurencess of anagram of string txt on the String s.
+
+HINT ->> Sliding window + cnt[256]
+
+Follow-up -> Is String s contain Permutation of string txt as a Substring in it or not ???
+
+
+PROBLEM - 02 ------------------>>
+
+Q.s -> 2 sorted arrays given. The number of pairs (i,j) for which a[i] == b[j] ???
+
+HINT --> How many Condition to check ?? The code approach will be Similar to ???
+
+
+
+PROBLEM - 03 ------------------>>
+
+Q.s -> No. of Segments with difference between max and min element is atmost k..
+
+HINT -> Which Type of Good Segment technique Problem ? What Container You will used ??
+
+
+
+PROBLEM - 04 ------------------->>
+
+Q.s -> A segment is good if its sum <= k. Find the Sum of the lengths of all possible Good Segments.
+
+HINT -> Which Type of Technique Problem ? How to calculate the SUM OF LENGTHS OF POSSIBLE GOOD SEGMENTS for our answer ? LOGIC ???
+
+HINT 2 -> [1,2,3] me 3 se end hone wale 3 subarray possible... Yeah 3 Subarray ke length ka Sum ek pattern follow krta hai , See...
+
+
+
+PROBLEM - 05 ------------------->>
+
+Q.s -> Girl likes 2 boys. Inorder to keep the relationship going on the, Girl has to keep the boys more than k distance far from each other. 
+       How many ways girl can choose the 2 valid Places for 2 boys ? [ arr is sorted ]
+       Ex -> Available Places arr = [1 3 5 8] , k = 4  ==> 2  ( (1,8) & (3,8) only possible ) 
+
+HINT - 1 ==> O(nlogn) approach .. Binary Search ?? 
+HINT - 2 ==> upperBound can be used ...
+
+HINT - 3 ==> O(n) solution --> Two Pointers ???
+
+HINT - 4 ==> Observe, This Question can be deduce as => Number of Subarrays with arr[j] - arr[i] > k .. arr[j] > arr[i] + k . Technique ??
+
 
 
 CONCEPT --------------------->>
