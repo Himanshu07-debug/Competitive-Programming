@@ -116,3 +116,8 @@ int main() {
 
 // Wnenever there is Max-min Type of Question Such as Maximize the Minimum, or Minimize the Maximum ... BS on answer will help surely
 
+// Question me Jo nikalne ko bola hai, Search Space ussi ki banti hai mostly i.e minimum time -> time ka Search Sapce , 
+//                                                                               min. dist -> distance ka Search Sapce...
+
+
+// For this -> Refer CP wali DSA notes book
