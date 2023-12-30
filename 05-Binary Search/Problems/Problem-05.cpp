@@ -81,7 +81,10 @@ int main(){
     }
 
     cout << l << endl;
+
+    // NOTE -> Yha pe l ke jagah r nhi kar sakte , l hamara true answer store kar rha hai (Highly Precised)
     
+    // No l = mid - 1 or r = mid + 1 becz ans can be lied in between l and r when r = l + 1 .. i.e (l = 1, r = 2 -> ans -> 1.01, 1.10, 1.001, etc)
 
     return 0;
 }
