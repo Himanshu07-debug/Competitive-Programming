@@ -1,24 +1,28 @@
-// A factory has n machines which can be used to make products. Your goal is to make a total of t products.
-// For each machine, you know the number of seconds it needs to make a single product. The machines can work simultaneously, and you can 
-// freely decide their schedule.
-// What is the shortest time needed to make t products?
+// There are n ropes, you need to cut k pieces of the same length from them. Find the maximum length of pieces you can get.
 
-// Constraints -> 1 <= n <= 2 * 10^5  ,, 1 <= t <= 10^9  ,,  1 <= arr[i] <= 10^9
+// n = 4 , k = 11 , [ 802, 743, 457, 539 ]
+// Answer -> 200.5
 
-// n = 3, t = 7,  [3,2,5]   ==> 8  ( 8 sec me 3 sec wla 2, 2 sec wla 4, 5 sec wla 1 products ===> Total 7 Products )
+// CONSTRAINT --->
+// 1 ≤ n,k ≤ 10000  ,  1 <= arr[i] <= 10^7
+// The answer will be considered correct if the relative or absolute error does not exceed 10^−6
 
+// The above line mean -> if the difference between your answer and the correct answer is < (10 ^ -6), it will be considered as correct
 
-// LOGIC -------------------->>
+// LOGIC ---------------------------->>
 
-// Simultaneously working is allowed  ---> Similar to P - Parathas Problem
+// We have to maximize the equal length of K pieces.
 
-// Search Space -> Will be of Time ( desired output is time )
+// We can do it by BS very easily, but here double answers are expected i.e If 200 is the answer, check for 200.5 , .... l + precision < r
 
-// We have to Minimize the time required to make the t Products..
-// Search Space --> F F F F F F  T T T T T T T   --> First wla true nikalana hai
+// Let say our answer range is 1e8 integers and each integer have a precision of 1e-6 i.e there are 1e6 decimal places for each integer.
+// Therefore, total no. of places to search -> 1e8 * 1e6...
+// Therefore, Using Binary Search, We have to do atleast log2(1e14) number of iterations.. 
 
-// Smaller Range -> 0 sec, Bigger -> Cant guess ( 1e18 )
+// log2(1e18) --> 63.. 
+// So what we can do, we will run 100 iterations, so that we can get highly precised value and also we will be sure with our answer..
 
+// TIME --> O( 100 * n )  [ 100 times iteration and O(n) for predicate function ]
 
 
 #include<bits/stdc++.h>
@@ -36,21 +40,17 @@ const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 const long long NINF = LLONG_MIN;
 
-bool predicate(vector<long long> &arr, long long n, long long t, long long m){
+bool fun(vector<long long> &arr, long long k, long long n, long double m){
 
-    long long p = 0;
+    long long c = 0;
 
     for(int i=0;i<n;i++){
 
-        p += m/arr[i];
-
-        if(p >= t){
-            return true;
-        }
+        c += arr[i]/m;
 
     }
 
-    return false;
+    return (c >= k);
 
 }
 
@@ -60,26 +60,27 @@ int main(){
     ios::sync_with_stdio(false); cin.tie(NULL);
 
     // Your code here
-    long long n, t; cin >> n >> t;
+
+    long long n , k; cin>> n >> k;
 
     vector<long long> arr(n);
 
     for(int i=0;i<n;i++) cin >> arr[i];
 
-    sort(arr.begin(),arr.end());
+    cout << fixed << setprecision(6) << endl;
 
-    long long l = 0, r = 1e18;
+    long double l = 0, r = 1e8, ans = 0; 
 
-    while( r - l > 1){
+    for(int i=1;i<=100;i++){
 
-        long long m = (l+ r)/2;
+        long double m = (l + r)/2;
 
-        if(predicate(arr,n,t,m)) r = m;
-        else l = m;
+        if(fun(arr,k,n,m)) l = m;
+        else r = m;
 
     }
 
-    cout << r << endl;
+    cout << l << endl;
     
 
     return 0;
