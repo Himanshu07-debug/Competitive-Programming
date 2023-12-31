@@ -23,6 +23,8 @@ Q.s -> No. of Segments with difference between max and min element is atmost k..
 
 HINT -> Which Type of Good Segment technique Problem ? What Container You will used ??
 
+// MULTISET
+
 
 
 PROBLEM - 04 ------------------->>
@@ -47,6 +49,53 @@ HINT - 2 ==> upperBound can be used ...
 HINT - 3 ==> O(n) solution --> Two Pointers ???
 
 HINT - 4 ==> Observe, This Question can be deduce as => Number of Subarrays with arr[j] - arr[i] > k .. arr[j] > arr[i] + k . Technique ??
+
+
+
+PROBLEM - 06 ------------------->>
+
+Q.s -> There are M towers and N cities in the state. They are Located in a Straight line. There x-axis pts. i.e location are given in two arrays.
+       Har ek tower ka ek specific radius hai.. Each Tower at position x has its network only in the range of x - r to x + r . Your Task is to 
+       find the minimum value of r so that each tower will have a each city will have a network from atleast one Tower.
+
+       EX -> n = 3 , m = 2 , city = [-2, 2, 4] , tower = [-3, 0]  ..... Ans => 4
+
+HINT - 1 ==> O(nlogn) approach .. Binary Search ?? 
+HINT - 2 ==> upperBound can be used ... 
+HINT - 3 ==> Did you have to handle the extreme indexes ?? How to get rid of this extra Checking of extreme pts in such cases. 
+              Can Some Container Other than vectors can be used for tower to do above op. more Efficiently..
+
+
+HINT - 4 ==> Can You come up with a O(n) Solution --> Two Pointers ???
+HINT - 5 ==> Kisi bhi city i ke liye uske j and j + 1 tower ke location ki only 3 possible cases hai .. 3 cases ??
+HINT - 6 ==> For any City i, j will be a valid tower if dist(i,j) < dist(i, j+1) , Otherwise Invalid Tower hai, aage ke tower check kro
+
+
+
+PROBLEM - 08 ---------------------->>
+
+Q.s -> You are given a huge integer a consisting of n digits. It may contain leading zeros. You can swap two digits on adjacent positions if they
+       are of diff. parity. You can Perform any number of Operation. Find the minimum integer you can obtain(can have leading zeroes)
+
+       Eg -> 0709 => 0079 , 1337 => 1337 , 246432 => 234642
+
+
+HINT - 1 --> Same parity wle change kar sakte hai kya unka order jo order me wo aaye hai input me ??
+HINT - 2 --> Subarray of any length with same parity ke andar diff parity wla koi bhi pe place kar sakte hai .... Give Example ..
+
+HINT - 3 --> Based on Above 2 observation, aap kaise implement kronge solution.. 
+HINT - 4 --> Two arrays of Even and Odd.. And then Merge Sort..
+
+
+PROBLEM - 10 ------------------------>>
+
+Q.s -> Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
+       Ex -> s1 = "ab", s2 = "eidbaooo"  -> True
+
+HINT -> Permutation is same as Anagram. Similar to Problem - 01
+
+
+
 
 
 

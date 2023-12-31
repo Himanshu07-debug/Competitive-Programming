@@ -1,4 +1,4 @@
-// You are given a huge integer a consisting of n digits (n is between 1 and 3⋅105 , inclusive). It may contain leading zeros. You can swap 
+// You are given a huge integer a consisting of n digits (n is between 1 and 3 * 10^5 , inclusive). It may contain leading zeros. You can swap 
 // two digits on adjacent (neighboring) positions if the swapping digits are of different parity (that is, they have different remainders 
 // when divided by 2 ).You can perform any number (possibly, zero) of such operations. 
 // Find the minimum integer you can obtain. 

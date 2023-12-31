@@ -52,6 +52,64 @@
 // --> Iss Question me agar ship ka move <= x hua to It can be considered that ship ka moves wind ke sath kisi dinn hue x days me
 // No. of Ships move = M, so x me se koi bhi M dinn ship ne move kiya honga alongwith wind..
 
+#include<bits/stdc++.h>
+
+#include <ext/pb_ds/assoc_container.hpp> 
+#include <ext/pb_ds/tree_policy.hpp> 
+
+using namespace std;
+using namespace __gnu_pbds; 
+
+typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update> PBDS;
+
+#define endl '\n'
+const long long MOD = 1e9 + 7;
+const long long INF = LLONG_MAX >> 1; 
+const long long NINF = LLONG_MIN;
+
+long long x , y, x2, y2, n;
+string s;
+
+long long cntU, cntD, cntR, cntL;
+
+bool check(long long val){
+
+    // weather moves peroidic, so we had concatenated many string s in one single String
+    long long u = (val/n)*1ll*cntU;
+    long long d = (val/n)*1ll*cntD;
+    long long l = (val/n)*1ll*cntL;
+    long long r = (val/n)*1ll*cntR;
+
+    // In the last segment, remaining days , wind contri
+    for(int i=0;i<val%n;i++){
+
+        u += (s[i] == 'U');
+        
+
+    }
+
+}
+
+
+int main(){
+
+    ios::sync_with_stdio(false); cin.tie(NULL);
+
+    // Your code here
+    cin >> x >> y >> x2 >> y2;
+
+    cin >> n;
+    cin >> s;
+
+
+    
+    
+
+    return 0;
+}
+
+
+
 
 
 
