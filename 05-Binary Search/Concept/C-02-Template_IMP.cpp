@@ -114,10 +114,16 @@ int main() {
 
 // ******************************** TIP ****************************************
 
-// Wnenever there is Max-min Type of Question Such as Maximize the Minimum, or Minimize the Maximum ... BS on answer will help surely
+// 1. Wnenever there is Max-min Type of Question Such as Maximize the Minimum, or Minimize the Maximum ... BS on answer will help surely
 
-// Question me Jo nikalne ko bola hai, Search Space ussi ki banti hai mostly i.e minimum time -> time ka Search Sapce , 
-//                                                                               min. dist -> distance ka Search Sapce...
+// 2. Question me Jo nikalne ko bola hai, Search Space ussi ki banti hai mostly i.e minimum time -> time ka Search Sapce , 
+//                                                                                  min. dist -> distance ka Search Sapce...
 
+// 3. Always Ask Yourself the Question, If x is possible , Can x - 1 is possible ? OR if x is possible, can x + 1 is possible ?
+
+// 4. In BS Problems, Don't think too much.. Agar Problem max/min value pucha hai jo koi condition ko satisfy kar rha ho.. Use BS...
+//    Implementation -> (a) Search Space where your answer can lie  
+//                      (b) In the Predicate, write the logic for the condition specified in Problem, if condition satisfy, return true, or false
+//                      (c) Decide on true/false , which half of the search space can be neglected .. (Pt. 3)
 
 // For this -> Refer CP wali DSA notes book
