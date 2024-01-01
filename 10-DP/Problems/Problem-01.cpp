@@ -1,7 +1,7 @@
 // Your task is to count the number of ways to construct sum n by throwing a dice one or more times. 
 // Each throw produces an outcome between 1 and  6. Print the number of ways modulo 10^9+7.
 
-// For example, if n=3, there are 4 ways:
+// For example, if n = 3, there are 4 ways:
 // 1+1+1 ,,  1+2  ,, 2+1  ,, 3
 
 
@@ -13,7 +13,8 @@
 // STEP - 1 ==> Thinking About Subproblem --------------------------------------------> 
 
 // Suppose n = 10, n = 6 , kaunsa easy honga solve karna, n = 6, n = 2 will be more easier
-// Therefore, Solving Subproblems will be easy
+// Therefore, Solving Subproblems will be easy ..
+// Also Think About the Overlapping Subproblems.
 
 
 // STEP - 2 ==> Breaking into SubProblems --------------------------------------------> 
@@ -130,6 +131,14 @@ void solve2(){
 
 // Approach 1 -> dp[0] se dp[n]   ===> TABULATION (Bottom up)
 // Approach 2 -> dp[n] se dp[0]   ===> MEMOIZATION (Top - down)
+
+
+// ******************************** TIP *****************************************
+
+// How to decide the Default value for the dp array ??
+// Suppose n*m ki grid hai and apko (0,0) -> (n-1, m-1) jna hai... arr[i] ranges from -100 to 100
+// So for any path, length will be m + n and Therefore min value can be -100 * (m + n) and max value can be 100 * (m + n)
+// You can take max value ka +1 or min_val - 1 as default value
 
 int main() {
 

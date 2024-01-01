@@ -10,9 +10,9 @@
    In Fibonacci, the Relation was Given, but You have to Figure out this Relation in other PROBLEM..
 
 
-4. Where Does the above Relation( 3rd point ) will not work ( BASE CASE )
+4. Where Does the above Relation( 3rd point ) will not work ( BASE CASE ) or Smallest Subproblem That I can solve
 
-5. What is the Biggest PROBLEM to solve ( FINAL SubProblem ) 
+5. What is the Biggest PROBLEM to solve ( Final SubProblem ) 
 
 
 
@@ -21,9 +21,14 @@
 
 #### TIME COMPLEXITY ------------------->>
 
-1. If all States have same time   --> no. of States * avg transition time per State  .. ( O(n)  --> O(n) --> O(n) ---> .... )
+1. If all States have same time   --> no. of States * avg transition time per State  .. ( O(n)  --> O(n) --> O(n) --> .... )
 
 2. If all States have varying time ---> Sum of transition time for each state i from 1 to n .. (O(n) --> O(n/2) --> O(n/3) --> .....)
+
+
+### SPACE COMPLEXITY ------------------->>
+
+No. of states * Space Complexity of each state
 
 
 

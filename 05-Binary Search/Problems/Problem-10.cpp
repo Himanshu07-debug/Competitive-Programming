@@ -84,9 +84,20 @@ bool check(long long val){
     for(int i=0;i<val%n;i++){
 
         u += (s[i] == 'U');
-        
+        d += (s[i] == 'D');
+        l += (s[i] == 'L');
+        r += (s[i] == 'R');
 
     }
+
+    // Wind Contri
+    long long x_dash = x + (r - l);
+    long long y_dash = y + (u - d);
+
+    // Ship moves
+    long long tmp = ((long long)(abs(x_dash - x2) + abs(y_dash - y2)));
+
+    return (tmp <= val);
 
 }
 
@@ -101,8 +112,28 @@ int main(){
     cin >> n;
     cin >> s;
 
+    cntU = count(s.begin(),s.end(),'U');
+    cntR = count(s.begin(),s.end(),'R');
+    cntL = count(s.begin(),s.end(),'L');
+    cntD = count(s.begin(),s.end(),'D');
 
+    long long l = 0, r = 1e15;
+
+    long long ans = -1;
+
+    while(l <= r){
+
+        long long m = (l + r)/2;
+
+        if(check(m)){
+            ans = m;
+            r = m - 1;
+        }
+        else l = m + 1;
+
+    }
     
+    cout << ans << endl;
     
 
     return 0;

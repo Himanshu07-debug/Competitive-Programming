@@ -31,4 +31,80 @@
 // So here, our Graph is not Monotonic, we will use Ternary search..  This are called as Unimodal graph (single local min/max)
 
 
+#include<bits/stdc++.h>
+
+#include <ext/pb_ds/assoc_container.hpp> 
+#include <ext/pb_ds/tree_policy.hpp> 
+
+using namespace std;
+using namespace __gnu_pbds; 
+
+typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update> PBDS;
+
+#define endl '\n'
+const long long MOD = 1e9 + 7;
+const long long INF = LLONG_MAX >> 1; 
+const long long NINF = LLONG_MIN;
+
+long long n, k;
+vector<long double> s, d;
+
+long double check(long double t){
+
+    long double maxD = -1e18;
+    long double minD = 1e18;
+
+    for(int i=0;i<n;i++){
+
+        maxD = max(maxD, s[i]*t + d[i]);
+        minD = min(minD, s[i]*t + d[i]);
+
+    }
+
+    return (maxD - minD);
+
+}
+
+
+int main(){
+
+    ios::sync_with_stdio(false); cin.tie(NULL);
+
+    // Your code here
+    cin >> n >> k;
+
+    s.resize(n);
+    d.resize(n);
+
+    for(int i=0;i<n;i++){
+        cin >> s[i] >> d[i];
+    }
+
+    long double ans = 1e18;
+
+    long double l = 0, h = k;
+
+    for(int i=0;i<100;i++){
+
+        long double m1 = l + (h-l)/3;
+        long double m2 = h - (h - l)/3;
+
+        if(check(m1) < check(m2)){
+            h = m2;
+            ans = check(m2);
+        }
+        else{
+            l = m1;
+            ans = check(m1);
+        }
+
+    }
+
+    cout << fixed << setprecision(6);
+    cout << ans << endl;
+    
+
+    return 0;
+}
+
 
