@@ -1,3 +1,26 @@
+// Consider a money system consisting of n coins. Each coin has a positive integer value. Your task is to calculate the number of distinct 
+// ways you can produce a money sum x using the available coins.
+
+// n = 3, x = 9
+// arr = [2 3 5]
+// ==> 8 ways
+
+
+// Recursion Tree me har ek valid path distinct hi honga in this case ...
+
+// State -> 
+// dp[k] => No. of ways of getting the sum k
+
+// Transition -->
+// dp[k] = sum of dp[ k - c[i]] , where 0 <= i <= n-1
+
+// Smallest SubProblem That cant be further break-down --->
+// dp[0] = 1
+
+// Final Subproblem -->
+// dp[x]
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -5,59 +28,38 @@ using namespace std;
 const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
-
-// RECURSIVE ( MEMOIZATION ) --->
-
-int fun(vector<int> &arr,int n, vector<int> &dp, int X){
-
-    if(X < 0)  return 0;
-
-    if(X == 0) return 1;
-
-    if(dp[X] != 0)  return dp[X];
-
-    for(int i=0;i<n;i++){
-        dp[X] = (dp[X] + fun(arr,n,dp,X - arr[i]))%MOD;
-    }
-
-    return dp[X];
-
-}
-
-
-
 int main(){
 
     ios::sync_with_stdio(false); cin.tie(NULL);
 
     // Your code here
-    int n,x;
+    long long n, x;
     cin >> n >> x;
 
-    vector<int> arr(n);
-    for(int i=0;i<n;i++)  cin >> arr[i];
+    vector<long long> arr(n);
 
-    vector<int> dp(x + 1, 0);
-    // dp[i] -> minimum coins to generate a sum of i
+    for(int i=0;i<n;i++) cin >> arr[i];
 
-    // Base case -> 
+    vector<long long> dp(x+1,0);
+
     dp[0] = 1;
 
-    for(int i = 1;i <= x; i++){
+    for(int i=1;i<=x;i++){
+
         for(int j=0;j<n;j++){
-            if(i - arr[j] >=0){
-                dp[i] = (dp[i] + dp[i - arr[j]])%MOD;
+
+            if(i - arr[j] >= 0){
+
+                dp[i] = (dp[i] + dp[i-arr[j]])%MOD;
+
             }
+
         }
+
     }
 
-    
-    // // Final SubProblem
     cout << dp[x] << endl;
-
-    int ans = fun(arr,n, dp, x);
-
-    cout << ans << endl;
+    
 
 
     return 0;
