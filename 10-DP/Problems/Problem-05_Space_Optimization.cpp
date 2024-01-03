@@ -22,7 +22,7 @@ const long long NINF = LLONG_MIN;
 
 // To Space Optmized any DP problem, ask this 2 question to yourself -->
 // 1. What other States Does our Current state depend on ?
-// 2. Do we need the answers of every single states to calculate the answer for Your current state or You need some answers of some previous 
+// 2. Do we need the answers of every single states to calculate the answer for Your current state or You need answers of some previous 
 //    states ?
 
 
