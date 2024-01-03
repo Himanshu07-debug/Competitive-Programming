@@ -14,12 +14,13 @@
 
 // Suppose n = 10, n = 6 , kaunsa easy honga solve karna, n = 6, n = 2 will be more easier
 // Therefore, Solving Subproblems will be easy ..
-// Also Think About the Overlapping Subproblems.
 
 
 // STEP - 2 ==> Breaking into SubProblems --------------------------------------------> 
 
 // 6 possibilities of dice .. So N can be divide as N - 1 , N - 2, ......., N - 6 in the RECURSION TREE
+
+// Also Think About the Overlapping Subproblems.
 
 
 // STEP - 3 ==> Thinking About Relation And Building the DP solution --------------------------------------------> 

@@ -116,8 +116,17 @@ int main(){
     // Change the dp state --> 
     // dp[i][k] --> no. of ways to get a sum of k such that all coins from c[1] to c[i] are pickable and all coins after c[i] are non-pickable
 
+    // Eg -> X = 9, {2,3,5}
+    // Root --> X - 5, X ===> 4 (choosen coin 5) , 9 (not choosen coin 5)
+    // First child --> 4 - 5, 4 ===> -1 (choosen coin 5 -> INVALID) , 4 (not choosen coin 5)
+    // Second Child --> 9 - 3, 9 ==> 6 (choosen coin 3) , 9 (not choosen coin 3)  
+
+    // Make the Recursion Tree -> 
+    // In one child, nth coin is choosen and In other child, nth coin is not choosen
+
     // (i,k) -> (i, k - c[i]) {pick}  AND  (i-1,k) {not picked}
-    // At every indx, we have to only decide either to include the arr[i] in the previous sum or not include
+    // At every indx, we have to only decide either to include the arr[i] in the previous sum or not include..
+
 
     // Transition -->
     // dp[i][k] --> dp[i - 1][k]  +  dp[i][k - c[i]]
@@ -147,6 +156,9 @@ int main(){
     }
 
     cout << dp[n][x] << endl;
+
+    // Remember , in Recursive Appraoch(Memoization) , as state is dependant on both i, k , Therefore Take both n, x are parameters and do not use
+    //            for loop inside... You can use ... But not a Good Approach
 
 
     return 0;

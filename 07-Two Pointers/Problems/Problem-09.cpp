@@ -11,17 +11,17 @@
 
 // Agar b length ka Subarray hai, The length of Subarray can be -> b - a, b - (a-1) , b - (a-2) , .... b - 0
 
+// Simply, for a Subarray ending with indx j, the no. of starting pts. possible is j - (b-a) , j - (b-(a-1)) , j - 0
 // We have to take the maximum out of this all Subarray for the Subarray ending with indx j .. (j >= b)
-
-// Ex -> [1,2,3,4,5] , a = 3, b = 5
-// Solving Range Queries -> 
-// [1,2,3,4,5] - [1,2] , [1,2,3,4,5] - [1] , [1,2,3,4,5] - 0
-// In all this Possibility, 0 se subtract krna will be optimal...
-
-// Maximum ke liye j indx pe end hone wale possible Subarray me se Minimum Sum wla subtract krna padega
+// This is same as Solving Queries for each indx j....
 
 
-// We are trying to maximize prefix[j] - prefix[i] . Since i is gauranted to be within the window [j-b, j] we can construct a 
+// Maximum sum ke liye j indx pe end hone wale possible Subarray me se Minimum sum wla wla discarded part subtract krna padega...
+// Iske liye saare possible st. pts i ke prefix[i] minus krke dekna padega prefix[j] se.. This can give TLE becz 1 <= a <= b <= n
+// Use Multiset.. This will give you the Minimum Sum Discarded prefix at just O(logn) 
+
+
+// We are trying to maximize prefix[j] - prefix[i] . Since i is gauranted to be within the window [j-b, j - (b-a)] we can construct a 
 // sliding window of size b, and compute max(prefix[j] - prefix[i])  where a <= i <= b
 
 
@@ -64,4 +64,5 @@ int main() {
 	}
 
 	cout << res << "\n";
+
 }

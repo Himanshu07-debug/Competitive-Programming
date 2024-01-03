@@ -87,12 +87,26 @@ HINT - 3 --> Based on Above 2 observation, aap kaise implement kronge solution..
 HINT - 4 --> Two arrays of Even and Odd.. And then Merge Sort..
 
 
+PROBLEM - 09 ------------------------>>>
+
+Q.s -> Given an array of n integers, your task is to find the maximum sum of values in a contiguous subarray with length between a and b.
+       Constraint => 1 <= n <= 10^5  ,,  1 <= a <= b <= n  , -10^9 <= arr[i] <= 10^9
+
+HINT 1 --> For each subarray ending with j, what are the possible st. pts. of subarray..
+HINT 2 --> How we will get the max. sum subarray sum from all this possible subarray for subarray endintg with j
+HINT 3 --> 1 <= a <= b <= n --> Traversing through all starting pts. can give TLE... How to optimize ??
+HINT 4 --> Window size will be ?? and use of Prefix sum... 
+
+
 PROBLEM - 10 ------------------------>>
 
 Q.s -> Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
        Ex -> s1 = "ab", s2 = "eidbaooo"  -> True
 
 HINT -> Permutation is same as Anagram. Similar to Problem - 01
+
+
+
 
 
 
