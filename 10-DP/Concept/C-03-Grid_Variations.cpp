@@ -100,7 +100,9 @@
 // dp1[x][y] = min sum path from (0,0) to (i,j)
 // dp2[x][y] = min sum path from (i,j) to (n-1,m-1)
 
-// Final answer --> dp1[x][y] + dp2[x][y] - arr[x][y]
+// Final answer --> dp1[x][y] + dp2[x][y] - arr[x][y] .. (arr[x][y] is calculated in both path.. So it will be included twice here)
+
+// NOTE --> Here we are Requiring 2 different notion dp states 
 
 // If number of ways is asked here --->
 // dp1[x][y] = No. of path from (0,0) to (i,j)
