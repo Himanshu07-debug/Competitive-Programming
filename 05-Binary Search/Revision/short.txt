@@ -1,3 +1,7 @@
+NOTE --> 
+
+Must see the C-02 --> Binary Search Tip notes.. then come here ....
+
 PROBLEM - 01 -------------------------->> 
 
 In Interactive Problem... Binary Search is always used ...
@@ -14,7 +18,56 @@ In Binary Search Logic, we can use MAP, SET, LOWER-BOUND, UPPER-BOUND as they al
 Example -> BS code se element search krne se aacha SET ka find() se krlo
 
 Q.s -> Find the Number of pairs in array such that arr[i] - arr[j] == k ... (i < j or j < i)
-HINT ==> (i < j or j < i) aaisa diya rhe to no need to worry arr[i] > arr[j] .. jo bada rha wo i ho jayega,
-        only search arr[i] ke liye (arr[i] + k) present hai kya array ... For Searching, use MAP or SET .. 
-        But SET nhi kar sakte use, WHY ??? 
+
+HINT1 --> (i < j or j < i) --> This mean array elements ka koi bhi arrangement kar sakte ho.. Answer affect nhi honga.. I mean Sorting...
+HINT2 --> LowerBound can be used.. But yha inefficent rhnga kyu ???
+HINT3 --> Becz arr[i] + k ke equal nhi hua element to... Set can also be not efficient , why ??? ( k == 0 )
+HINT4 --> MAP is best to use
+
+
+PROBLEM - 03 ------------------------>>
+
+Q.s -> Given an Array of Worloads, split it among K workers, Such that the maximum work that any Worker has to do is minimized..
+        Eg -> K = 3 , A = [10,5,20,50,25,45,15]  ===> 75
+        Possible allocation of work -> 
+        [10,5,20] [50,25] [45,15] -> max(35, 75, 60) => 75
+        [10,5] [20,50,25] [45,15] -> max(15, 95, 60) => 95
+
+HINT --> Aapke pass K buckets hai, unko allocate krna hai elements in such that the maximum sum of a bucket is min. , kaise kronge ?
+HINT2 --> Typical DSA BOOK ALLOCATION Problem .. Immediate click hona chahiye ...
+
+
+PROBLEM - 04 ------------------------>>
+
+Q.s -> A factory has n machines which can be used to make products. Your goal is to make a total of t products.
+        For each machine, you know the number of seconds it needs to make a single product. The machines can work simultaneously ..
+        What is the shortest time needed to make t products?
+        Eg -> n = 3, t = 7,  [3,2,5]   ==> 8  ( 8 sec me 3 sec wla 2, 2 sec wla 4, 5 sec wla 1 products ===> Total 7 Products )
+
+HINT 1 -> BS ? Search Space kispe ? Movement kaisa ? Search Space ka Graph kaise banega ??
+HINT 2 -> simultaneously Working allowed hai, Predicate function ??
+HINT 3 -> Same like P parathas Problem
+
+
+PROBLEM - 05 ----------------------->>
+
+Q.s -> There are n ropes, you need to cut k pieces of the same length from them. Find the maximum length of pieces you can get.
+        Eg -> n = 4 , k = 11 , [ 802, 743, 457, 539 ]
+        Answer -> 200.5
+        NOTE --> The answer will be considered correct if the relative or absolute error does not exceed 10^−6
+
+HINT 1 -> What Does the Note line mean ?? Yha pe Precision me answer chahiye .. How to do apply BS when answers in Double Datatype are accepted ?
+HINT 2 -> In this Question, Apne Search Space ki length kitni ho gyi hai ?? r value in our answer Search Space ???
+HINT 3 -> Each integer have a precision of 1e-6 i.e there are 1e6 decimal places for each integer. Now Total Search Space ??
+HINT 4 -> Min. no. of times our BS should iterate to get the Answer ???? log2(1e8 * 1e6 ) ...
+HINT 5 -> log(1e18) -> 63 .  So you will iterate for 100 times to get Highly precised value .. setprecision on kar dena with fixed..
+HINT 6 -> l = m + 1 , r  = m-1 kyu nhi ... 
+
+
+
+
+
+
+
+
 

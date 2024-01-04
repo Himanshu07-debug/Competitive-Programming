@@ -24,6 +24,8 @@
 
 // TIME --> O( 100 * n )  [ 100 times iteration and O(n) for predicate function ]
 
+// r values in our case -> 1e3 * 1e7 / 1e3  --> (n * arr[i]) / k
+
 
 #include<bits/stdc++.h>
 

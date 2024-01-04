@@ -1,4 +1,3 @@
-
 // Apne ko order se lena dena nhi as i < j & j < i --> Both pairs are VALID
 // For Each element, we have to find that either arr[i] + k exists or not...
 

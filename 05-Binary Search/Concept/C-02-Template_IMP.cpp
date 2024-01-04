@@ -126,4 +126,11 @@ int main() {
 //                      (b) In the Predicate, write the logic for the condition specified in Problem, if condition satisfy, return true, or false
 //                      (c) Decide on true/false , which half of the search space can be neglected .. (Pt. 3)
 
+
+// 5. Our job is to only write the proper Predicate function so that any value given to func can be determined that it satisfies the condition or 
+//    not.. And thoda sa movement dekhlo true hone pe kha jaana hai... Do not think much that BS min/max satisfying pt. ka answer kaise denga..
+//    Aap sirf Predicate likh do and BS pe leave krdo all Job... This is becz ->
+//    BS helps in finding the maximum/minimum satisfying value in your answer search space where the condition given in particular Q. satisfies..
+//    Threshold pt. / Junction pt.   
+
 // For this -> Refer CP wali DSA notes book

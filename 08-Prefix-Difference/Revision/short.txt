@@ -1,3 +1,9 @@
+PROBLEM - 01 ----------->>
+
+Several Temparature ranges are given( li , ri) of recipies. A Temparature is admissible if atleast k recipies recommend it. Further given Q 
+queries of temp. range, find out how many Temparature are admissible within the temp. range..
+
+
 PROBLEM - 02 ---------->>
 
 Q.s => Each arr[i][j] is the sum of all elements mat[r][c] for: i - k <= r <= i + k, j - k <= c <= j + k . (k is given)
@@ -32,6 +38,7 @@ Q.s -> Rearrange the Array elements to maximize the total sum of the K queries. 
 --> Maximum wale elements array ka most occured index pe rhna chahiye 
 
 HINT --> Difference Array can be used
+HINT2 --> Inorder to make the Rearrange array, You can use the array of pairs with {occ, indx}
 
 
 
