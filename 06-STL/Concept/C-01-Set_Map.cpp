@@ -68,6 +68,7 @@ int main(){
 
 
     // NOTE --> In MULTI-SET, s.find(x) points to the first occ of x if x occured multiple times in multiset
+    // NOTE --> Multimap can have multiple keys with same values...
     
 
     return 0;

@@ -3,6 +3,8 @@
 
 
 
+
+
 // One thing is very Clear.. You can't go with GREEDY .. Sample Testcase Proves this thing .... 
 // We have to try out all Possibilities of elements picking .. 
 
@@ -51,6 +53,7 @@
 
 // FOLLOW-UP Question --> Player 2 ka max. score ---> sum[0][n-1] - dp[0][n-1] ... ( POWER OF STATE DEFINATION )
 
+
 #include<bits/stdc++.h>
 
 #include <ext/pb_ds/assoc_container.hpp> 
@@ -65,6 +68,9 @@ typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_upda
 const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 const long long NINF = LLONG_MIN;
+
+
+
 
 
 int main(){
