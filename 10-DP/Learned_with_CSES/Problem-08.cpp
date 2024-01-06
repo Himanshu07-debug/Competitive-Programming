@@ -46,9 +46,46 @@ const long long INF = LLONG_MAX >> 1;
 const long long NINF = LLONG_MIN;
 
 
+// Memoization -->
+
+int f(int i, int x, vector<int>&val, vector<int> &wt, vector<vector<int>> &dp){
+
+    if(i < 0) return 0;
+
+    if(dp[i][x] != -1) return dp[i][x];
+
+    int pick = 0;
+    if(x >= wt[i]) pick = val[i] + f(i-1, x-wt[i], val, wt, dp);
+
+    int skip = f(i-1, x, val, wt, dp);
+
+    return dp[i][x] = max(pick, skip);
+
+}
+
+void solve(){
+
+    int n, x;  cin >> n >> x;
+
+    vector<int> val(n) , wt(n);
+
+    for(int i=0;i<n;i++) cin >> wt[i];
+
+    for(int i=0;i<n;i++) cin >> val[i];
+
+    vector<vector<int>> dp(n, vector<int> (x + 1, -1));
+
+    cout << f(n-1, x, val, wt, dp) << endl;
+
+}
+
+
 int main(){
 
     ios::sync_with_stdio(false); cin.tie(NULL);
+
+    // Memoization -->
+    solve();
 
     // Your code here
     int n, x;  cin >> n >> x;

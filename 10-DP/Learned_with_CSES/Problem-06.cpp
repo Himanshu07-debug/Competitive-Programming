@@ -26,7 +26,7 @@
 
 // Smallest Subproblem -> dp[0] = 0
 
-// Final Subproblem -> dp[x]
+// Final Subproblem -> dp[n]
 
 // Default value -> 1e9
 
