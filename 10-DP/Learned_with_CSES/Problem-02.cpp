@@ -93,9 +93,6 @@ int main(){
     // Final SubProblem
     cout << (dp[x] < 1e9 ? dp[x] : -1 ) << endl;
 
-    // Once You click the Iterative, It is very Easy to convert the Iterative -> Recursive
-    // In Recursive, You have to handle Outer Loop i.e states recursively
-
     // NOTE -> Iterative Code ko comment kar dena, becz dp has been changed in it
 
     int ans = fun(arr,n, dp, x);

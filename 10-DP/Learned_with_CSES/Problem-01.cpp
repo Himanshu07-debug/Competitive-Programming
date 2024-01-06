@@ -72,6 +72,40 @@ using namespace std;
 const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
+int f(int i, vector<int> &dp){
+
+    if(i < 0) return 0;
+
+    if(i == 0) return 1;
+
+    if(dp[i] != -1){
+        return dp[i];
+    }
+
+    int sum = 0;
+
+    for(int j=1;j<=6;j++){
+
+        sum = (sum + f(i - j, dp))%MOD;
+
+    }
+
+    return dp[i] = sum;
+
+}
+
+void solve(){
+
+    int n; cin >> n;
+
+    vector<int> dp(n + 1, -1);
+
+    dp[0] = 1;
+
+    cout << f(n, dp) << endl;
+
+}
+
 
 // APPROACH - 1 ===>
 void solve1(){
@@ -148,6 +182,7 @@ int main() {
     int t; cin >> t;
 
     while(t--){
+        solve();
         solve1();
         solve2();
     }

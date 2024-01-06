@@ -107,7 +107,7 @@ void dice_Combination(){
 
 void Combination2(){
 
-        int n, x;  cin >> n >> x;
+    int n, x;  cin >> n >> x;
 
     vector<int> arr(n);
 

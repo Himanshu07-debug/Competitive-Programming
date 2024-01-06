@@ -63,6 +63,42 @@ const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 
 
+// Memoization ------------------------->>
+
+// For Priyansh Bhaiya Approach 
+
+int f(int i, int sum, vector<vector<int>> &dp, vector<int> &arr){
+
+    if(sum < 0 || i >= arr.size()) return 0;
+
+    if(sum == 0) return 1;
+
+    if(dp[i][sum] != -1) return dp[i][sum];
+
+    int pick = f(i, sum - arr[i], dp,arr);
+    int skip = f(i+1, sum, dp, arr);
+
+    dp[i][sum] = (pick + skip)%MOD;
+
+    return dp[i][sum];
+
+}
+
+void solve(){
+
+    int n, x;  cin >> n >> x;
+
+    vector<int> arr(n);
+
+    for(int i=0;i<n;i++) cin >> arr[i];
+
+    vector<vector<int>> dp(n+1, vector<int>(x+1, -1));
+
+    cout << f(0,x,dp,arr) << endl;
+
+}
+
+
 
 int main(){
 
@@ -106,6 +142,9 @@ int main(){
     }
 
     cout << dp[0][x] << endl;
+
+    // Memoization ---> 
+    solve();
 
     // ******************************** IMP ********************************************************
 
