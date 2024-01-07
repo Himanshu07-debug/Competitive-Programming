@@ -74,7 +74,7 @@ PROBLEM - 07 ------------------>>>
 Q.s -> Array is Given. K Query is given in the form [l,r] . In each Query, Add (i - l + 1) to each l <= i <= r .. 
        1 <= N, K <= 1e6
 
-NOTE -> Here We have a Different variation of Query --> From l to r , we have to add the Numbers Progressively by 1 ...
+NOTE -> Here We have a Different variation of Query --> From l to r , we have to add the Numbers Progressively increasing by 1 ...
         For Example --> l = 1 , r = 4, then 1, 2, 3, 4  addition to this range
 
 HINT -> [0,0,0,0,0,0] , l = 0, r = 2 -> [1,2,3,0,0,0] => How to make this Effect ??

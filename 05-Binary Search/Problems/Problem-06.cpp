@@ -1,5 +1,5 @@
-// At some points on the road there are n friends, and i-th of them is standing at the point x[i] meters and can move with any speed no greater than 
-// v[i] meters per second in any of the two directions along the road: south or north.
+// At some points on the road there are n friends, and i-th of them is standing at the point x[i] meters and can move with any speed no greater 
+// than v[i] meters per second in any of the two directions along the road: south or north.
 
 // You are to compute the minimum time needed to gather all the n friends at some point on the road. 
 // Note that the point they meet at doesn't need to have integer coordinate.
@@ -63,7 +63,7 @@ bool fun(vector<long double> &x,vector<long double> &v, long long n, long long t
     for(int i=0;i<n;i++){
 
         if(arr[i].first > r || arr[i].second < l ){
-            return 0;
+            return false;
         }
 
         l = max(l, arr[i].first);
