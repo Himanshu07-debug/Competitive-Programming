@@ -79,6 +79,36 @@ HINT3 --> [xi - t*vi, xi + t*vi] -> ith frnd ... How you will find the
 
 
 
+PROBLEM - 08 ------------------------------>>
+
+Q.s -> Matrix di hai m * n ki. m shops hai and n frnd no. denote kar rha hai. arr[i][j] -> Gift from ith shop is allocated to jth frnd.. 
+       ith shop ka Gift jth frnd ko arr[i][j] value ka joy deta hai. You have to find X value as high as Possible. X = min(a1, a2, .. , an)..
+       a[i] -> joy allocated to ith frnds. Saare n frnds ko gift allcoate honi chahiye and you can visit only n-1 shops.
+
+OBSERVE -> X min hai allocation ka and Uski high value manga hai -> We have to maximize the minimum joy allocated to a frnd 
+
+HINT 1 -> Search Space ? n frnd ke liye n-1 shops, this means ?
+HINT 2 -> there should be a shop jha se aap atleast 2 frnd ke liye gift le sako...
+HINT 3 -> Do not Worry about Max/Min. Wo BS dekh lenga. Aap Correct Predicate kaise likhonge ???
+HINT 4 -> 2 things to check -> 1. ith frnd ko konse shop mid joy de sakte hai... --> vector<vector<int>> ans(n)
+                               2. Kya koi ek shop hai jo 2 frnd ko >= mid joy de sakta hai --> visited[m]
+
+
+PROBLEM - 09 --------------------------------->>
+
+Q.s -> You are given an array a of n integers, where n is odd. You can make the following operation with it: Choose one of the elements of the 
+        array (for example ai ) and increase it by 1 (that is, replace it with ai+1 ). 
+        You want to make the median of the array the largest possible using at most k operations.
+
+HINT 1 -> For a number to be median, n/2 elements smaller and n/2 bigger rhnne chahiye.. Kyuki Yha pe n -> odd hai
+HINT 2 -> Predicate Function ??  
+HINT 3 -> Sort the array. Start from n/2 indx. if(arr[i] < m) -> cnt += (m - arr[i]); else cnt += 0
+
+
+
+
+
+
 
 
 

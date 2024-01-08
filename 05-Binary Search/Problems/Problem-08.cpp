@@ -6,6 +6,7 @@
 // Constraint -> 2 <= n,m <= 10^5  ,,  2 <= n*m <= 10^5   ,  1 <= arr[i][j] <= 10^9
 
 // m = 4, n = 2
+// matrix of arr[i][j] .. i -> shop, j -> frnd .. row -> Shops, col -> Frnd no.
 // 1 2
 // 3 4 
 // Ans -> 3 (possible combos -> (1,2) , (2,3) , (3,4))
@@ -41,42 +42,42 @@ const long long NINF = LLONG_MIN;
 
 bool fun(vector<vector<long long>> arr, long long n, long long m, long long mi){
 
-        vector<vector<long long >> ans(n); // -> This stores that the ith frnd can take gift from which shops
+    vector<vector<long long >> ans(n); // -> This stores that the ith frnd can take gift from which shops
 
-        for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){
 
-            for(int j=0;j<m;j++){
+        for(int j=0;j<m;j++){
 
-                // j -> shop, i -> frnd
+            // j -> shop, i -> frnd
 
-                if(arr[j][i] >= mi){
+            if(arr[j][i] >= mi){
 
-                    ans[i].push_back(j);
+                ans[i].push_back(j);
 
-                }
-
-            }
-
-            //  No shop allocated to ith frnd i.e ith frnd do not get any Gift
-            if(ans[i].size() == 0){
-                return false;
             }
 
         }
 
-        // Checking for two gifts from same shop i.e there is a shop, from which I can take gift for atleast 2 frnds...
-        vector<long long> visited(m,0);
-
-        for(int i=0;i<n;i++){
-
-            for(auto x:ans[i]){
-
-                if(visited[x]) return true;
-
-                visited[x] = 1;
-            }
-
+        //  No shop allocated to ith frnd i.e ith frnd do not get any Gift
+        if(ans[i].size() == 0){
+            return false;
         }
+
+    }
+
+    // Checking for two gifts from same shop i.e there is a shop, from which I can take gift for atleast 2 frnds...
+    vector<long long> visited(m,0);
+
+    for(int i=0;i<n;i++){
+
+        for(auto x:ans[i]){
+
+            if(visited[x]) return true;
+
+            visited[x] = 1;
+        }
+
+    }
 
     return false;
 
