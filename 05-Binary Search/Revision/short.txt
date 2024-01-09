@@ -106,7 +106,32 @@ HINT 3 -> Sort the array. Start from n/2 indx. if(arr[i] < m) -> cnt += (m - arr
 
 
 
+PROBLEM - 10 --------------------------------->>
 
+What's the minimum number of days needed for a ship, starting at (x1, y1), to reach coordinates (x2, y2) based on a 
+periodic wind forecast (U, D, L, R) of length n? The ship moves one unit up, down, left, or right according to the wind, and can stays 
+in its place only. The wind direction repeats every n days.
+The ship can also make its move alongwith wind moves when it aims to move i.e In order to move Diagonally, when Wind is blowing L, it goes
+U, the ship will move ( x-1, y+1 ) .. If ship move U and wind is also moving U at that time, then it doubles (x, y + 2)
+
+x1 = 0, y1 = 0
+x2 = 4, y2 = 6
+n = 3
+str = "UUU"
+OUTPUT -> 5 ( (0,0) → (1,1) → (2,2) → (3,3) → (4,4) → (4,6) )
+
+
+NOTE -> Read the Question properly, what You understand ??
+
+OBSERVE How we conclude to Go with BS ??
+1. Greedy ho skta hai, But aapke paas Proof nhi hai Wo hamesha sahi denga... Constraint ke wajah se DP laga nhi sakte hai...
+2. Q.s me min. bola hai and Greedy, DP nhi lag rha hai , Tab BS se hi min/max possible hai and Constraint bhi 10^5 hai ..
+3. Sirf Yeah socho kya aap koi bhi x days me kitne moves lagenge, Nikal Sakte ho kya O(n) me , YES, Then Predicate ??
+4. Agar Predicate me Logic and usko O(n) me implement kar diya, Aakhe band kro and use BS on the Search Space on Days...
+
+
+HINT FOR PREDICATE --> Wind ke contirbution se kis cell tk pahuch sakte ho, And uss cell se muje kitne moves krne padenge , calculate, 
+                        Agar merse kiya hu move <= x (current no. of days) , VALID ... 
 
 
 
