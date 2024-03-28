@@ -19,6 +19,7 @@ const long long INF = LLONG_MAX >> 1;
 // Agar hum teeno indexes ke change handle kar rhe hai i.e mid, mid - 1, mid + 1, Then left <= right
 
 bool search1(vector<int> a, int target) {
+    
     int left = 0, right = a.size() - 1;
 
     while (left <= right) {
