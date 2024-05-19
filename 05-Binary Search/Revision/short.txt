@@ -78,6 +78,7 @@ HINT2 --> Har ek person ki ek range rhngi kisi bhi time t pe movement ki, can Yo
 HINT3 --> [xi - t*vi, xi + t*vi] -> ith frnd ... How you will find the Intersection pt. in all these ranges...
 
 
+PROBLEM O8 is not mine Piece of Cake
 
 PROBLEM - 08 ------------------------------>>
 
@@ -131,7 +132,7 @@ OBSERVE How we conclude to Go with BS ??
 
 
 HINT FOR PREDICATE --> Wind ke contirbution se kis cell tk pahuch sakte ho, And uss cell se muje kitne moves krne padenge , calculate, 
-                        Agar merse kiya hu move <= x (current no. of days) , VALID ... 
+                       Agar merse kiya hu move <= x (current no. of days) , VALID ... 
 
 
 

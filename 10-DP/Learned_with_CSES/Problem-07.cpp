@@ -155,15 +155,6 @@ int main(){
 
     }
 
-
-    // please do not think about top-down or Bottom-up.. Its easy .. You can do it.. Just reverse the State..
-
-    // dp[i][j] -> No. of ways from (0,0) to (i,j)
-    // Final Subproblem -> dp[n-1][m-1]  .. i , j = n-1
-    // Base case -> dp[0][0] = 1 
-
-    // Transition -> W.k.t that values starts filling from the Base case, so (i,j) will depend on that base case side values which are filled
-
     
 
     return 0;
