@@ -9,7 +9,7 @@
 
 // FORM 2
 
-// We want Ordered, We have to go with knapsack logic of FORM 1 , It will ensure order ... 
+// We want Ordered, We have to go with subset(pick skip) logic of FORM 1 , It will ensure order ... 
 
 // this are the cases, where FORM 2 is used with overlap FORM 1 in logic
 

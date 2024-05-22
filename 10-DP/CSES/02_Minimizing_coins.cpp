@@ -21,7 +21,7 @@ const long long INF = LLONG_MAX >> 1;
 // PATH / SEQUENCE / MOVES / STEPS ---> always FORM 2
 
 // NOTE 2 --> FORM 1 are just like ordered ways --> 0th indx le liye then agar usko skip kiye to dobara nhi .. 
-//           but if in question 2 + 5 + 2 and 2 + 2 + 5 are considered different --> Knapsack will give wrong answer here...
+//           but if in question 2 + 5 + 2 and 2 + 2 + 5 are considered different --> pick/not pick will give wrong answer here...
 // REMEMBER --> if FORM 1 can be applied on the problem but unordered ways are allowed --> FORM 2 is optimized in space and best.. use that
 //              (ex --> in 1st and this problem, you can go with knapsack but not optimized)
 
