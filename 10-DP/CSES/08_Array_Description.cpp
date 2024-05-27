@@ -43,6 +43,7 @@ const long long NINF = LLONG_MIN;
 // some way, sequence, some elements --> FORM 2
 
 // We have to keep the track of last element ....
+// This last element will help us to only make 3 adjacent cells moves rather than movement from 1 to m
 // if arr[i] == 0  --> then can put last - 1, last, last + 1 on the current place
 // if arr[i] == x --> check from last , and take current x as last for next call
 
