@@ -26,6 +26,7 @@ const long long NINF = LLONG_MIN;
 // its good to sort the array in decreasing order when the width are same... 
 // (2, 3) , (3, 10), (3, 7), (3, 5), (3, 2) (4, 6)
 
+// Array states -
 // [3]
 // [3, 10] 
 // [3, 7]

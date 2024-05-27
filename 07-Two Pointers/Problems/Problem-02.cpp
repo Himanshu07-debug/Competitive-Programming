@@ -4,6 +4,9 @@
 // b = [1 3 3 4 5 5 5]
 // Output -> 11
 
+
+// simple NAIVE is that --> cnta[ch] * cntb[ch]
+
 #include<bits/stdc++.h>
 using namespace std;
 

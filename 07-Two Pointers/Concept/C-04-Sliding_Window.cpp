@@ -20,7 +20,7 @@ const long long NINF = LLONG_MIN;
 // Whatever we had seen by Two pointers till now ==> Variable Sized Sliding window...
 // NOTION --> So hum usko 2 pointers hi consider krnge
 
-// We will assume Sliding window means only Fixed Sized window Questions 87uioyhjg.. Two pointers ke liye Good Segment Technique
+// We will assume Sliding window means only Fixed Sized window Questions .. Two pointers ke liye Good Segment Technique
 
 
 // Fixed Sized Sliding Window => The Size of the window is Provided in the Question i.e Fixed Length ke Window [i .. j] banege
