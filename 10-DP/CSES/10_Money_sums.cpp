@@ -63,7 +63,7 @@ const long long NINF = LLONG_MIN;
 
 
 int dp[101][101];
-int m;
+int n;
 const int N = 1e5;
 
 

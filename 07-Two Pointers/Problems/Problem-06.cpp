@@ -5,17 +5,17 @@
 // the specified radius 'r'. (radius means har ek tower "x - r To x + r" tk cover krnga)
 
 
-// Constraint -> 1 <= n, m <= 10^5   , -10^9 <= arr[i], brr[i] <= 10^9
+// Constraint -> 1 <= n, m <= 10^5   , -10^9 <= cities[i], towers[i] <= 10^9
 
 
 //  n = 3 , m = 2
-// arr = [-2, 2, 4] , brr = [-3, 0]
+// cities = [-2, 2, 4] , towers = [-3, 0]
 // Ans => 4
 
 
 // LOGIC ---> 
 
-// Har ek city ke liye atleast ek to hona chahiye left or right me .. So har ek city ka right wla nikal lenge upperbound lagagke brr() me and 
+// Har ek city ke liye atleast ek to hona chahiye left or right me .. So har ek city ka right wla nikal lenge upperbound lagagke towers() me and 
 // left wla indx - 1 honga, usase bhi nikal lenge... Jisase Min. distance honga, city uss side ke Tower ko choose karengi
 
 

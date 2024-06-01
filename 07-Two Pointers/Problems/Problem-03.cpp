@@ -6,6 +6,13 @@
 
 // 1 <= n <= 10^5
 
+
+// LOGIC ------------------------>>
+
+// A segment in which mx - mi <= k, there any other pairs will also have the diff <= k in the segment.. becz mx - mi is the max diff possible
+
+// Increasing Good Segment technique...
+
 #include<bits/stdc++.h>
 using namespace std;
 
